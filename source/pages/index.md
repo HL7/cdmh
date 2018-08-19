@@ -44,7 +44,7 @@ The next section provides a road map for the reader to walk through the implemen
 
 The following table will provide a road map to the reader to follow and absorb the content of the implementation guide.
 
-| Topic to Read  | What it Contains and its relationship to PRO IG | Where can I find the content ? |
+| Topic to Read  | What it Contains and its relationship to CDMH IG | Where can I find the content ? |
 |:---------------|:------------------------------------------------|-------------------------------:|
 | US-Core | The set of FHIR profiles mostly commonly implemented by vendors, also contains many of the definitions used for the CDMH IG. (For e.g Definition of“Supported”).| [US-Core](http://hl7.org/fhir/us/core/STU1/index.html)|
 | CDMH Overview | The artifact provides an overview of the CDMH project.| [Overview](./cdmh-overview.html)|
