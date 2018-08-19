@@ -34,6 +34,7 @@ The capabilities described as part of the CDMH FHIR IG are intended to be levera
 
 The CDMH FHIR IG will leverage the US-Core IG and profiles for the resources that overlap with US-Core. 
 The CDMH FHIR IG will leverage DAF-Research IG for future phases where by queries and workflows can be automated using FHIR standard. 
+
 The CDMH FHIR IG will create profiles of profiles leveraging US-Core, DAF-Research as necessary and will create new profiles and extensions for Resources based on the four Common Data Model requirements. 
 
 The next section provides a road map for the reader to walk through the implementation guide.
