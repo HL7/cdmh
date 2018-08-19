@@ -1,5 +1,5 @@
 ---
-title: Common Data Model Harmonization FHIR Implementation Guide
+title: Common Data Models Harmonization FHIR Implementation Guide
 layout: default
 active: home
 ---
@@ -19,7 +19,7 @@ active: home
 
 ###  Introduction
 
-The Common Data Model Harmonization (CDMH) FHIR Implementation Guide (IG) will focus on mapping and translating observational data extracted for Patient Centered Outcome Research (PCOR) purposes into FHIR format.  Research data is extracted from the different research networks each of which may use a different data model for their data representation. The project focuses on research networks using the following four Common Data Models (4 CDMs) 
+The Common Data Models Harmonization (CDMH) FHIR Implementation Guide (IG) will focus on mapping and translating observational data extracted for Patient Centered Outcome Research (PCOR) purposes into FHIR format.  Research data is extracted from the different research networks each of which may use a different data model for their data representation. The project focuses on research networks using the following four Common Data Models (4 CDMs) 
 * Patient Centered Outcome Research Network (PCORNet) Common Data Model (CDM) 
 * Informatics for Integration Biology and Bedside (i2b2) model
 * Observational Medical Outcomes Partnership (OMOP) model

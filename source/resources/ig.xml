@@ -4,7 +4,7 @@
   <id value="ig"/>
   <url value="http://hl7.org/fhir/us/cdmh/ImplementationGuide/ig"/>
   <version value="0.0.0"/>
-  <name value="Patient Reported Outcomes"/>
+  <name value="Common Data Models Harmonization (CMDH)"/>
   <status value="draft"/>
   <publisher value="Health eData Inc"/>
   <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
