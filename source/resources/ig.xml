@@ -15,7 +15,7 @@
   <!-- 0..1 SPDX license code for this IG (or not-open-source) -->
   <fhirVersion value="4.0.0"/>
   <!-- 0..1 FHIR Version this Implementation Guide targets -->
-  <definition><resource><reference><reference value="Patient/example"/></reference><exampleBoolean value="true"/></resource><resource><reference><reference value="ValueSet/blah-codes"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="StructureDefinition/template-profile-on-profile"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="CodeSystem/blah-codes"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="CapabilityStatement/server"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="CapabilityStatement/client"/></reference><exampleBoolean value="false"/></resource>
+  <definition><resource><reference><reference value="Patient/example"/></reference><exampleBoolean value="true"/></resource><resource><reference><reference value="ValueSet/blah-codes"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="StructureDefinition/template-profile-on-profile"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="CodeSystem/blah-codes"/></reference><exampleBoolean value="false"/></resource>
      <!-- <resource>
        <reference>
      <reference value="[type]/[id]"/>
