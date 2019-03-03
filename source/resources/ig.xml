@@ -6,8 +6,8 @@
   <version value="0.0.0"/>
   <name value="Common Data Models Harmonization (CMDH)"/>
   <status value="draft"/>
-  <publisher value="Health eData Inc"/>
-  <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
+  <publisher value="Office of the National Coordinator (ONC)"/>
+  <copyright value="Used by permission of ONC, all rights reserved Creative Commons License"/>
   <!-- 0..1 Use and/or publishing restrictions -->
   <!-- <packageId value="healthedatainc.ig-test3"/> -->
   <!-- 0..1 NPM Package name for IG -->
@@ -25,7 +25,7 @@
       <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/patient"/>|<exampleBoolean value="true|false"/>
     </resource>   -->
     <page>
-      <nameUrl value="index.md"/>
+<!--      <nameUrl value="index.md"/> -->
       <title value="CDMH Homepage"/>
       <generation value="markdown"/>
     </page>

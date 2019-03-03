@@ -47,8 +47,8 @@ The following table will provide a road map to the reader to follow and absorb t
 | Topic to Read  | What it Contains and its relationship to CDMH IG | Where can I find the content ? |
 |:---------------|:------------------------------------------------|-------------------------------:|
 | US-Core | The set of FHIR profiles mostly commonly implemented by vendors, also contains many of the definitions used for the CDMH IG. (For e.g Definition of“Supported”).| [US-Core](http://hl7.org/fhir/us/core/STU1/index.html)|
-| CDMH Overview | The artifact provides an overview of the CDMH project.| [Overview](./cdmh-overview.html)|
-| Mappings and Profiles | The artifact defines the various mappings, profiles, extensions and resources that make up the CDMH FHIR IG.| [Profiles](./guidance.html)|
+| CDMH Overview | The artifact provides an overview of the CDMH project.| [Overview](cdmh-overview.html)|
+| Mappings and Profiles | The artifact defines the various mappings, profiles, extensions and resources that make up the CDMH FHIR IG.| [Mappings and Profiles](profiles.html)|
 | Implementation Guidance | The artifact contains guidance and examples that will help implementers of CDMH FHIR IG.| [Implementation Guidance](guidance.html)|
 | DAF-Research | The PCORTF sponsored IG outlines mechanisms to perform queries in distributed networks which is leveraged by the CDMH IG.| [DAF-Research](http://hl7.org/fhir/us/daf-research/)|
 
