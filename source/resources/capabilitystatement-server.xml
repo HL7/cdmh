@@ -4,7 +4,7 @@
 	<text>
 		<status value="generated"/>
 		<div xmlns="http://www.w3.org/1999/xhtml">
-<ul><li>FHIR Version: 3.0.0</li><li>Supported formats: xml, json</li><li>Published: 2017-03-08</li><li>Published by: Health eData Inc</li></ul><p>The Section describes the expected capabilities etc....</p></div>
+<ul><li>FHIR Version: 4.0.0</li><li>Supported formats: xml, json</li><li>Published: 2017-03-08</li><li>Published by: Health eData Inc</li></ul><p>The Section describes the expected capabilities etc....</p></div>
 </text>
 	<url value="http://hl7.org/fhir/us/cdmh/CapabilityStatement/server"/>
 	<name value="Server"/>
@@ -19,8 +19,7 @@
 	</contact>
 	<description value="This resource defines the expected capabilities "/>
 	<kind value="requirements"/>
-	<fhirVersion value="3.0.0"/>
-	<acceptUnknown value="extensions"/>
+	<fhirVersion value="4.0.0"/>
 	<format value="xml"/>
 	<format value="json"/>
 
