@@ -9,13 +9,14 @@
   <publisher value="Office of the National Coordinator (ONC)"/>
   <copyright value="Used by permission of ONC, all rights reserved Creative Commons License"/>
   <!-- 0..1 Use and/or publishing restrictions -->
-  <!-- <packageId value="healthedatainc.ig-test3"/> -->
+  <packageId value="hl7.fhir.us.cdmh"/> 
   <!-- 0..1 NPM Package name for IG -->
   <!-- <license value="CC0-1.0"/> -->
   <!-- 0..1 SPDX license code for this IG (or not-open-source) -->
   <fhirVersion value="4.0.0"/>
   <!-- 0..1 FHIR Version this Implementation Guide targets -->
-  <definition><resource><reference><reference value="Patient/example"/></reference><exampleBoolean value="true"/></resource><resource><reference><reference value="ValueSet/blah-codes"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="StructureDefinition/template-profile-on-profile"/></reference><exampleBoolean value="false"/></resource><resource><reference><reference value="CodeSystem/blah-codes"/></reference><exampleBoolean value="false"/></resource>
+  <definition>
+<resource><reference><reference value="CapabilityStatement/server"/></reference><exampleBoolean value="false"/></resource>
      <!-- <resource>
        <reference>
      <reference value="[type]/[id]"/>
@@ -25,7 +26,7 @@
       <exampleCanonical value="http://hl7.org/fhir/us/core/StructureDefinition/patient"/>|<exampleBoolean value="true|false"/>
     </resource>   -->
     <page>
-<!--      <nameUrl value="index.md"/> -->
+      <nameUrl value="index.md"/>
       <title value="CDMH Homepage"/>
       <generation value="markdown"/>
     </page>
