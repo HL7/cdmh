@@ -49,6 +49,78 @@
         <td class="maptable17">Patient.address.period</td>
         <td class="maptable17">Patient</td>
       </tr>
+      <tr style='height:20px;'>
+        <td class="maptable13" colspan="3">Table : ENCOUNTER
+        </td>
+        <td class="maptable14"></td>
+        <td class="maptable14">
+        </td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">EncounterID</td>
+        <td class="maptable17">Encounter.id</td>
+        <td class="maptable17">us-core-encounter</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">PatID</td>
+        <td class="maptable17">Encounter.subject</td>
+        <td class="maptable17">us-core-encounter</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">ADATE</td>
+        <td class="maptable17">Encounter.period</td>
+        <td class="maptable17">us-core-encounter</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">DDATE</td>
+        <td class="maptable17">Encounter.period</td>
+        <td class="maptable17">us-core-encounter</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Provider</td>
+        <td class="maptable17">Encounter.participant.individual.id</td>
+        <td class="maptable17">us-core-encounter, us-core-practitioner</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Facility_Location</td>
+        <td class="maptable17">Encounter.location.location.address</td>
+        <td class="maptable17">us-core-encounter, us-core-location</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">EncType</td>
+        <td class="maptable17">Encounter.class</td>
+        <td class="maptable17">us-core-encounter</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Facility_Code</td>
+        <td class="maptable17">Encounter.location.location.identifier</td>
+        <td class="maptable17">us-core-encounter, us-core-location</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Discharge_Disposition</td>
+        <td class="maptable17">Encounter.extension (Proposed Name: discharge-disposition: CodeableConcept) :  or Observation.code, Observation.value[x]</td>
+        <td class="maptable17">us-core-encounter or us-core-observationresults</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Discharge_Status</td>
+        <td class="maptable17">Encounter.location.location.type</td>
+        <td class="maptable17">us-core-encounter,us-core-location</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">DRG</td>
+        <td class="maptable17">Encounter.extension (Proposed Name: drg : CodeableConcept)</td>
+        <td class="maptable17">us-core-encounter</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">DRG_Type</td>
+        <td class="maptable17">Encounter.extension (Proposed Name: drg-type : CodeableConcept)</td>
+        <td class="maptable17">us-core-encounter</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">Admitting_Source</td>
+        <td class="maptable17">Encounter.hospitalization.admitSource or Encounter.hospitalization.origin(location).type</td>
+        <td class="maptable17">us-core-encounter, us-core-location</td>
+      </tr>
     </tbody>
   </table>
 </div>
