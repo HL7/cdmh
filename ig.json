@@ -5,13 +5,13 @@
    "logging":[  
       "progress"
    ],
-   "fixed-business-version":"0.0.0",
+   "fixed-business-version":"0.1.0",
    "dependencyList":[  
       {  
          "name":"uscore",
          "version":"current",
-         "source":"dependencies/uscore-vp",
-         "location":"http://hl7.org/fhir/us/core"
+         "source":"dependencies/us-core-r4",
+         "location":"http://hl7.org/fhir/us/core-r4"
       }
    ],
    "title":"Common Data Models Harmonization (CDMH)",
@@ -31,7 +31,6 @@
    "working-dir":"/Users/nbashyam/git/cdmh/",
    "allviews":"true",
    "spreadsheets":[  
-
    ],
    "do-transforms":"false",
    "gen-examples":"false",
@@ -39,7 +38,10 @@
       "CapabilityStatement/server" : {
          "base" : "CapabilityStatement-server.html",
          "source" : "capabilitystatement-server.xml"
-     }
+     },
+     "StructureMap/Foo" : {
+      "base" : "StructureMap-Foo.html"
+    }
    },
    "tool":"jekyll",
    "paths":{  
@@ -49,7 +51,7 @@
       ],
       "qa":"generated_output/qa",
       "temp":"generated_output/temp",
-      "specification":"http://hl7.org/fhir",
+      "specification":"http://hl7.org/fhir/",
       "txCache":"generated_output/txCache",
       "resources":[  
          "source/resources",
@@ -92,7 +94,7 @@
          "template-base":"base.html"
       }
    },
-   "publisher":"ONC",
+   "publisher":"Office of the National Coordinator",
    "no-inactive-codes":"false",
    "pub_url":"nagesh.bashyam@drajer.com",
    "npm-name":"hl7.fhir.us.cdmh",
