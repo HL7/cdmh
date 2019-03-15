@@ -8,10 +8,10 @@
    "fixed-business-version":"0.1.0",
    "dependencyList":[  
       {  
-         "name":"uscore",
+         "name":"uscoreR4",
          "version":"current",
-         "source":"dependencies/us-core-r4",
-         "location":"http://hl7.org/fhir/us/core-r4"
+	 "source":"dependencies/us-core-r4",
+         "location":"http://hl7.org/fhir/us/core"
       }
    ],
    "title":"Common Data Models Harmonization (CDMH)",
