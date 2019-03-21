@@ -4,7 +4,7 @@
   <id value="ig"/>
   <url value="http://hl7.org/fhir/us/cdmh/ImplementationGuide/ig"/>
   <version value="0.0.0"/>
-  <name value="Common Data Models Harmonization (CMDH)"/>
+  <name value="Common_Data_Models_Harmonization"/>
   <status value="draft"/>
   <publisher value="Office of the National Coordinator (ONC)"/>
   <copyright value="Used by permission of HL7, all rights reserved Creative Commons License"/>
