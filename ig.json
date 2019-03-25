@@ -52,6 +52,7 @@
       "qa":"generated_output/qa",
       "temp":"generated_output/temp",
       "specification":"http://hl7.org/fhir/",
+      "history" : "http://hl7.org/fhir/us/cdmh/history.html",
       "txCache":"generated_output/txCache",
       "resources":[  
          "source/resources",
