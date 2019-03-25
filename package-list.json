@@ -4,11 +4,20 @@
  "canonical" : "http://hl7.org/fhir/us/cdmh", 
  "introduction" : "The CDMH FHIR IG provides guidance on how to map the various common data models namely PCORnet CDM, i2b2, OMOP and Sentinel to FHIR resources to facilitate data access by researchers",
  "list" : [{
-  "version" : "0.1.0",
+  "version" : "current",
+  "date" : "2018-04-02",
   "desc" : "Continuous Integration Build (latest in version control)",
-  "path" : "http://build.fhir.org/ig/HL7/cdmh/index.html",
+  "path" : "http://hl7.org/fhir/us/cdmh",
   "status" : "ci-build",
-  "current" : true
+  "current" : true,
+  "sequence" : "Release 4"
+ },{
+  "version" : "0.1.0",
+  "date" : "2018-04-02",
+  "desc" : "Release 4 STU Ballot",
+  "path" : "http://hl7.org/fhir/us/cdmh",
+  "status" : "ballot",
+  "sequence" : "Release 4"
  }]
 }
 
