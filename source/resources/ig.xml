@@ -4,10 +4,17 @@
   <id value="ig"/>
   <url value="http://hl7.org/fhir/us/cdmh/ImplementationGuide/ig"/>
   <version value="0.1.0"/>
-  <name value="Common_Data_Models_Harmonization"/>
+  <name value="CommonDataModelsHarmonization"/>
+  <title value="Common Data Models Harmonization"/>
   <status value="draft"/>
-  <publisher value="Office of the National Coordinator (ONC)"/>
+  <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
   <copyright value="Used by permission of HL7, all rights reserved Creative Commons License"/>
+<contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/Special/committees/rcrim"/>
+    </telecom>
+  </contact>
   <!-- 0..1 Use and/or publishing restrictions -->
   <packageId value="hl7.fhir.us.cdmh"/> 
   <!-- 0..1 NPM Package name for IG -->
