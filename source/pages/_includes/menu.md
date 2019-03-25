@@ -1,7 +1,7 @@
 {:.nav .navbar-nav}
 <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 - [Home](index.html)
-- [General Guidance](guidance.html)
+- [Overview](cdmh-overview.html)
 - [Mappings and Profiles](profiles.html)
 <!-- - [Mappings](structuremaps.html) -->
 <!-- - [Extensions](extensions.html) -->
@@ -10,4 +10,5 @@
 - [Capability Statements](capstatements.html)
 <!-- - [Security](security.html) -->
 <!-- - [Examples](examples.html) -->
+- [Implementation Guidance](guidance.html)
 - [Downloads](downloads.html)

@@ -5,7 +5,7 @@ active: profiles
 ---
 ### Mappings
 
-This section contains the mappings between the various CDMs and the FHIR Resources/profiles. In each mapping the CDM data element is mapped to the appropriate FHIR Data Element. The column FHIR Resource/Profile/Extension identifies the specific profile and/or extension if one exists. If the profiles do not exist then they are mapped to the resource. New profiles and extensions will be added where necessary as the pilot implementations provide feedback through the ballot process.
+This section contains the mappings between the various CDMs, BRIDG and the FHIR Resources/profiles. In each mapping the CDM data element is mapped to the appropriate BRIDG data element and the FHIR Data Element. The column FHIR Resource/Profile/Extension identifies the specific profile and/or extension if one exists. If the profiles do not exist then they are mapped to the resource. New profiles and extensions will be added where necessary as the pilot implementations provide feedback through the ballot process.
 
 ### Mapping Conventions Used
 
@@ -25,7 +25,7 @@ We ask for feedback on these extensions before we proliferate the extensions.
 
 The CDMH project analysis has identified many areas where semantics of the data elements have to be considered to perform the mappings. The following are specific areas where translators written to map between the source and target formats have to apply proper semantic transformation to achieve the desired results. 
 * Date and Time Representations.
-* Vocabulary Mappings from source vocabulary (CDMs represtation) to target vocabulary (FHIR representation) has to be considered to minimize or prevent data loss. The following are codes that need to be translated between the CDM models and FHIR code systems and value sets.
+* Vocabulary Mappings from source vocabulary (CDMs represtation) to target vocabularies (BRIDG and FHIR representation) has to be considered to minimize or prevent data loss. The following are codes that need to be translated between the CDM models and FHIR code systems and value sets.
 - Diagnosis codes from source vocabulary to ICD10-CM
 - Procedure codes from source vocabulary to CPT-4
 - Sex codes
@@ -41,6 +41,19 @@ The CDMH project analysis has identified many areas where semantics of the data 
 - Specimen types
 - Observation codes
 - Observation value units
+
+#### CDMs to BRIDG Mappings 
+
+The mappings of the various CDMs to BRIDG data model which was used as the intermediary model in the CDMH project are documented in the following spreadsheet.
+
+[CDMs to BRIDG Mappings](https://drive.google.com/file/d/194nwCX3dBMU7cfCO8no7XFVHA6I3WlYm/view?usp=sharing)
+
+```
+**Feedback Required**
+
+In future versions of the IG, we may consider adding a BRIDG column to the below tables to have the BRIDG mapping side by side to the FHIR mappings. Another option is to add separate sections for each CDM to BRIDG similar to what has been done for FHIR. Please provide feedback on whether any of the above options would help or if it would confuse the readers since the IG's primary intent is to provide mappings from CDMs to FHIR.
+
+```
 
 #### PCORnet CDM version 4 to FHIR Mappings
 
@@ -83,7 +96,7 @@ The table below outlines the mappings between i2b2 and FHIR Resources/profiles a
 
 ### Profiles
 
-The CDMH IG uses the US Core profiles and the data elements present in the base resources to map Sentinel, i2b2, PCORnet CDM and OMOP to FHIR.
+The CDMH IG uses the US Core profiles, along with the data elements present in the base resources and proposed extensions to map Sentinel, i2b2, PCORnet CDM and OMOP to FHIR.
 
 
 {% include list-extensions.xhtml %}

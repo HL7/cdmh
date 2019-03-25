@@ -3,7 +3,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig"/>
   <url value="http://hl7.org/fhir/us/cdmh/ImplementationGuide/ig"/>
-  <version value="0.0.0"/>
+  <version value="0.1.0"/>
   <name value="Common_Data_Models_Harmonization"/>
   <status value="draft"/>
   <publisher value="Office of the National Coordinator (ONC)"/>

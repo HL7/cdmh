@@ -4,8 +4,6 @@ layout: default
 active: overview
 ---
 
-{% include publish-box.html %}
-
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
@@ -36,7 +34,8 @@ The purpose and goals of the overall project are as follows
 	- Informatics for Integrating Biology & the Bedside (i2b2)
 	- Observational Medical Outcomes Partnership (OMOP).
 
-* Creating mapping between these CDMs as well as intermediary model such as Biomedical Research Integrated Domain Group (BRIDG) and Fast Healthcare Interoperability Resources (FHIR) profiles and resources. These mappings will facilitate researchers’ access to data from multiple research networks.
+* Creating mapping between the above CDMs to Biomedical Research Integrated Domain Group (BRIDG) which serves as an intermediary model in the project. This is explained further in the abstract model section below.
+* Create mappings between the above CDMs and Fast Healthcare Interoperability Resources (FHIR) profiles and resources. These mappings will facilitate broader access to data from multiple research networks.
 
 ### Abstract Model, Actors and Definitions
 
@@ -62,6 +61,24 @@ The steps involved in the CDMH project to create a query and then distribute the
 **Data Partner Client:** Data Partner Client represents the capability that allows the Data Partner network or organization to control the queries being run and results being submitted to the Researchers. 
 
 **CDMs:** Common Data Models (CDMs) represent various physical representations of data that are commonly used by research networks and organizations currently. For CDMH project purposes, FDA's Sentinel,PCORnet CDM, i2b2 and OMOP data models are being considered for mapping to FHIR.  
+
+####  BRIDG Intermediary Model and its role in CDMH project
+
+The abstract model shown above allows researchers to compose queries in a uniform format and send them to the data partners for execution. In order to compose queries that can be executed against the different data models, the researcher has two options 
+1. Compose queries in the different formats required by each data partner.
+2. Compose queries in a common format using and intermediary model and then translate the query from intermediary model to the various formats required by the data partners. 
+
+For CDMH, Option 1 was not considered as it would out a significant burden on the researchers and the user interface to compose queries in each format and the maintenance of the overall solution would be complex. Hence Option 2 was chosen with BRIDG serving as the intermediary model. 
+Leveraging BRIDG as the intermediary model has many benefits some of which are listed below
+* Ability to use a common model for composing the queries making the system design easier and maintainable.
+* Well defined semantics of BRIDG makes it easier for others to understand the data.
+* Allows for converting from a single intermediary models to any number of CDMs, which can be done once centrally thus reducing any burden on the data partners. 
+* Allows for converting results from the data partners to a common model from where it can be mapped and translated to other formats including FHIR.
+
+In the current phase of the project, BRIDG was chosen as the intermediary model to gain experience with the overall project and its implementation. In future phases, FHIR may be considered for playing the role of the intermediary model.
+
+As as result of the architecture choices and decision made, the CDMH project developed a mapping between the various CDMs and BRIDG and then mapped BRIDG to FHIR. These mappings have been leveraged to finalize the mappings of the CDMs to FHIR and are outlined in the Mappings and Profiles section of the IG.
+
 
 ###  Expected Benefits of the CDMH Project
 
