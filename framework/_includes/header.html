@@ -3,10 +3,10 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>{{site.data.fhir.igName}}</title>
+  <title>{{site.data.fhir.ig.title}}</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="{{site.data.fhir.igName}} Implemenation Guide" />
+<meta name="description" content="{{site.data.fhir.ig.title}} Implemenation Guide" />
 <meta name="author" content="{{site.data.fhir.ig.publisher}}"/>
   <link href="fhir.css" rel="stylesheet"/>
 
@@ -56,7 +56,7 @@
 
 
       <div id="project-status" class="project-status"> <!-- ig title text -->
-        <b>{{ site.data.fhir.igName }} Implementation Guide</b>
+        <b>{{ site.data.fhir.ig.title }} Implementation Guide</b>
         {% if {{site.build}} == "ci" %}
         CI Build
         {% elsif {{site.build}} == "ballot" %}
