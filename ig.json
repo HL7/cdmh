@@ -26,7 +26,7 @@
    ],
    "sct-edition":"http://snomed.info/sct/731000124108",
    "mappings":"true",
-   "version":"4.0.0",
+   "version":"4.1.0",
    "license":"CC0-1.0",
    "working-dir":"/Users/nbashyam/git/cdmh/",
    "allviews":"true",
