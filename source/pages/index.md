@@ -22,7 +22,7 @@ The Common Data Models Harmonization (CDMH) FHIR Implementation Guide (IG) will 
 * Patient Centered Outcome Research Network (PCORNet) Common Data Model (CDM) 
 * Informatics for Integration Biology and Bedside (i2b2) model
 * Observational Medical Outcomes Partnership (OMOP) model
-* Federal Drug Administration’s Sentinel model
+* Federal Drug Administration’s Sentinel model 
 
 The larger CDMH project led by FDA in collaboration with other Federal Agencies and specific research networks tackles the various aspects such as querying the data and getting the results back from the queries; however, the CDMH FHIR IG only focuses on mapping and translating the results obtained from queries to a FHIR format. The following benefits are expected from translation of research data into a FHIR format
 * The data can be published using FHIR format using well defined RESTful APIs for other authorized researchers
