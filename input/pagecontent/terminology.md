@@ -1,9 +1,3 @@
----
-title: ValueSets and CodeSystems defined as part of this Implementation Guide
-layout: default
-active: terminology
----
-
 #### Code Systems
 
 The CDMH IG depends on US-Core published code systems and code systems published or referenced by the HL7 FHIR standard itself. The IG does not introducce any new code systems.

@@ -1,9 +1,3 @@
----
-title: Downloads
-layout: default
-active: downloads
----
-
 **Package File**
 
 The following package file contains an NPM Package used by many of the FHIR tools.  It includes all the value sets, profiles, extensions, list of pages and urls in the IG, etc defined as part of the this version of the Implementation Guides.:
