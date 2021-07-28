@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Hidden IG for de facto IG publishing-->
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="cdmh"/>
+  <url value="http://hl7.org/fhir/us/cdmh/ImplementationGuide/cdmh"/>
+  <version value="1.0.0"/>
+  <name value="CommonDataModelsHarmonization"/>
+  <title value="Common Data Models Harmonization"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
+  <copyright value="Used by permission of HL7, all rights reserved Creative Commons License"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org/Special/committees/rcrim"/>
+    </telecom>
+  </contact>
+  <description value="CDMH Maps data elements and classes between FHIR and Sentinel, i2b2, PCORnet CDM, OMOP research models."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <!-- 0..1 Use and/or publishing restrictions -->
+  <packageId value="hl7.fhir.us.cdmh"/> 
+  <!-- 0..1 NPM Package name for IG -->
+  <!-- <license value="CC0-1.0"/> -->
+  <!-- 0..1 SPDX license code for this IG (or not-open-source) -->
+  <fhirVersion value="4.1.0"/>
+  <!-- 0..1 FHIR Version this Implementation Guide targets -->
+  <dependsOn id="uscoreR4">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="3.1.0"/>
+  </dependsOn>
+  <definition>
+    <page>
+      <!-- The root will always be toc.html - the template will force it if you don't do it -->
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="IG Home Page"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="background.html"/>
+        <title value="Background"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="profiles.html"/>
+        <title value="Detailed Specification"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="credits.html"/>
+        <title value="Credits"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Useful Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="IG Change History"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="history.html"/>
+        <title value="IG Version History"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="copyrightyear"/>
+      <value value="2019+"/>
+    </parameter>
+    <!-- releaselabel should be the ballot status for HL7-published IGs. -->
+    <parameter>
+      <code value="releaselabel"/>
+      <value value="STU 1 Publication"/>
+    </parameter>
+    <parameter>
+      <code value="find-other-resources"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="path-expansion-params"/>
+      <value value="terminology-settings.json"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

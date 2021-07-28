@@ -1,0 +1,59 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li>
+    <a href="{{site.data.info.assets}}toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">CDMH Specification<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="{{site.data.info.assets}}background.html">Technical Background</a>
+      </li>
+      <li>
+        <a href="{{site.data.info.assets}}profiles.html">
+          <b>CDMH Mappings</b>
+        </a>
+      </li>
+      <li>
+        <a href="{{site.data.info.assets}}downloads.html">Downloads</a>
+      </li>
+      <li>
+        <a href="{{site.data.info.assets}}credits.html">Credits</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="{{site.data.info.assets}}artifacts.html">CDMH Artifacts</a>
+      </li>
+      <li>
+        <a href="{{site.data.fhir.uscoreR4}}/index.html">US Core STU3 (FHIR R4 version)</a>
+      </li>
+      <li>
+        <a href="{{site.data.info.assets}}downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>  
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Base Specs<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="{{site.data.fhir.path}}index.html">FHIR R4 Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+      <li>
+        <a target="_blank" href="{{site.data.fhir.uscoreR4}}/index.html">US Core STU3 (FHIR R4 version)<img src="external.png" style="text-align: baseline"/></a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="{{site.data.info.assets}}history.html">History</a>
+  </li>
+</ul>

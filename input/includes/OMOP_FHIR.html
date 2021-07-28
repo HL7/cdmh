@@ -1,0 +1,831 @@
+<style type="text/css">.ritz .waffle a { color: inherit; }.ritz .waffle .maptable17{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#ffffff;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable18{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#ffffff;text-align:left;color:#262626;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable12{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#4f81bd;text-align:center;font-weight:bold;color:#ffffff;font-family:'Calibri',Arial;font-size:12pt;vertical-align:middle;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable15{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#c6d9f0;text-align:center;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:bottom;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable112{background-color:#ffffff;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:12pt;vertical-align:middle;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable11{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;border-left:1px SOLID #000000;background-color:#4f81bd;text-align:center;font-weight:bold;color:#ffffff;font-family:'Calibri',Arial;font-size:12pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable10{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#4f81bd;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:12pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable111{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;background-color:#c6d9f0;text-align:left;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable14{border-bottom:1px SOLID #000000;border-right:1px SOLID transparent;background-color:#c6d9f0;text-align:center;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:bottom;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable13{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;border-left:1px SOLID #000000;background-color:#c6d9f0;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:12pt;vertical-align:bottom;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px;}.ritz .waffle .maptable110{border-bottom:1px SOLID #000000;border-right:1px SOLID transparent;background-color:#c6d9f0;text-align:left;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable16{border-bottom:1px SOLID #000000;border-right:1px SOLID #000000;border-left:1px SOLID #000000;background-color:#c6d9f0;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:12pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable19{border-bottom:1px SOLID #000000;border-right:1px SOLID transparent;background-color:#c6d9f0;text-align:center;font-weight:bold;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}.ritz .waffle .maptable113{background-color:#ffffff;text-align:left;color:#000000;font-family:'Calibri',Arial;font-size:11pt;vertical-align:middle;white-space:normal;overflow:hidden;word-wrap:break-word;direction:ltr;padding:0px 3px 0px 3px;}</style>
+<div class="ritz grid-container" dir="ltr">
+  <table class="waffle" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr style='height:20px;'>
+        <td class="maptable11">OMOP Data Element</td>
+        <td class="maptable11">FHIR Data Element</td>
+        <td class="maptable11">FHIR Resource/Profile/Extension</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable13" colspan="3">Table : Person
+        </td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">person_id</td>
+        <td class="maptable17">Patient.identifier</td>
+        <td class="maptable17">us-core-patient</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">provider_id</td>
+        <td class="maptable17">Patient.generalPractitioner</td>
+        <td class="maptable17">Patient</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">care_site_id</td>
+        <td class="maptable17">BodySite.patient</td>
+        <td class="maptable17">BodySite</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">gender_concept_id</td>
+        <td class="maptable17">Patient.gender</td>
+        <td class="maptable17">us-core-patient</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">year_of_birth</td>
+        <td class="maptable17">Patient.birthDate</td>
+        <td class="maptable17">us-core-patient</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">month_of_birth</td>
+        <td class="maptable17">Patient.birthDate</td>
+        <td class="maptable17">us-core-patient</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">day_of_birth</td>
+        <td class="maptable17">Patient.birthDate</td>
+        <td class="maptable17">us-core-patient</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">birth_datetime</td>
+        <td class="maptable17">Patient.birthDate</td>
+        <td class="maptable17">us-core-patient</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">race_concept_id</td>
+        <td class="maptable17">Patient.extension: us-core-race</td>
+        <td class="maptable17">us-core-patient</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">ethnicity_concept_id</td>
+        <td class="maptable17">Patient.extension: us-core-ethnicity</td>
+        <td class="maptable17">us-core-patient</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">location_id</td>
+        <td class="maptable17">Patient.address</td>
+        <td class="maptable17">Patient</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable13" colspan="3">Table : VISIT_OCCURRENCE
+        </td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">visit_occurence_id</td>
+        <td class="maptable17">Encounter.id</td>
+        <td class="maptable17">us-core-encounter</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">care_site_id</td>
+        <td class="maptable17">Encounter.location.location.identifier</td>
+        <td class="maptable17">us-core-encounter, us-core-location</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">admitting_source_concept_id</td>
+        <td class="maptable17">Encounter.hospitalization.admitSource or Encounter.hospitalization.origin(location).type</td>
+        <td class="maptable17">us-core-encounter, us-core-location</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">discharge_to_concept_id</td>
+        <td class="maptable17">Encounter.location.location.type</td>
+        <td class="maptable17">us-core-encounter,us-core-location</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">preceding_visit_occurence</td>
+        <td class="maptable17">Encounter.partOf</td>
+        <td class="maptable17">us-core-encounter</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">person_id</td>
+        <td class="maptable17">Encounter.subject</td>
+        <td class="maptable17">us-core-encounter</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">visit_concept_id</td>
+        <td class="maptable17">Encounter.type</td>
+        <td class="maptable17">us-core-encounter</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">visit_start_date</td>
+        <td class="maptable17">Encounter.period</td>
+        <td class="maptable17">us-core-encounter</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">visit_start_datetime</td>
+        <td class="maptable17">Encounter.period</td>
+        <td class="maptable17">us-core-encounter</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">visit_end_date</td>
+        <td class="maptable17">Encounter.period</td>
+        <td class="maptable17">us-core-encounter</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">visit_end_datetime</td>
+        <td class="maptable17">Encounter.period</td>
+        <td class="maptable17">us-core-encounter</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">visit_type_concept_id</td>
+        <td class="maptable17">Encounter.extension (Proposed Name: source-data-type : CodeableConcept)</td>
+        <td class="maptable17">us-core-encounter</td>
+      </tr>      
+      <tr style='height:20px;'>
+        <td class="maptable13" colspan="3">Table : CARE_SITE
+        </td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">care_site_id</td>
+        <td class="maptable17">Location.id</td>
+        <td class="maptable17">us-core-location</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">care_site_name</td>
+        <td class="maptable17">Location.name</td>
+        <td class="maptable17">us-core-location</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">place_of_service_concept_id</td>
+        <td class="maptable17">Location.type</td>
+        <td class="maptable17">us-core-location</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">location_id</td>
+        <td class="maptable17">Location.address</td>
+        <td class="maptable17">us-core-location</td>
+      </tr>	  
+	  <tr style='height:20px;'>
+        <td class="maptable13" colspan="3">Table : CONDITION_OCCURRENCE
+        </td>
+      </tr>	  
+      <tr style='height:20px;'>
+        <td class="maptable16">condition_occurrence_id</td>
+        <td class="maptable17">Condition.id</td>
+        <td class="maptable17">us-core-condition</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">provider_id</td>
+        <td class="maptable17">Condition.asserter</td>
+        <td class="maptable17">us-core-condition</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">visit_occurrence_id</td>
+        <td class="maptable17">Condition.encounter</td>
+        <td class="maptable17">us-core-condition</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">condition_status_concept_id</td>
+        <td class="maptable17">Condition.clinicalStatus</td>
+        <td class="maptable17">us-core-condition</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">person_id</td>
+        <td class="maptable17">Condition.subject</td>
+        <td class="maptable17">us-core-condition</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">condition_concept_id</td>
+        <td class="maptable17">Condition.code</td>
+        <td class="maptable17">us-core-condition</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">condition_start_date</td>
+        <td class="maptable17">Condition.onset[x]</td>
+        <td class="maptable17">us-core-condition</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">condition_start_datetime</td>
+        <td class="maptable17">Condition.onset[x]</td>
+        <td class="maptable17">us-core-condition</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">condition_end_date</td>
+        <td class="maptable17">Condition.abatement[x]</td>
+        <td class="maptable17">us-core-condition</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">condition_end_datetime</td>
+        <td class="maptable17">Condition.abatement[x]</td>
+        <td class="maptable17">us-core-condition</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">condition_type_concept_id</td>
+        <td class="maptable17">Condition.Extension (Proposed Name: raw-value : CodeableConcept)</td>
+        <td class="maptable17">us-core-condition</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">stop_reason</td>
+        <td class="maptable17">Condition.Extension (Proposed Name: abatement-reason : CodeableConcept)</td>
+        <td class="maptable17">us-core-condition</td>
+      </tr>	  
+	  <tr style='height:20px;'>
+        <td class="maptable13" colspan="3">Table : DEATH
+        </td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">person_id</td>
+        <td class="maptable17">AdverseEvent.subject</td>
+        <td class="maptable17">AdverseEvent</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">death_date</td>
+        <td class="maptable17">AdverseEvent.date</td>
+        <td class="maptable17">AdverseEvent</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">death_datetime</td>
+        <td class="maptable17">AdverseEvent.recordedDate</td>
+        <td class="maptable17">AdverseEvent</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">death_type_concept_id</td>
+        <td class="maptable17">AdverseEvent.suspectedEntity.causality.Extension (Proposed Name: cause-code : CodeableConcept)</td>
+        <td class="maptable17">AdverseEvent</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">cause_concept_id</td>
+        <td class="maptable17">AdverseEvent.suspectedEntity.causality.Extension (Proposed Name: cause-code : CodeableConcept)</td>
+        <td class="maptable17">AdverseEvent</td>
+      </tr>  
+	   <tr style='height:20px;'>
+        <td class="maptable13" colspan="3">Table : DEVICE_EXPOSURE
+        </td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">device_exposure_id</td>
+        <td class="maptable17">Procedure.id</td>
+        <td class="maptable17">us-core-procedure</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">quantity</td>
+        <td class="maptable17">Procedure.focalDevice,Procedure.usedReference,Procedure.usedCode</td>
+        <td class="maptable17">us-core-procedure</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">provider_id</td>
+        <td class="maptable17">Procedure.performer.actor</td>
+        <td class="maptable17">us-core-procedure, us-core-practitioner</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">visit_occurrence_id</td>
+        <td class="maptable17">Procedure.encounter</td>
+        <td class="maptable17">us-core-procedure</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">person_id</td>
+        <td class="maptable17">Procedure.subject</td>
+        <td class="maptable17">us-core-procedure</td>
+      </tr>
+	   <tr style='height:20px;'>
+        <td class="maptable16">device_concept_id</td>
+        <td class="maptable17">Procedure.focalDevice,Procedure.usedReference,Procedure.usedCode</td>
+        <td class="maptable17">us-core-procedure</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">device_exposure_start_date</td>
+        <td class="maptable17">Procedure.performedPeriod</td>
+        <td class="maptable17">us-core-procedure</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">device_exposure_start_datetime</td>
+        <td class="maptable17">Procedure.performedPeriod</td>
+        <td class="maptable17">us-core-procedure</td>
+      </tr> 
+      <tr style='height:20px;'>
+        <td class="maptable16">device_exposure_end_date</td>
+        <td class="maptable17">Procedure.performedPeriod</td>
+        <td class="maptable17">us-core-procedure</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">device_exposure_end_datetime</td>
+        <td class="maptable17">Procedure.performedPeriod</td>
+        <td class="maptable17">us-core-procedure</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">device_type_concept_id</td>
+        <td class="maptable17">Procedure.Extension (Proposed Name: raw-value : CodeableConcept)</td>
+        <td class="maptable17">us-core-procedure</td>
+      </tr>
+	   <tr style='height:20px;'>
+        <td class="maptable16">unique_device_id</td>
+        <td class="maptable17">Procedure.focalDevice,Procedure.usedReference</td>
+        <td class="maptable17">us-core-procedure</td>
+      </tr>	  
+	  <tr style='height:20px;'>
+        <td class="maptable13" colspan="3">Table :DRUG_EXPOSURE
+        </td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">drug_exposure_id</td>
+        <td class="maptable17">MedicationStatement.id</td>
+        <td class="maptable17">us-core-medicationstatement</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">stop_reason</td>
+        <td class="maptable17">MedicationStatement.statusReason</td>
+        <td class="maptable17">us-core-medicationstatement</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">refills</td>
+        <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).dispenseRequest.numberOfRepeatsAllowed</td>
+        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">quantity</td>
+        <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).dispenseRequest.quantity</td>
+        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">days_supply</td>
+        <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).dispenseRequest.expectedSupplyDuration</td>
+        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+      </tr>
+	   <tr style='height:20px;'>
+        <td class="maptable16">lot_number</td>
+        <td class="maptable17">MedicationStatement.medication.batch.lotNumber</td>
+        <td class="maptable17">us-core-medicationstatement, us-core-medication</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">sig</td>
+        <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).dosageInstruction.text</td>
+        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">route_concept_id</td>
+        <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).dosageInstruction.route</td>
+        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+      </tr> 
+      <tr style='height:20px;'>
+        <td class="maptable16">provider_id</td>
+        <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).requester</td>
+        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">visit_occurrence_id</td>
+        <td class="maptable17">MedicationStatement.context</td>
+        <td class="maptable17">us-core-medicationstatement, us-core-encounter</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">drug_source_value</td>
+        <td class="maptable17">MedicationStatement.Extension (Proposed Name: raw-value : CodeableConcept)</td>
+        <td class="maptable17">us-core-medicationstatement</td>
+      </tr>
+	   <tr style='height:20px;'>
+        <td class="maptable16">person_id</td>
+        <td class="maptable17">MedicationStatement.subject</td>
+        <td class="maptable17">us-core-medicationstatement</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">drug_concept_id</td>
+        <td class="maptable17">MedicationStatement.medicationCodeableConcept</td>
+        <td class="maptable17">us-core-medicationstatement</td>
+      </tr> 
+      <tr style='height:20px;'>
+        <td class="maptable16">drug_exposure_start_date</td>
+        <td class="maptable17">MedicationStatement.effectivePeriod</td>
+        <td class="maptable17">us-core-medicationstatement</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">drug_exposure_start_datetime</td>
+        <td class="maptable17">MedicationStatement.effectivePeriod</td>
+        <td class="maptable17">us-core-medicationstatement</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">drug_exposure_end_date</td>
+        <td class="maptable17">MedicationStatement.effectivePeriod</td>
+        <td class="maptable17">us-core-medicationstatement</td>
+      </tr>
+	   <tr style='height:20px;'>
+        <td class="maptable16">drug_exposure_end_datetime</td>
+        <td class="maptable17">MedicationStatement.effectivePeriod</td>
+        <td class="maptable17">us-core-medicationstatement</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">verbatim_end_date</td>
+        <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).validityPeriod</td>
+        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">drug_type_concept_id</td>
+        <td class="maptable17">MedicationStatement.medicationCodeableConcept</td>
+        <td class="maptable17">us-core-medicationstatement</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable13" colspan="3">Table : LOCATION
+        </td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">location_id</td>
+        <td class="maptable17">Location.id</td>
+        <td class="maptable17">us-core-location</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">address_1</td>
+        <td class="maptable17">Location.address.line</td>
+        <td class="maptable17">us-core-location</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">address_2</td>
+        <td class="maptable17">Location.address.line</td>
+        <td class="maptable17">us-core-location</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">city</td>
+        <td class="maptable17">Location.address.city</td>
+        <td class="maptable17">us-core-location</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">state</td>
+        <td class="maptable17">Location.address.state</td>
+        <td class="maptable17">us-core-location</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">zip</td>
+        <td class="maptable17">Location.address.postalCode</td>
+        <td class="maptable17">us-core-location</td>
+      </tr>
+	   <tr style='height:20px;'>
+        <td class="maptable16">country</td>
+        <td class="maptable17">Location.address.country</td>
+        <td class="maptable17">us-core-location</td>
+      </tr>  
+	  <tr style='height:20px;'>
+        <td class="maptable13" colspan="3">Table :MEASUREMENT
+        </td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">measurement_id</td>
+        <td class="maptable17">Observation.id</td>
+        <td class="maptable17">us-core-observationresults</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">unit_concept_id</td>
+        <td class="maptable17">Observation.value[x]</td>
+        <td class="maptable17">us-core-observationresults</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">range_low</td>
+        <td class="maptable17">Observation.referenceRange.low</td>
+        <td class="maptable17">us-core-observationresults</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">range_high</td>
+        <td class="maptable17">Observation.referenceRange.high</td>
+        <td class="maptable17">us-core-observationresults</td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">provider_id</td>
+        <td class="maptable17">Observation.performer (Practitioner)</td>
+        <td class="maptable17">us-core-observationresults</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">visit_occurrence_id</td>
+        <td class="maptable17">Observation.encounter</td>
+        <td class="maptable17">us-core-observationresults</td>
+      </tr>
+	   <tr style='height:20px;'>
+        <td class="maptable16">measurement_source_value</td>
+        <td class="maptable17">Observation.Extension (Proposed Name: raw-value : CodeableConcept)</td>
+        <td class="maptable17">us-core-observationresults</td>
+      </tr>
+	   <tr style='height:20px;'>
+        <td class="maptable16">person_id</td>
+        <td class="maptable17">Observation.subject</td>
+        <td class="maptable17">us-core-observationresults</td>
+      </tr>
+	   <tr style='height:20px;'>
+        <td class="maptable16">measurement_concept_id</td>
+        <td class="maptable17">Observation.code</td>
+        <td class="maptable17">us-core-observationresults</td>
+      </tr>
+	   <tr style='height:20px;'>
+        <td class="maptable16">measurement_date</td>
+        <td class="maptable17">Observation.effectiveDateTime</td>
+        <td class="maptable17">us-core-observationresults</td>
+      </tr>
+	   <tr style='height:20px;'>
+        <td class="maptable16">measurement_datetime</td>
+        <td class="maptable17">Observation.effectiveDateTime</td>
+        <td class="maptable17">us-core-observationresults</td>
+      </tr>
+	   <tr style='height:20px;'>
+        <td class="maptable16">measurement_type_concept_id</td>
+        <td class="maptable17">Observation.meta.source</td>
+        <td class="maptable17">us-core-observationresults</td>
+      </tr>
+	   <tr style='height:20px;'>
+        <td class="maptable16">operator_concept_id</td>
+        <td class="maptable17">Not sure why this is required</td>
+        <td class="maptable17">None</td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">value_as_number</td>
+        <td class="maptable17">Observation.value[x]</td>
+        <td class="maptable17">us-core-observationresults</td>
+      </tr>
+	   <tr style='height:20px;'>
+        <td class="maptable16">value_as_concept_id</td>
+        <td class="maptable17">Observation.valueCodeableConcept</td>
+        <td class="maptable17">us-core-observationresults</td>
+      </tr>
+      <!--  
+	  <tr style='height:20px;'>
+        <td class="maptable13" colspan="3">Table :NOTE
+        </td>
+        <td class="maptable14"></td>
+        <td class="maptable14">
+        </td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">note_id</td>
+        <td class="maptable17"></td>
+        <td class="maptable17"></td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">language_concept_id</td>
+        <td class="maptable17"></td>
+        <td class="maptable17"></td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">provider_id</td>
+        <td class="maptable17"></td>
+        <td class="maptable17"></td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">visit_occurrence_id</td>
+        <td class="maptable17"></td>
+        <td class="maptable17"></td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">person_id</td>
+        <td class="maptable17"></td>
+        <td class="maptable17"></td>
+      </tr>
+	   <tr style='height:20px;'>
+        <td class="maptable16">note_date</td>
+        <td class="maptable17"></td>
+        <td class="maptable17"></td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">note_datetime</td>
+        <td class="maptable17"></td>
+        <td class="maptable17"></td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">note_type_concept_id</td>
+        <td class="maptable17"></td>
+        <td class="maptable17"></td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">note_class_concept_id</td>
+        <td class="maptable17"></td>
+        <td class="maptable17"></td>
+      </tr>
+	  <tr style='height:20px;'>
+        <td class="maptable16">note_title</td>
+        <td class="maptable17"></td>
+        <td class="maptable17"></td>
+      </tr>
+      <tr style='height:20px;'>
+        <td class="maptable16">note_text</td>
+        <td class="maptable17"></td>
+        <td class="maptable17"></td>
+      </tr>
+	   <tr style='height:20px;'>
+        <td class="maptable16">encoding_concept_id</td>
+        <td class="maptable17"></td>
+        <td class="maptable17"></td>
+      </tr>
+	  
+	  -->
+	  
+	  <tr style='height:20px;'>
+        <td class="maptable13" colspan="3">Table :OBSERVATION_PERIOD (Not Required to be mapped for CDMH)
+        </td>
+      </tr>
+	  
+	  
+	  <tr style='height:20px;'>
+		<td class="maptable13" colspan="3">Table : OBSERVATION
+		</td>
+	</tr>
+		<tr style='height:20px;'>
+		<td class="maptable16">observation_id </td>
+		<td class="maptable17">Observation.id</td>
+		<td class="maptable17">us-core-observationresults</td>
+	</tr>
+		<tr style='height:20px;'>
+		<td class="maptable16">qualifier_concept_id</td>
+		<td class="maptable17">Observation.Extension (Proposed Name: decision-aid-alert : CodeableConcept)</td>
+		<td class="maptable17">us-core-observationresults</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">unit_concept_id</td>
+		<td class="maptable17">Observation.value[x]</td>
+		<td class="maptable17">us-core-observationresults</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">provider_id</td>
+		<td class="maptable17">Observation.performer (Practitioner)</td>
+		<td class="maptable17">us-core-observationresults</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">visit_occurrence_id</td>
+		<td class="maptable17">Observation.encounter</td>
+		<td class="maptable17">us-core-observationresults</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">person_id</td>
+		<td class="maptable17">Observation.subject</td>
+		<td class="maptable17">us-core-observationresults</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">observation_concept_id</td>
+		<td class="maptable17">Observation.code</td>
+		<td class="maptable17">us-core-observationresults</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">observation_date</td>
+		<td class="maptable17">Observation.effectiveDateTime</td>
+		<td class="maptable17">us-core-observationresults</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">observation_datetime</td>
+		<td class="maptable17">Observation.effectiveDateTime</td>
+		<td class="maptable17">us-core-observationresults</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">observation_type_concept_id</td>
+		<td class="maptable17">Observation.category</td>
+		<td class="maptable17">us-core-observationresults</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">value_as_number</td>
+		<td class="maptable17">Observation.value[x]</td>
+		<td class="maptable17">us-core-observationresults</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">value_as_string</td>
+		<td class="maptable17">Observation.valueString</td>
+		<td class="maptable17">us-core-observationresults</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">value_as_concept_id</td>
+		<td class="maptable17">Observation.valueCodeableConcept</td>
+		<td class="maptable17">us-core-observationresults</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable13" colspan="3">Table : PROCEDURE_OCCURRENCE
+		</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">procedure_occurrence_id</td>
+		<td class="maptable17">Procedure.id</td>
+		<td class="maptable17">us-core-procedure</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">visit_occurrence_id</td>
+		<td class="maptable17">Procedure.encounter</td>
+		<td class="maptable17">us-core-procedure</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">person_id</td>
+		<td class="maptable17">Procedure.subject</td>
+		<td class="maptable17">us-core-procedure</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">procedure_concept_id</td>
+		<td class="maptable17">Procedure.code</td>
+		<td class="maptable17">us-core-procedure</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">procedure_date</td>
+		<td class="maptable17">Procedure.performedDateTime</td>
+		<td class="maptable17">us-core-procedure</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">procedure_datetime</td>
+		<td class="maptable17">Procedure.performedDateTime</td>
+		<td class="maptable17">us-core-procedure</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">procedure_type_concept_id</td>
+		<td class="maptable17">Procedure.Extension (Proposed Name: source-data-type : CodeableConcept)</td>
+		<td class="maptable17">us-core-procedure</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">modifier_concept_id</td>
+		<td class="maptable17">Not Mapped currently</td>
+		<td class="maptable17"></td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">quantity</td>
+		<td class="maptable17">Procedure.Extension (Proposed Name: num-of-procedures : CodeableConcept)</td>
+		<td class="maptable17">us-core-procedure</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">provider_id</td>
+		<td class="maptable17">Procedure.performer.actor</td>
+		<td class="maptable17">us-core-procedure</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable13" colspan="3">Table : PROVIDER
+		</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">provider_id</td>
+		<td class="maptable17">Practitioner.id</td>
+		<td class="maptable17">us-core-practitioner</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">provider_name</td>
+		<td class="maptable17">Practitioner.name</td>
+		<td class="maptable17">us-core-practitioner</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">npi</td>
+		<td class="maptable17">Practitioner.identifier</td>
+		<td class="maptable17">us-core-practitioner</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">dea</td>
+		<td class="maptable17">Practitioner.qualification</td>
+		<td class="maptable17">us-core-practitioner</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">specialty_concept_id</td>
+		<td class="maptable17">PractitionerRole.specialty</td>
+		<td class="maptable17">us-core-practitionerrole</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">care_site_id</td>
+		<td class="maptable17">PractitionerRole.location</td>
+		<td class="maptable17">us-core-practitionerrole</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">year_of_birth</td>
+		<td class="maptable17">Practitioner.birthDate</td>
+		<td class="maptable17">us-core-practitioner</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">gender_concept_id</td>
+		<td class="maptable17">Practitioner.gender</td>
+		<td class="maptable17">us-core-practitioner</td>
+	</tr>	
+	<tr style='height:20px;'>
+		<td class="maptable13" colspan="3">Table : SPECIMEN
+		</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">specimen_id </td>
+		<td class="maptable17">Specimen.id</td>
+		<td class="maptable17">Specimen</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">disease_status_concept_id</td>
+		<td class="maptable17">Specimen.Extension (Proposed Name: disease-status-code : CodeableConcept)</td>
+		<td class="maptable17">Specimen</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">person_id</td>
+		<td class="maptable17">Specimen.subject</td>
+		<td class="maptable17">Specimen</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">specimen_concept_id</td>
+		<td class="maptable17">Specimen.type</td>
+		<td class="maptable17">Specimen</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">specimen_type_concept_id</td>
+		<td class="maptable17">Specimen.Extension (Proposed Name: source-data-type : CodeableConcept)</td>
+		<td class="maptable17">Specimen</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">specimen_date</td>
+		<td class="maptable17">Specimen.collection.collectedDateTime</td>
+		<td class="maptable17">Specimen</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">specimen_datetime</td>
+		<td class="maptable17">Specimen.collection.collectedDateTime</td>
+		<td class="maptable17">Specimen</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">quantity</td>
+		<td class="maptable17">Specimen.collection.quantity</td>
+		<td class="maptable17">Specimen</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">unit_concept_id</td>
+		<td class="maptable17">Specimen.collection.quantity</td>
+		<td class="maptable17">Specimen</td>
+	</tr>
+	<tr style='height:20px;'>
+		<td class="maptable16">anatomic_site_concept_id</td>
+		<td class="maptable17">Specimen.bodySite</td>
+		<td class="maptable17">Specimen</td>
+	</tr>      
+    </tbody>
+  </table>
+</div>
