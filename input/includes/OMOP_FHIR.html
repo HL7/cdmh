@@ -6,527 +6,649 @@
         <td class="maptable11">OMOP Data Element</td>
         <td class="maptable11">FHIR Data Element</td>
         <td class="maptable11">FHIR Resource/Profile/Extension</td>
+        <td class="maptable11">BRIDG Mapping</td>
       </tr>
       <tr style='height:20px;'>
-        <td class="maptable13" colspan="3">Table : Person
+        <td class="maptable13" colspan="2">Table : Person
         </td>
+        <td class="maptable13">Patient</td>
+        <td class="maptable13">Person</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">person_id</td>
         <td class="maptable17">Patient.identifier</td>
         <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">Person : Subject.identifier(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">provider_id</td>
         <td class="maptable17">Patient.generalPractitioner</td>
         <td class="maptable17">Patient</td>
+        <td class="maptable17">Person : HealthcareProvider.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">care_site_id</td>
-        <td class="maptable17">BodySite.patient</td>
-        <td class="maptable17">BodySite</td>
+        <td class="maptable17">Patient.managingOrganization</td>
+        <td class="maptable17">Organization</td>
+        <td class="maptable17">Person : HealthcareFacility.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">gender_concept_id</td>
         <td class="maptable17">Patient.gender</td>
         <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">Person.sexGenotypeCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">year_of_birth</td>
         <td class="maptable17">Patient.birthDate</td>
         <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">Person.birthDate</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">month_of_birth</td>
         <td class="maptable17">Patient.birthDate</td>
         <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">Person.birthDate</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">day_of_birth</td>
         <td class="maptable17">Patient.birthDate</td>
         <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">Person.birthDate</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">birth_datetime</td>
         <td class="maptable17">Patient.birthDate</td>
         <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">Person.birthDate</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">race_concept_id</td>
         <td class="maptable17">Patient.extension: us-core-race</td>
         <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">Person.raceCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">ethnicity_concept_id</td>
         <td class="maptable17">Patient.extension: us-core-ethnicity</td>
         <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">Person.ethnicGroupCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">location_id</td>
         <td class="maptable17">Patient.address</td>
         <td class="maptable17">Patient</td>
+        <td class="maptable17">Person.postalAddress</td>
       </tr>
       <tr style='height:20px;'>
-        <td class="maptable13" colspan="3">Table : VISIT_OCCURRENCE
+        <td class="maptable13" colspan="2">Table : VISIT_OCCURRENCE
         </td>
+        <td class="maptable13">Encounter</td>
+        <td class="maptable13">PerformedEncounter WHERE PerformedEncounter > DefinedSubjectActivityGroup.categoryCode = "Encounter"</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">visit_occurence_id</td>
         <td class="maptable17">Encounter.id</td>
         <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">PerformedEncounter.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">care_site_id</td>
         <td class="maptable17">Encounter.location.location.identifier</td>
         <td class="maptable17">us-core-encounter, us-core-location</td>
+        <td class="maptable17">PerformedEncounter : Place : ServiceDeliveryLocation : Organization : HealthcareFacility.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">admitting_source_concept_id</td>
         <td class="maptable17">Encounter.hospitalization.admitSource or Encounter.hospitalization.origin(location).type</td>
         <td class="maptable17">us-core-encounter, us-core-location</td>
+        <td class="maptable17">PerformedEncounter : arrives from : Place.typeCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">discharge_to_concept_id</td>
         <td class="maptable17">Encounter.location.location.type</td>
         <td class="maptable17">us-core-encounter,us-core-location</td>
+        <td class="maptable17">PerformedEncounter : departs for : Place.typeCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">preceding_visit_occurence</td>
         <td class="maptable17">Encounter.partOf</td>
         <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">PerformedEncounter : PerformedEncounter</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">person_id</td>
         <td class="maptable17">Encounter.subject</td>
         <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">PerformedEncounter : Subject.identifier(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">visit_concept_id</td>
         <td class="maptable17">Encounter.type</td>
         <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">PerformedEncounter : DefinedSubjectActivityGroup.nameCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">visit_start_date</td>
         <td class="maptable17">Encounter.period</td>
         <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">Encounter</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">visit_start_datetime</td>
         <td class="maptable17">Encounter.period</td>
         <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">PerformedEncounter.dateRange(IVL[TS.DATETIME]).low</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">visit_end_date</td>
         <td class="maptable17">Encounter.period</td>
         <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">PerformedEncounter.dateRange(IVL[TS.DATETIME]).high</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">visit_end_datetime</td>
         <td class="maptable17">Encounter.period</td>
         <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">PerformedEncounter.dateRange(IVL[TS.DATETIME]).high</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">visit_type_concept_id</td>
         <td class="maptable17">Encounter.extension (Proposed Name: source-data-type : CodeableConcept)</td>
         <td class="maptable17">us-core-encounter</td>
-      </tr>      
+        <td class="maptable17">PerformedEncounter.informationSourceTypeCode</td>
+      </tr>   
       <tr style='height:20px;'>
-        <td class="maptable13" colspan="3">Table : CARE_SITE
+        <td class="maptable16">provider_id</td>
+        <td class="maptable17">Encounter.performer</td>
+        <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">PerformedEncounter : Performer : HealthcareProvider.identifier(DSET[ID]).item(ID).identifier</td>
+      </tr>   
+      <tr style='height:20px;'>
+        <td class="maptable13" colspan="2">Table : CARE_SITE
         </td>
+        <td class="maptable13">Location</td>
+        <td class="maptable13">HealthcareFacility</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">care_site_id</td>
-        <td class="maptable17">Location.id</td>
+        <td class="maptable17">Location.identifier</td>
         <td class="maptable17">us-core-location</td>
+        <td class="maptable17">HealthcareFacility.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">care_site_name</td>
         <td class="maptable17">Location.name</td>
         <td class="maptable17">us-core-location</td>
+        <td class="maptable17">HealthcareFacility : Organization.name</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">place_of_service_concept_id</td>
         <td class="maptable17">Location.type</td>
         <td class="maptable17">us-core-location</td>
+        <td class="maptable17">HealthcareFacility : Organization.typeCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">location_id</td>
         <td class="maptable17">Location.address</td>
         <td class="maptable17">us-core-location</td>
+        <td class="maptable17">HealthcareFacility.postalAddress</td>
       </tr>	  
 	  <tr style='height:20px;'>
-        <td class="maptable13" colspan="3">Table : CONDITION_OCCURRENCE
+        <td class="maptable13" colspan="2">Table : CONDITION_OCCURRENCE
         </td>
+        <td class="maptable13">Condition</td>
+        <td class="maptable13">PerformedMedicalConditionResult</td>
       </tr>	  
       <tr style='height:20px;'>
         <td class="maptable16">condition_occurrence_id</td>
         <td class="maptable17">Condition.id</td>
         <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">PerformedMedicalConditionResult : PerformedObservation.identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">provider_id</td>
         <td class="maptable17">Condition.asserter</td>
         <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">PerformedMedicalConditionResult : PerformedObservation : Performer : HealthcareProvider.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">visit_occurrence_id</td>
         <td class="maptable17">Condition.encounter</td>
         <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">PerformedMedicalConditionResult : PerformedObservation : PerformedCompositionRelationship : PerformedEncounter.identifier.item(ID).identifier</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">condition_status_concept_id</td>
         <td class="maptable17">Condition.clinicalStatus</td>
         <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">PerformedMedicalConditionResult.conditionStatusCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">person_id</td>
         <td class="maptable17">Condition.subject</td>
         <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">PerformedMedicalConditionResult : PerformedObservation : Subject.identifier.item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">condition_concept_id</td>
         <td class="maptable17">Condition.code</td>
         <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">PerformedMedicalConditionResult.value(CD).code</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">condition_start_date</td>
         <td class="maptable17">Condition.onset[x]</td>
         <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">PerformedMedicalConditionResult.occurrenceDateRange(IVL[TS.DATETIME]).low</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">condition_start_datetime</td>
         <td class="maptable17">Condition.onset[x]</td>
         <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">PerformedMedicalConditionResult.occurrenceDateRange(IVL[TS.DATETIME]).low</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">condition_end_date</td>
         <td class="maptable17">Condition.abatement[x]</td>
         <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">PerformedMedicationConditionResult.occurrenceDateRange(IVL[TS.DATETIME]).high</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">condition_end_datetime</td>
         <td class="maptable17">Condition.abatement[x]</td>
         <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">PerformedMedicationConditionResult.occurrenceDateRange(IVL[TS.DATETIME]).high</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">condition_type_concept_id</td>
         <td class="maptable17">Condition.Extension (Proposed Name: raw-value : CodeableConcept)</td>
         <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">PerformedMedicalConditionResult : PerformedObservation.informationSourceTypeCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">stop_reason</td>
         <td class="maptable17">Condition.Extension (Proposed Name: abatement-reason : CodeableConcept)</td>
         <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">PerformedMedicalConditionResult.conditionStatusChangeReason</td>
       </tr>	  
 	  <tr style='height:20px;'>
-        <td class="maptable13" colspan="3">Table : DEATH
+        <td class="maptable13" colspan="2">Table : DEATH
         </td>
+        <td class="maptable13">AdverseEvent</td>
+        <td class="maptable13">AdverseEvent WHERE AdverseEvent : PerformedObservation : DefinedObservation.nameCode = "Death Information"</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">person_id</td>
         <td class="maptable17">AdverseEvent.subject</td>
         <td class="maptable17">AdverseEvent</td>
+        <td class="maptable17">AdverseEvent : PerformedObservation : Subject.identifier(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">death_date</td>
         <td class="maptable17">AdverseEvent.date</td>
         <td class="maptable17">AdverseEvent</td>
+        <td class="maptable17">AdverseEvent.occurrenceDateRange(IVL[TS.DATETIME]).low</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">death_datetime</td>
         <td class="maptable17">AdverseEvent.recordedDate</td>
         <td class="maptable17">AdverseEvent</td>
+        <td class="maptable17">AdverseEvent.occurrenceDateRange(IVL[TS.DATETIME]).low</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">death_type_concept_id</td>
         <td class="maptable17">AdverseEvent.suspectedEntity.causality.Extension (Proposed Name: cause-code : CodeableConcept)</td>
         <td class="maptable17">AdverseEvent</td>
+        <td class="maptable17">AdverseEvent : PerformedObservation.informationSourceTypeCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">cause_concept_id</td>
         <td class="maptable17">AdverseEvent.suspectedEntity.causality.Extension (Proposed Name: cause-code : CodeableConcept)</td>
         <td class="maptable17">AdverseEvent</td>
+        <td class="maptable17">AdverseEvent : CausalAssessment : EvaluatedResultRelationship : PerformedObservationResult.value(CD)</td>
       </tr>  
 	   <tr style='height:20px;'>
-        <td class="maptable13" colspan="3">Table : DEVICE_EXPOSURE
+        <td class="maptable13" colspan="2">Table : DEVICE_EXPOSURE
         </td>
+        <td class="maptable13">Procedure</td>
+        <td class="maptable13">PerformedSubstanceAdministration</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">device_exposure_id</td>
-        <td class="maptable17">Procedure.id</td>
+        <td class="maptable17">Procedure.focalDevice.identifier</td>
         <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">PerformedSubstanceAdministration.identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">quantity</td>
-        <td class="maptable17">Procedure.focalDevice,Procedure.usedReference,Procedure.usedCode</td>
+        <td class="maptable17">Procedure.focalDevice</td>
         <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">PerformedSubstanceAdministration.productDose</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">provider_id</td>
         <td class="maptable17">Procedure.performer.actor</td>
         <td class="maptable17">us-core-procedure, us-core-practitioner</td>
+        <td class="maptable17">PerformedSubstanceAdministration : Performer : HealthcareProvider.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">visit_occurrence_id</td>
         <td class="maptable17">Procedure.encounter</td>
         <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">PerformedSubstanceAdministration : PerformedCompositionRelationship : PerformedEncounter.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">person_id</td>
         <td class="maptable17">Procedure.subject</td>
         <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">PerformedSubstanceAdministration : Subject.identifier</td>
       </tr>
 	   <tr style='height:20px;'>
         <td class="maptable16">device_concept_id</td>
         <td class="maptable17">Procedure.focalDevice,Procedure.usedReference,Procedure.usedCode</td>
         <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">PerformedSubstanceAdministration : Device.code</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">device_exposure_start_date</td>
-        <td class="maptable17">Procedure.performedPeriod</td>
+        <td class="maptable17">Procedure.performedPeriod.low</td>
         <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">PerformedSubstanceAdministration.dateRange(IVL[TS.DATETIME]).low</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">device_exposure_start_datetime</td>
-        <td class="maptable17">Procedure.performedPeriod</td>
+        <td class="maptable17">Procedure.performedPeriod.low</td>
         <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">PerformedSubstanceAdministration.dateRange(IVL[TS.DATETIME]).low</td>
       </tr> 
       <tr style='height:20px;'>
         <td class="maptable16">device_exposure_end_date</td>
-        <td class="maptable17">Procedure.performedPeriod</td>
+        <td class="maptable17">Procedure.performedPeriod.high</td>
         <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">PerformedSubstanceAdministration.dateRange(IVL[TS.DATETIME]).high</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">device_exposure_end_datetime</td>
         <td class="maptable17">Procedure.performedPeriod</td>
         <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">PerformedSubstanceAdministration.dateRange(IVL[TS.DATETIME]).high</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">device_type_concept_id</td>
         <td class="maptable17">Procedure.Extension (Proposed Name: raw-value : CodeableConcept)</td>
         <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">PerformedSubstanceAdministration.informationSourceTypeCode</td>
       </tr>
 	   <tr style='height:20px;'>
         <td class="maptable16">unique_device_id</td>
         <td class="maptable17">Procedure.focalDevice,Procedure.usedReference</td>
         <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">PerformedSubstanceAdministration : Device.identifier</td>
       </tr>	  
 	  <tr style='height:20px;'>
-        <td class="maptable13" colspan="3">Table :DRUG_EXPOSURE
+        <td class="maptable13" colspan="2">Table :DRUG_EXPOSURE
         </td>
+        <td class="maptable13">MedicationStatement, MedicationRequest</td>
+        <td class="maptable13">PerformedSubstanceAdministration</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">drug_exposure_id</td>
-        <td class="maptable17">MedicationStatement.id</td>
-        <td class="maptable17">us-core-medicationstatement</td>
+        <td class="maptable17">MedicationStatement.identifier</td>
+        <td class="maptable17">MedicationStatement</td>
+        <td class="maptable17">PerformedSubstanceAdministration.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">stop_reason</td>
         <td class="maptable17">MedicationStatement.statusReason</td>
-        <td class="maptable17">us-core-medicationstatement</td>
+        <td class="maptable17">MedicationStatement</td>
+        <td class="maptable17">PerformedSubstanceAdministration.changeReason</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">refills</td>
         <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).dispenseRequest.numberOfRepeatsAllowed</td>
-        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+        <td class="maptable17">MedicationStatement, us-core-medicationrequest</td>
+        <td class="maptable17">PerformedSubstanceAdministration : PerformedCompositionRelationship : PerformedStudyAgentTransfer.orderedNumberOfRepeats</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">quantity</td>
         <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).dispenseRequest.quantity</td>
-        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+        <td class="maptable17">MedicationStatement, us-core-medicationrequest</td>
+        <td class="maptable17">PerformedSubstanceAdministration.productDose(PQ).value</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">days_supply</td>
         <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).dispenseRequest.expectedSupplyDuration</td>
-        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+        <td class="maptable17">MedicationStatement, us-core-medicationrequest</td>
+        <td class="maptable17">PerformedSubstanceAdministration : PerformedCompositionRelationship : PerformedStudyAgentTransfer.daysSupply</td>
       </tr>
 	   <tr style='height:20px;'>
         <td class="maptable16">lot_number</td>
         <td class="maptable17">MedicationStatement.medication.batch.lotNumber</td>
-        <td class="maptable17">us-core-medicationstatement, us-core-medication</td>
+        <td class="maptable17">MedicationStatement, us-core-medication</td>
+        <td class="maptable17">PerformedSubstanceAdministration : Drug.lotNumberText</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">sig</td>
         <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).dosageInstruction.text</td>
-        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+        <td class="maptable17">uMedicationStatement, us-core-medicationrequest</td>
+        <td class="maptable17">PerformedSubstanceAdministration.productDoseDescription</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">route_concept_id</td>
         <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).dosageInstruction.route</td>
-        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+        <td class="maptable17">MedicationStatement, us-core-medicationrequest</td>
+        <td class="maptable17">PerformedSubstanceAdministration.routeOfAdministrationCode</td>
       </tr> 
       <tr style='height:20px;'>
         <td class="maptable16">provider_id</td>
         <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).requester</td>
-        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+        <td class="maptable17">MedicationStatement, us-core-medicationrequest</td>
+        <td class="maptable17">PerformedSubstanceAdministration : Performer > HealthcareProvider.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">visit_occurrence_id</td>
         <td class="maptable17">MedicationStatement.context</td>
-        <td class="maptable17">us-core-medicationstatement, us-core-encounter</td>
+        <td class="maptable17">MedicationStatement, us-core-encounter</td>
+        <td class="maptable17">PerformedSubstanceAdministration : PerformedCompositionRelationship : PerformedEncounter.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">drug_source_value</td>
         <td class="maptable17">MedicationStatement.Extension (Proposed Name: raw-value : CodeableConcept)</td>
-        <td class="maptable17">us-core-medicationstatement</td>
+        <td class="maptable17">MedicationStatement</td>
+        <td class="maptable17">PerformedSubstanceAdministration : Drug.code(CD).originalText</td>
       </tr>
 	   <tr style='height:20px;'>
         <td class="maptable16">person_id</td>
         <td class="maptable17">MedicationStatement.subject</td>
-        <td class="maptable17">us-core-medicationstatement</td>
+        <td class="maptable17">MedicationStatement</td>
+        <td class="maptable17">PerformedSubstanceAdministration : Subject.identifier(ID).identifier</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">drug_concept_id</td>
         <td class="maptable17">MedicationStatement.medicationCodeableConcept</td>
-        <td class="maptable17">us-core-medicationstatement</td>
+        <td class="maptable17">MedicationStatement</td>
+        <td class="maptable17">PerformedSubstanceAdministration : Drug.code(CD).code</td>
       </tr> 
       <tr style='height:20px;'>
         <td class="maptable16">drug_exposure_start_date</td>
         <td class="maptable17">MedicationStatement.effectivePeriod</td>
-        <td class="maptable17">us-core-medicationstatement</td>
+        <td class="maptable17">MedicationStatement</td>
+        <td class="maptable17">PerformedSubstanceAdministration.dateRange(IVL[TS.DATETIME]).low</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">drug_exposure_start_datetime</td>
         <td class="maptable17">MedicationStatement.effectivePeriod</td>
-        <td class="maptable17">us-core-medicationstatement</td>
+        <td class="maptable17">MedicationStatement</td>
+        <td class="maptable17">PerformedSubstanceAdministration.dateRange(IVL[TS.DATETIME]).low</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">drug_exposure_end_date</td>
         <td class="maptable17">MedicationStatement.effectivePeriod</td>
-        <td class="maptable17">us-core-medicationstatement</td>
+        <td class="maptable17">MedicationStatement</td>
+        <td class="maptable17">PerformedSubstanceAdministration.dateRange(IVL[TS.DATETIME]).high</td>
       </tr>
 	   <tr style='height:20px;'>
         <td class="maptable16">drug_exposure_end_datetime</td>
         <td class="maptable17">MedicationStatement.effectivePeriod</td>
-        <td class="maptable17">us-core-medicationstatement</td>
+        <td class="maptable17">MedicationStatement</td>
+        <td class="maptable17">PerformedSubstanceAdministration.dateRange(IVL[TS.DATETIME]).high</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">verbatim_end_date</td>
         <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).validityPeriod</td>
-        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+        <td class="maptable17">MedicationStatement, us-core-medicationrequest</td>
+        <td class="maptable17">PerformedSubstanceAdministration.dateRange(IVL[TS.DATETIME]).high</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">drug_type_concept_id</td>
         <td class="maptable17">MedicationStatement.medicationCodeableConcept</td>
-        <td class="maptable17">us-core-medicationstatement</td>
+        <td class="maptable17">MedicationStatement</td>
+        <td class="maptable17">PerformedSubstanceAdministration.informationSourceTypeCode</td>
       </tr>
 	  <tr style='height:20px;'>
-        <td class="maptable13" colspan="3">Table : LOCATION
+        <td class="maptable13" colspan="2">Table : LOCATION
         </td>
+        <td class="maptable13">Location</td>
+        <td class="maptable13">Linked to specific BRIDG tables as needed</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">location_id</td>
-        <td class="maptable17">Location.id</td>
+        <td class="maptable17">Location.identifier</td>
         <td class="maptable17">us-core-location</td>
+        <td class="maptable17">Linked to specific BRIDG tables as needed</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">address_1</td>
         <td class="maptable17">Location.address.line</td>
         <td class="maptable17">us-core-location</td>
+        <td class="maptable17">Linked to specific BRIDG tables as needed</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">address_2</td>
         <td class="maptable17">Location.address.line</td>
         <td class="maptable17">us-core-location</td>
+        <td class="maptable17">Linked to specific BRIDG tables as needed</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">city</td>
         <td class="maptable17">Location.address.city</td>
         <td class="maptable17">us-core-location</td>
+        <td class="maptable17">Linked to specific BRIDG tables as needed</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">state</td>
         <td class="maptable17">Location.address.state</td>
         <td class="maptable17">us-core-location</td>
+        <td class="maptable17">Linked to specific BRIDG tables as needed</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">zip</td>
         <td class="maptable17">Location.address.postalCode</td>
         <td class="maptable17">us-core-location</td>
+        <td class="maptable17">Linked to specific BRIDG tables as needed</td>
       </tr>
 	   <tr style='height:20px;'>
         <td class="maptable16">country</td>
         <td class="maptable17">Location.address.country</td>
         <td class="maptable17">us-core-location</td>
+        <td class="maptable17">Linked to specific BRIDG tables as needed</td>
       </tr>  
 	  <tr style='height:20px;'>
-        <td class="maptable13" colspan="3">Table :MEASUREMENT
+        <td class="maptable13" colspan="2">Table :MEASUREMENT
         </td>
+        <td class="maptable13">Observation</td>
+        <td class="maptable13">PerformedClinicalResult</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">measurement_id</td>
-        <td class="maptable17">Observation.id</td>
+        <td class="maptable17">Observation.identifier</td>
         <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">PerformedClinicalResult : PerformedObservation.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">unit_concept_id</td>
         <td class="maptable17">Observation.value[x]</td>
         <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">PerformedClinicalResult.value(ANY=PQ).unit</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">range_low</td>
         <td class="maptable17">Observation.referenceRange.low</td>
         <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">PerformedClinicalResult > ReferenceResult.value(ANY=IVL[PQ]).low</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">range_high</td>
         <td class="maptable17">Observation.referenceRange.high</td>
         <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">PerformedClinicalResult > ReferenceResult.value(ANY=IVL[PQ]).high</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">provider_id</td>
         <td class="maptable17">Observation.performer (Practitioner)</td>
         <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">PerformedClinicalResult : PerformedObservation : Performer : HealthcareProvider.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">visit_occurrence_id</td>
         <td class="maptable17">Observation.encounter</td>
         <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">PerformedClinicalResult : PerformedObservation : PerformedCompositionRelationship : PerformedEncounter.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
 	   <tr style='height:20px;'>
         <td class="maptable16">measurement_source_value</td>
         <td class="maptable17">Observation.Extension (Proposed Name: raw-value : CodeableConcept)</td>
         <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">PerformedClinicalResult : PerformedObservation : DefinedObservation.nameCode(CD).translation(DSET[CD]).item</td>
       </tr>
 	   <tr style='height:20px;'>
         <td class="maptable16">person_id</td>
         <td class="maptable17">Observation.subject</td>
         <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">PerformedClinicalResult : PerformedObservation : Subject : Specimen : PerformedSpecimenCollection : Subject.identifier(ID).identifier</td>
       </tr>
 	   <tr style='height:20px;'>
         <td class="maptable16">measurement_concept_id</td>
         <td class="maptable17">Observation.code</td>
         <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">PerformedClinicalResult : PerformedObservation : DefinedObservation.nameCode(CD).code</td>
       </tr>
 	   <tr style='height:20px;'>
         <td class="maptable16">measurement_date</td>
         <td class="maptable17">Observation.effectiveDateTime</td>
         <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">PerformedClincalResult : PerformedObservation.dateRange(IVL[TS.DATETIME]).high</td>
       </tr>
 	   <tr style='height:20px;'>
         <td class="maptable16">measurement_datetime</td>
         <td class="maptable17">Observation.effectiveDateTime</td>
         <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">PerformedClincalResult : PerformedObservation.dateRange(IVL[TS.DATETIME]).high</td>
       </tr>
 	   <tr style='height:20px;'>
         <td class="maptable16">measurement_type_concept_id</td>
         <td class="maptable17">Observation.meta.source</td>
         <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">PerformedClinicalResult : PerformedObservation.informationSourceTypeCode</td>
       </tr>
 	   <tr style='height:20px;'>
         <td class="maptable16">operator_concept_id</td>
-        <td class="maptable17">Not sure why this is required</td>
-        <td class="maptable17">None</td>
+        <td class="maptable17">Observation.value[x]</td>
+        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">PerformedClinicalResult.value AND PerformedClinicalResult : PerformedClinicalResult.value</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">value_as_number</td>
-        <td class="maptable17">Observation.value[x]</td>
+        <td class="maptable17">Observation.valueInt</td>
         <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">IF Unit AND Modifier are present, PerformedClinicalResult.value(ANY=URG[PQ]) ELSE IF Unit present, PerformedClinicalResult.value(ANY=PQ).value, ELSE IF Modifier present, PerformedClinicalResult.value(ANY=URG[REAL]), ELSE PerformedClinicalResult.value(ANY=REAL).value</td>
       </tr>
 	   <tr style='height:20px;'>
         <td class="maptable16">value_as_concept_id</td>
         <td class="maptable17">Observation.valueCodeableConcept</td>
         <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">PerformedClinicalResult.value(ANY=CD).code</td>
       </tr>
       <!--  
 	  <tr style='height:20px;'>
@@ -600,231 +722,274 @@
 	  -->
 	  
 	  <tr style='height:20px;'>
-        <td class="maptable13" colspan="3">Table :OBSERVATION_PERIOD (Not Required to be mapped for CDMH)
+        <td class="maptable13" colspan="4">Table :OBSERVATION_PERIOD (Not Required to be mapped for CDMH)
         </td>
       </tr>
 	  
 	  
 	  <tr style='height:20px;'>
-		<td class="maptable13" colspan="3">Table : OBSERVATION
+		<td class="maptable13" colspan="2">Table : OBSERVATION
 		</td>
+		<td class="maptable13">Observation</td>
+		<td class="maptable13">PerformedClinicalResult WHERE PerformedClinicalResult : PerformedObservation : DefinedObservation.categoryCode = "Clinical Observation"</td>
 	</tr>
 		<tr style='height:20px;'>
 		<td class="maptable16">observation_id </td>
-		<td class="maptable17">Observation.id</td>
+		<td class="maptable17">Observation.identifier</td>
 		<td class="maptable17">us-core-observationresults</td>
+		<td class="maptable17">PerformedClinicalResult : PerformedObservation.identifier</td>
 	</tr>
 		<tr style='height:20px;'>
 		<td class="maptable16">qualifier_concept_id</td>
 		<td class="maptable17">Observation.Extension (Proposed Name: decision-aid-alert : CodeableConcept)</td>
 		<td class="maptable17">us-core-observationresults</td>
+		<td class="maptable17">PerformedClinicalResult : ResultClassification.code</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">unit_concept_id</td>
 		<td class="maptable17">Observation.value[x]</td>
 		<td class="maptable17">us-core-observationresults</td>
+		<td class="maptable17">PerformedClinicalResult.value(ANY=PQ).unit</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">provider_id</td>
 		<td class="maptable17">Observation.performer (Practitioner)</td>
 		<td class="maptable17">us-core-observationresults</td>
+		<td class="maptable17">PerformedClinicalResult : PerformedObservation : Performer : HealthcareProvider.identifier(DSET[ID]).item(ID).identifier</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">visit_occurrence_id</td>
 		<td class="maptable17">Observation.encounter</td>
 		<td class="maptable17">us-core-observationresults</td>
+		<td class="maptable17">PerformedClinicalResult : PerformedObservation : PerformedCompositionRelationship : PerformedEncounter.identifier(DSET[ID]).item(ID).identifier</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">person_id</td>
 		<td class="maptable17">Observation.subject</td>
 		<td class="maptable17">us-core-observationresults</td>
+		<td class="maptable17">PerformedClinicalResult : PerformedObservation : Subject.identifier(ID).identifier</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">observation_concept_id</td>
 		<td class="maptable17">Observation.code</td>
 		<td class="maptable17">us-core-observationresults</td>
+		<td class="maptable17">PerformedClinicalResult : PerformedObservation : DefinedObservation.nameCode</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">observation_date</td>
 		<td class="maptable17">Observation.effectiveDateTime</td>
 		<td class="maptable17">us-core-observationresults</td>
+		<td class="maptable17">PerformedClinicalResult : PerformedActivity.dateRange(IVL[TS.DATETIME]).high</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">observation_datetime</td>
 		<td class="maptable17">Observation.effectiveDateTime</td>
 		<td class="maptable17">us-core-observationresults</td>
+		<td class="maptable17">PerformedClinicalResult : PerformedActivity.dateRange(IVL[TS.DATETIME]).high</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">observation_type_concept_id</td>
 		<td class="maptable17">Observation.category</td>
 		<td class="maptable17">us-core-observationresults</td>
+		<td class="maptable17">PerformedClinicalResult : PerformedObservation.informationSourceTypeCode</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">value_as_number</td>
 		<td class="maptable17">Observation.value[x]</td>
 		<td class="maptable17">us-core-observationresults</td>
+		<td class="maptable17">PerformedClinicalResult.value(ANY=REAL) OR PerformedClinicalResult.value(ANY=PQ).value</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">value_as_string</td>
 		<td class="maptable17">Observation.valueString</td>
 		<td class="maptable17">us-core-observationresults</td>
+		<td class="maptable17">PerformedClinicalResult.value(ANY=ST)</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">value_as_concept_id</td>
 		<td class="maptable17">Observation.valueCodeableConcept</td>
 		<td class="maptable17">us-core-observationresults</td>
+		<td class="maptable17">PerformedClinicalResult.value(ANY=CD)</td>
 	</tr>
 	<tr style='height:20px;'>
-		<td class="maptable13" colspan="3">Table : PROCEDURE_OCCURRENCE
+		<td class="maptable13" colspan="2">Table : PROCEDURE_OCCURRENCE
 		</td>
+		<td class="maptable13">Procedure</td>
+		<td class="maptable13">PerformedProcedure</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">procedure_occurrence_id</td>
-		<td class="maptable17">Procedure.id</td>
+		<td class="maptable17">Procedure.identifier</td>
 		<td class="maptable17">us-core-procedure</td>
+		<td class="maptable17">PerformedProcedure.identifier(DSET[ID]).item(ID).identifier</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">visit_occurrence_id</td>
 		<td class="maptable17">Procedure.encounter</td>
 		<td class="maptable17">us-core-procedure</td>
+		<td class="maptable17">Procedure</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">person_id</td>
 		<td class="maptable17">Procedure.subject</td>
 		<td class="maptable17">us-core-procedure</td>
+		<td class="maptable17">PerformedProcedure : PerformedCompositionRelationship : PerformedEncounter.identifier.item(ID).identifier</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">procedure_concept_id</td>
 		<td class="maptable17">Procedure.code</td>
 		<td class="maptable17">us-core-procedure</td>
+		<td class="maptable17">PerformedProcedure : DefinedProcedure.nameCode</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">procedure_date</td>
 		<td class="maptable17">Procedure.performedDateTime</td>
 		<td class="maptable17">us-core-procedure</td>
+		<td class="maptable17">PerformedProcedure.dateRange(IVL[TS.DATETIME]).high</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">procedure_datetime</td>
 		<td class="maptable17">Procedure.performedDateTime</td>
 		<td class="maptable17">us-core-procedure</td>
+		<td class="maptable17">PerformedProcedure.dateRange(IVL[TS.DATETIME]).high</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">procedure_type_concept_id</td>
 		<td class="maptable17">Procedure.Extension (Proposed Name: source-data-type : CodeableConcept)</td>
 		<td class="maptable17">us-core-procedure</td>
-	</tr>
-	<tr style='height:20px;'>
-		<td class="maptable16">modifier_concept_id</td>
-		<td class="maptable17">Not Mapped currently</td>
-		<td class="maptable17"></td>
+		<td class="maptable17">PerformedProcedure.informationSourceTypeCode</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">quantity</td>
 		<td class="maptable17">Procedure.Extension (Proposed Name: num-of-procedures : CodeableConcept)</td>
 		<td class="maptable17">us-core-procedure</td>
+		<td class="maptable17">PerformedProcedure.quantity</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">provider_id</td>
 		<td class="maptable17">Procedure.performer.actor</td>
 		<td class="maptable17">us-core-procedure</td>
+		<td class="maptable17">PerformedProcedure : Performer : HealthcareProvider.identifier(DSET[ID]).item(ID).identifier</td>
 	</tr>
 	<tr style='height:20px;'>
-		<td class="maptable13" colspan="3">Table : PROVIDER
+		<td class="maptable13" colspan="2">Table : PROVIDER
 		</td>
+		<td class="maptable13">Practitioner</td>
+		<td class="maptable13">HealthcareProvider</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">provider_id</td>
-		<td class="maptable17">Practitioner.id</td>
+		<td class="maptable17">Practitioner.identifier</td>
 		<td class="maptable17">us-core-practitioner</td>
+		<td class="maptable17">HealthcareProvider.identifier(DSET[ID]).item(ID).identifier</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">provider_name</td>
 		<td class="maptable17">Practitioner.name</td>
 		<td class="maptable17">us-core-practitioner</td>
+		<td class="maptable17">HealthcareProvider > Person.name(DSET[EN]).item(EN)</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">npi</td>
 		<td class="maptable17">Practitioner.identifier</td>
 		<td class="maptable17">us-core-practitioner</td>
+		<td class="maptable17">HealthcareProvider.identifier(DSET[ID]).item(ID).identifier WHERE identifier(DSET[ID]).item(ID).typeCode="NPI"</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">dea</td>
 		<td class="maptable17">Practitioner.qualification</td>
 		<td class="maptable17">us-core-practitioner</td>
+		<td class="maptable17">HealthcareProvider.identifier(DSET[ID]).item(ID).identifier WHERE identifier(DSET[ID]).item(ID).typeCode="DEA Number"</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">specialty_concept_id</td>
 		<td class="maptable17">PractitionerRole.specialty</td>
 		<td class="maptable17">us-core-practitionerrole</td>
+		<td class="maptable17">HealthcareProvider.roleCode</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">care_site_id</td>
 		<td class="maptable17">PractitionerRole.location</td>
 		<td class="maptable17">us-core-practitionerrole</td>
+		<td class="maptable17">HealthcareProvider : HealthcareFacility.identifier(DSET[ID]).item(ID).identifier</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">year_of_birth</td>
 		<td class="maptable17">Practitioner.birthDate</td>
 		<td class="maptable17">us-core-practitioner</td>
+		<td class="maptable17">HealthcareProvider : Person.birthDate</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">gender_concept_id</td>
 		<td class="maptable17">Practitioner.gender</td>
 		<td class="maptable17">us-core-practitioner</td>
+		<td class="maptable17">HealthcareProvider : Person.administrativeGenderCode</td>
 	</tr>	
 	<tr style='height:20px;'>
-		<td class="maptable13" colspan="3">Table : SPECIMEN
+		<td class="maptable13" colspan="2">Table : SPECIMEN
 		</td>
+		<td class="maptable13">Specimen</td>
+		<td class="maptable13">Specimen</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">specimen_id </td>
-		<td class="maptable17">Specimen.id</td>
+		<td class="maptable17">Specimen.identifier</td>
 		<td class="maptable17">Specimen</td>
+		<td class="maptable17">Specimen : Material.identifier</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">disease_status_concept_id</td>
 		<td class="maptable17">Specimen.Extension (Proposed Name: disease-status-code : CodeableConcept)</td>
 		<td class="maptable17">Specimen</td>
+		<td class="maptable17">Specimen : Subject : PerformedObservation : PerformedDiagnosis.diseaseStatusCode</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">person_id</td>
 		<td class="maptable17">Specimen.subject</td>
 		<td class="maptable17">Specimen</td>
+		<td class="maptable17">Specimen : PerformedSpecimenCollection : Subject.identifier</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">specimen_concept_id</td>
 		<td class="maptable17">Specimen.type</td>
 		<td class="maptable17">Specimen</td>
+		<td class="maptable17">Specimen : Material.code</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">specimen_type_concept_id</td>
 		<td class="maptable17">Specimen.Extension (Proposed Name: source-data-type : CodeableConcept)</td>
 		<td class="maptable17">Specimen</td>
+		<td class="maptable17">Specimen : PerformedSpecimenCollection.informationSourceTypeCode</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">specimen_date</td>
 		<td class="maptable17">Specimen.collection.collectedDateTime</td>
 		<td class="maptable17">Specimen</td>
+		<td class="maptable17">Specimen : PerformedSpecimenCollection.dateRange(IVL[TS.DATETIME]).high</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">specimen_datetime</td>
 		<td class="maptable17">Specimen.collection.collectedDateTime</td>
 		<td class="maptable17">Specimen</td>
+		<td class="maptable17">Specimen : PerformedSpecimenCollection.dateRange(IVL[TS.DATETIME]).high</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">quantity</td>
 		<td class="maptable17">Specimen.collection.quantity</td>
 		<td class="maptable17">Specimen</td>
+		<td class="maptable17">Specimen : PerformedSpecimenCollection.quantity(PQ).value</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">unit_concept_id</td>
 		<td class="maptable17">Specimen.collection.quantity</td>
 		<td class="maptable17">Specimen</td>
+		<td class="maptable17">Specimen : PerformedSpecimenCollection.quantity(PQ).unit</td>
 	</tr>
 	<tr style='height:20px;'>
 		<td class="maptable16">anatomic_site_concept_id</td>
 		<td class="maptable17">Specimen.bodySite</td>
 		<td class="maptable17">Specimen</td>
+		<td class="maptable17">Specimen : PerformedSpecimenCollection.targetAnatomicSiteCode</td>
 	</tr>      
     </tbody>
   </table>

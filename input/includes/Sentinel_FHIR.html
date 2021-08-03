@@ -6,114 +6,139 @@
         <td class="maptable11">Sentinel Data Element</td>
         <td class="maptable11">FHIR Data Element</td>
         <td class="maptable11">FHIR Resource/Profile/Extension</td>
+        <td class="maptable11">BRIDG Mapping</td>
       </tr>
       <tr style='height:20px;'>
-        <td class="maptable13" colspan="3">Table : DEMOGRAPHIC
+        <td class="maptable13" colspan="2">Table : DEMOGRAPHIC
         </td>
+        <td class="maptable13">Patient</td>
+        <td class="maptable13">Person</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">PatID</td>
         <td class="maptable17">Patient.identifier</td>
         <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">Person : Subject.identifier(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Birth-Date</td>
         <td class="maptable17">Patient.birthDate</td>
         <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">Person.birthDate</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Sex</td>
         <td class="maptable17">Patient.extension: us-core-birthsex</td>
         <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">Person.sexGenotypeCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Hispanic</td>
         <td class="maptable17">Patient.extension: us-core-ethnicity</td>
         <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">Person.ethnicGroupCode WHERE Person.ethnicGroupCode = "Hispanic"</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Race</td>
         <td class="maptable17">Patient.extension: us-core-race</td>
         <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">Person.raceCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Zip</td>
         <td class="maptable17">Patient.address</td>
         <td class="maptable17">Patient</td>
+        <td class="maptable17">Person.postalAddress.item(AD).item(ADXP).value WHERE Person.postalAddress.item(AD).item(ADXP).partType = 'ZIP'</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Zip_Date</td>
         <td class="maptable17">Patient.address.period</td>
         <td class="maptable17">Patient</td>
+        <td class="maptable17">Person.postalAddress(AD).useablePeriod(IVL_TS).low</td>
       </tr>
       <tr style='height:20px;'>
-        <td class="maptable13" colspan="3">Table : ENCOUNTER
+        <td class="maptable13" colspan="2">Table : ENCOUNTER
         </td>
+        <td class="maptable13">Encounter</td>
+        <td class="maptable13">PerformedEncounter WHERE PerformedEncounter : DefinedSubjectActivityGroup.categoryCode = "Encounter"</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">EncounterID</td>
-        <td class="maptable17">Encounter.id</td>
+        <td class="maptable17">Encounter.identifier</td>
         <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">PerformedEncounter.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">PatID</td>
         <td class="maptable17">Encounter.subject</td>
         <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">PerformedEncounter : Subject.identifier(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">ADATE</td>
         <td class="maptable17">Encounter.period</td>
         <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">PerformedEncounter.dateRange(IVL[TS.DATETIME]).low</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">DDATE</td>
         <td class="maptable17">Encounter.period</td>
         <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">PerformedEncounter.dateRange(IVL[TS.DATETIME]).high</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Provider</td>
         <td class="maptable17">Encounter.participant.individual.id</td>
         <td class="maptable17">us-core-encounter, us-core-practitioner</td>
+        <td class="maptable17">PerformedEncounter : Performer : HealthcareProvider.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Facility_Location</td>
         <td class="maptable17">Encounter.location.location.address</td>
         <td class="maptable17">us-core-encounter, us-core-location</td>
+        <td class="maptable17">PerformedEncounter : Place.physicalAddress(AD).item(ADXP).value WHERE PerformedActivity : Place.physicalAddress(AD).item(ADXP).partType = 'ZIP'</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">EncType</td>
         <td class="maptable17">Encounter.class</td>
         <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">PerformedEncounter : DefinedSubjectActivityGroup.nameCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Facility_Code</td>
         <td class="maptable17">Encounter.location.location.identifier</td>
         <td class="maptable17">us-core-encounter, us-core-location</td>
+        <td class="maptable17">PerformedEncounter : Place : ServiceDeliveryLocation : Organization : HealthcareFacility.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Discharge_Disposition</td>
         <td class="maptable17">Encounter.extension (Proposed Name: discharge-disposition: CodeableConcept) :  or Observation.code, Observation.value[x]</td>
         <td class="maptable17">us-core-encounter or us-core-observationresults</td>
+        <td class="maptable17">Encounter</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Discharge_Status</td>
         <td class="maptable17">Encounter.location.location.type</td>
         <td class="maptable17">us-core-encounter,us-core-location</td>
+        <td class="maptable17">PerformedEncounter : departs for : Place.typeCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">DRG</td>
         <td class="maptable17">Encounter.extension (Proposed Name: drg : CodeableConcept)</td>
         <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">PerformedEncounter.classificationCode(CD).code</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">DRG_Type</td>
         <td class="maptable17">Encounter.extension (Proposed Name: drg-type : CodeableConcept)</td>
         <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">PerformedEncounter.classificationCode(CD).codeSystem</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Admitting_Source</td>
         <td class="maptable17">Encounter.hospitalization.admitSource or Encounter.hospitalization.origin(location).type</td>
         <td class="maptable17">us-core-encounter, us-core-location</td>
+        <td class="maptable17">PerformedEncounter : arrives from : Place.typeCode</td>
       </tr>
     </tbody>
   </table>
