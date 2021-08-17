@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="uscore-to-pcornet-birth-sex"/> 
+  <text> 
+    <status value="generated"/> 
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2> BirthSex Mappings from US Core to PCORNet</h2> 
+        <p> Mapping from US Core Birth Sex (http://hl7.org/fhir/us/core/STU3.1/ValueSet-birthsex.html) to 
+        <a>http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-birth-sex</a> 
+      </p>
+      <div> 
+        <p> This concept map defines a mapping from US Core Birth Sex to PCORNet Birth Sex codes.</p> 
+      </div> 
+      <br/> 
+      <table class="grid">
+        <tr> 
+          <td> 
+            <b> Source Code</b> 
+          </td> 
+          <td> 
+            <b> Equivalence</b> 
+          </td> 
+          <td> 
+            <b> Destination Code</b> 
+          </td> 
+        </tr> 
+        <tr> 
+          <td> M</td> 
+          <td> equal</td> 
+          <td> M</td> 
+        </tr> 
+        <tr> 
+          <td> F</td> 
+          <td> equal</td> 
+          <td> F</td> 
+        </tr> 
+        <tr> 
+          <td> UNK</td> 
+          <td> equal</td> 
+          <td> UN</td> 
+        </tr> 
+      </table>  
+    </div> 
+  </text> 
+  <url value="http://hl7.org/fhir/us/cdmh/ConceptMap/uscore-to-pcornet-birth-sex"/> 
+  <name value="USCoreToPCORNetBirthSex"/> 
+  <title value="Mapping from US Core to PCORNet Birth Sex Codes"/>
+  <status value="draft"/> 
+  <experimental value="false"/> 
+  <description value="This concept map defines a mapping from US Core Birth Sex to PCORNet Birth Sex codes."/> 
+  <sourceCanonical value="http://hl7.org/fhir/us/core/ValueSet/birthsex"/> 
+  <targetCanonical value="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-birth-sex"/> 
+  <group> 
+    <element> 
+      <code value="M"/> 
+      <target> 
+        <code value="M"/> 
+        <equivalence value="equal"/> 
+      </target> 
+    </element> 
+    <element> 
+      <code value="F"/> 
+      <target> 
+        <code value="F"/> 
+        <equivalence value="equal"/> 
+      </target> 
+    </element> 
+    <element> 
+      <code value="UNK"/> 
+      <target> 
+        <code value="UN"/> 
+        <equivalence value="equal"/> 
+      </target> 
+    </element> 
+  </group> 
+</ConceptMap> 

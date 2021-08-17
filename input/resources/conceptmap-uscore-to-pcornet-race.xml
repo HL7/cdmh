@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="uscore-to-pcornet-race"/> 
+  <text> 
+    <status value="generated"/> 
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2> Mapping from US Core to PCORNet Race codes</h2> 
+        <p> Mapping from US Core Race (https://www.hl7.org/fhir/us/core/ValueSet-omb-race-category.html) to 
+        <a>http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-race</a> 
+      </p>
+      <div> 
+        <p> This concept map defines a mapping from US Core Race category to PCORNet race codes.</p> 
+      </div> 
+      <br/> 
+      <table class="grid">
+        <tr> 
+          <td> 
+            <b> Source Code</b> 
+          </td> 
+          <td> 
+            <b> Equivalence</b> 
+          </td> 
+          <td> 
+            <b> Destination Code</b> 
+          </td> 
+        </tr> 
+        <tr> 
+          <td> 1002-5</td> 
+          <td> equal</td> 
+          <td> 01</td> 
+        </tr> 
+        <tr> 
+          <td> 2028-9</td> 
+          <td> equal</td> 
+          <td> 02</td> 
+        </tr> 
+         <tr> 
+          <td> 2054-5</td> 
+          <td> equal</td> 
+          <td> 03</td> 
+        </tr> 
+         <tr> 
+          <td> 2076-8</td> 
+          <td> equal</td> 
+          <td> 04</td> 
+        </tr> 
+         <tr> 
+          <td> 2106-3</td> 
+          <td> equal</td> 
+          <td> 05</td> 
+        </tr> 
+         <tr> 
+          <td> UNK</td> 
+          <td> equal</td> 
+          <td> UN</td> 
+        </tr> 
+         <tr> 
+          <td> ASKU</td> 
+          <td> equal</td> 
+          <td> 07</td> 
+        </tr> 
+      </table>  
+    </div> 
+  </text> 
+  <url value="http://hl7.org/fhir/us/cdmh/ConceptMap/uscore-to-pcornet-race"/> 
+  <name value="USCoreToPCORNetRace"/> 
+  <title value="Mapping from US Core to PCORNet Race Codes"/>
+  <status value="draft"/> 
+  <experimental value="false"/> 
+  <description value="This concept map defines a mapping from US Core Race to PCORNet Race codes."/> 
+  <sourceCanonical value="http://hl7.org/fhir/us/core/ValueSet/omb-race-category"/> 
+  <targetCanonical value="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-race"/> 
+  <group> 
+    <element> 
+      <code value="1002-5"/> 
+      <target> 
+        <code value="01"/> 
+        <equivalence value="equal"/> 
+      </target> 
+    </element> 
+    <element> 
+      <code value="2028-9"/> 
+      <target> 
+        <code value="02"/> 
+        <equivalence value="equal"/> 
+      </target> 
+    </element> 
+        <element> 
+      <code value="2054-5"/> 
+      <target> 
+        <code value="03"/> 
+        <equivalence value="equal"/> 
+      </target> 
+    </element>
+        <element> 
+      <code value="2076-8"/> 
+      <target> 
+        <code value="04"/> 
+        <equivalence value="equal"/> 
+      </target> 
+    </element>
+        <element> 
+      <code value="2106-03"/> 
+      <target> 
+        <code value="05"/> 
+        <equivalence value="equal"/> 
+      </target> 
+    </element>
+        <element> 
+      <code value="UNK"/> 
+      <target> 
+        <code value="UN"/> 
+        <equivalence value="equal"/> 
+      </target> 
+    </element>
+        <element> 
+      <code value="ASKU"/> 
+      <target> 
+        <code value="07"/> 
+        <equivalence value="equal"/> 
+      </target> 
+    </element>
+  </group> 
+</ConceptMap> 

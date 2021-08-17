@@ -16,50 +16,50 @@
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">patid</td>
-        <td class="maptable17">Patient.identifier</td>
-        <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">Patient.id or Generated Value</td>
+        <td class="maptable17">cdmh-patient</td>
         <td class="maptable17">Person : Subject.identifier(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">birth_date</td>
         <td class="maptable17">Patient.birthDate</td>
-        <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">cdmh-patient</td>
         <td class="maptable17">Person.birthDate</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">birth_time</td>
         <td class="maptable17">Patient.birthDate</td>
-        <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">cdmh-patient</td>
         <td class="maptable17">Person.birthDate</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">sex</td>
         <td class="maptable17">Patient.extension: us-core-birthsex</td>
-        <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">cdmh-patient</td>
         <td class="maptable17">Person.sexGenotypeCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">sexual_orientation</td>
-        <td class="maptable17">Observation.code, Observation.value[x]</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">Patient.extension: cdmh-patient-sexualOrientation</td>
+        <td class="maptable17">cdmh-patient</td>
         <td class="maptable17">Person.sexualOrientationCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">gender_identity</td>
-        <td class="maptable17">Observation.code, Observation.value[x]</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">Patient.extension: patient-genderIdentity</td>
+        <td class="maptable17">cdmh-patient</td>
         <td class="maptable17">Person.genderIdentityCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">hispanic</td>
         <td class="maptable17">Patient.extension: us-core-ethnicity</td>
-        <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">cdmh-patientt</td>
         <td class="maptable17">Person.ethnicGroupCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">race</td>
         <td class="maptable17">Patient.extension: us-core-race</td>
-        <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">cdmh-patient</td>
         <td class="maptable17">Person.raceCode</td>
       </tr>
       <tr style='height:20px;'>
@@ -71,7 +71,7 @@
       <tr style='height:20px;'>
         <td class="maptable16">pat_pref_language_spoken</td>
         <td class="maptable17">Patient.communication.language</td>
-        <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">cdmh-patient</td>
         <td class="maptable17">Not mapped for CDMH project</td>
       </tr>
       <tr style='height:20px;'>

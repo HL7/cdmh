@@ -36,6 +36,7 @@
     <version value="3.1.0"/>
   </dependsOn>
   <definition>
+
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
