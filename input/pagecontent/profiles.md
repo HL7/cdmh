@@ -67,9 +67,9 @@ The table below outlines the mappings between Sentinel and FHIR Resources/profil
 
 
 
-#### i2b2 1.4 to FHIR R4 Mappings
+#### i2b2/ACT 1.4 to FHIR R4 Mappings
 
-The table below outlines the mappings between i2b2 and FHIR Resources/profiles and extensions.
+The table below outlines the mappings between i2b2/ACT and FHIR Resources/profiles and extensions.
 
 
 {% include i2b2_FHIR.html %}

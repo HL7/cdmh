@@ -11,7 +11,7 @@
 
 The Common Data Models Harmonization (CDMH) FHIR Implementation Guide (IG) will focus on mapping and translating observational data extracted for Patient Centered Outcome Research (PCOR) and other purposes into FHIR format.  Data is extracted from the different networks each of which may use a different data model for their data representation. The project focuses on the Common Data Models (CDMs) from the following four networks: 
 * Patient Centered Outcome Research Network (PCORNet) 
-* Informatics for Integrating Biology and Bedside (i2b2) 
+* Informatics for Integrating Biology and Bedside (i2b2) Accrual to Clinical Trials (ACT), also known as i2b2/ACT.
 * Observational Medical Outcomes Partnership (OMOP) 
 * Food and Drug Administration's Sentinel 
 
