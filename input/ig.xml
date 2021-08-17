@@ -36,7 +36,14 @@
     <version value="3.1.0"/>
   </dependsOn>
   <definition>
-
+    <resource>
+      <reference>
+        <reference value="Patient/example"/>
+      </reference>
+      <name value="CDMH Patient - Example"/>
+      <description value="An example showing a CDMH Patient record in FHIR extracted from an EMR."/>
+      <exampleBoolean value="true"/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>
