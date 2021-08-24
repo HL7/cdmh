@@ -17,49 +17,49 @@
       <tr style='height:20px;'>
         <td class="maptable16">patid</td>
         <td class="maptable17">Patient.id or Generated Value</td>
-        <td class="maptable17">cdmh-patient</td>
+        <td class="maptable17">CdmhPatient</td>
         <td class="maptable17">Person : Subject.identifier(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">birth_date</td>
         <td class="maptable17">Patient.birthDate</td>
-        <td class="maptable17">cdmh-patient</td>
+        <td class="maptable17">CdmhPatient</td>
         <td class="maptable17">Person.birthDate</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">birth_time</td>
         <td class="maptable17">Patient.birthDate</td>
-        <td class="maptable17">cdmh-patient</td>
+        <td class="maptable17">CdmhPatient</td>
         <td class="maptable17">Person.birthDate</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">sex</td>
         <td class="maptable17">Patient.extension: us-core-birthsex</td>
-        <td class="maptable17">cdmh-patient</td>
+        <td class="maptable17">CdmhPatient</td>
         <td class="maptable17">Person.sexGenotypeCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">sexual_orientation</td>
-        <td class="maptable17">Patient.extension: cdmh-patient-sexualOrientation</td>
-        <td class="maptable17">cdmh-patient</td>
+        <td class="maptable17">Patient.extension: CdmhPatient-sexualOrientation</td>
+        <td class="maptable17">CdmhPatient</td>
         <td class="maptable17">Person.sexualOrientationCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">gender_identity</td>
         <td class="maptable17">Patient.extension: patient-genderIdentity</td>
-        <td class="maptable17">cdmh-patient</td>
+        <td class="maptable17">CdmhPatient</td>
         <td class="maptable17">Person.genderIdentityCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">hispanic</td>
         <td class="maptable17">Patient.extension: cdmh-pcornet-ethnicity</td>
-        <td class="maptable17">cdmh-patientt</td>
+        <td class="maptable17">CdmhPatient</td>
         <td class="maptable17">Person.ethnicGroupCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">race</td>
         <td class="maptable17">Patient.extension: cdmh-pcornet-race</td>
-        <td class="maptable17">cdmh-patient</td>
+        <td class="maptable17">CdmhPatient</td>
         <td class="maptable17">Person.raceCode</td>
       </tr>
       <tr style='height:20px;'>
@@ -71,7 +71,7 @@
       <tr style='height:20px;'>
         <td class="maptable16">pat_pref_language_spoken</td>
         <td class="maptable17">Patient.communication.language</td>
-        <td class="maptable17">cdmh-patient</td>
+        <td class="maptable17">CdmhPatient</td>
         <td class="maptable17">Not mapped for CDMH project</td>
       </tr>
       <tr style='height:20px;'>
@@ -83,91 +83,91 @@
       <tr style='height:20px;'>
         <td class="maptable16">encounterid</td>
         <td class="maptable17">Encounter.id or Generated Value</td>
-        <td class="maptable17">cdmh-encounter</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedEncounter.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">patid</td>
         <td class="maptable17">Encounter.subject.id</td>
-        <td class="maptable17">cdmh-encounter</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedEncounter : Subject.identifier(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">admit_date</td>
         <td class="maptable17">Encounter.period.start</td>
-        <td class="maptable17">cdmh-encounter</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedEncounter.dateRange(IVL[TS.DATETIME]).low</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">admit_time</td>
         <td class="maptable17">Encounter.period.start</td>
-        <td class="maptable17">cdmh-encounter</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedEncounter.dateRange(IVL[TS.DATETIME]).low</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">discharge_date</td>
         <td class="maptable17">Encounter.period.end</td>
-        <td class="maptable17">cdmh-encounter</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedEncounter.dateRange(IVL[TS.DATETIME]).high</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">discharge_time</td>
         <td class="maptable17">Encounter.period.end</td>
-        <td class="maptable17">cdmh-encounter</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedEncounter.dateRange(IVL[TS.DATETIME]).high</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">providerid</td>
         <td class="maptable17">Encounter.participant.individual.id</td>
-        <td class="maptable17">cdmh-encounter, us-core-practitioner</td>
+        <td class="maptable17">CdmhEncounter, us-core-practitioner</td>
         <td class="maptable17">PerformedEncounter : Performer : HealthcareProvider.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">facility_location</td>
         <td class="maptable17">Encounter.location.location.address</td>
-        <td class="maptable17">cdmh-encounter, us-core-location</td>
+        <td class="maptable17">CdmhEncounter, us-core-location</td>
         <td class="maptable17">PerformedEncounter : Place.physicalAddress(AD).item(ADXP).value WHERE PerformedActivity : Place.physicalAddress(AD).item(ADXP).partType = 'ZIP'</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">enc_type</td>
         <td class="maptable17">Encounter.class</td>
-        <td class="maptable17">cdmh-encounter</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedEncounter : DefinedSubjectActivityGroup.nameCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">facilityid</td>
         <td class="maptable17">Encounter.location.location.id</td>
-        <td class="maptable17">cdmh-encounter, us-core-location</td>
+        <td class="maptable17">CdmhEncounter, us-core-location</td>
         <td class="maptable17">PerformedEncounter : Place : ServiceDeliveryLocation : Organization : HealthcareFacility.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">discharge_disposition</td>
         <td class="maptable17">Encounter.hospitalization.dischargeDisposition</td>
-        <td class="maptable17">cdmh-encounter</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedEncounter : departs for : Place.typeCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">discharge_status</td>
         <td class="maptable17">Encounter.location.location.type</td>
-        <td class="maptable17">cdmh-encounter,us-core-location</td>
+        <td class="maptable17">CdmhEncounter,us-core-location</td>
         <td class="maptable17">PerformedEncounter : PerformedObservation : PerformedObservationResult.value(ANY = CD) WHERE PerformedObservation : DefinedObservation.nameCode = "SubjectStatusAtDischarge"</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">drg</td>
         <td class="maptable17">Encounter.extension : cdmh-pcornet-drg-group</td>
-        <td class="maptable17">cdmh-encounter</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedEncounter.classificationCode(CD).code</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">drg_type</td>
         <td class="maptable17">Encounter.extension : cdmh-pcornet-drg-version</td>
-        <td class="maptable17">cdmh-encounter</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedEncounter.classificationCode(CD).codeSystem</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">admitting_source</td>
         <td class="maptable17">Encounter.hospitalization.origin(location).type</td>
-        <td class="maptable17">cdmh-encounter, us-core-location</td>
+        <td class="maptable17">CdmhEncounter, us-core-location</td>
         <td class="maptable17">PerformedEncounter : arrives from : Place.typeCode</td>
       </tr>
       <tr style='height:20px;'>
@@ -185,192 +185,192 @@
       <tr style='height:20px;'>
         <td class="maptable16">facility_type</td>
         <td class="maptable17">Encounter.location.location.type</td>
-        <td class="maptable17">cdmh-encounter, us-core-location</td>
+        <td class="maptable17">CdmhEncounter, us-core-location</td>
         <td class="maptable17">PerformedEncounter : Place : ServiceDeliveryLocation : Organization : HealthcareFacility</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable13" colspan="2">Table : ENROLLMENT</td>
-        <td class="maptable13">ResearchStudy</td>
+        <td class="maptable13">CdmhResearchStudy</td>
         <td class="maptable13">PerformedAdministrativeActivity WHERE PerformedAdministrativeActivity : DefinedSubjectActivityGroup.categoryCode = "ObservationPeriod"</td>
 	</tr>	
 	<tr style='height:20px;'>
         <td class="maptable16">patid</td>
         <td class="maptable17">ResearchStudy.enrollment.member.entity.id</td>
-        <td class="maptable17">ResearchStudy</td>
+        <td class="maptable17">CdmhResearchStudy, CdmhGroup</td>
         <td class="maptable17">PerformedAdministrativeActivity : Subject.identifier(ID).identifier</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">enr_start_date</td>
         <td class="maptable17">ResearchStudy.enrollment.member.period</td>
-        <td class="maptable17">ResearchStudy</td>
+        <td class="maptable17">CdmhResearchStudy, CdmhGroup</td>
         <td class="maptable17">PerformedAdministrativeActivity.dateRange(IVL[TS.DATETIME]).low</td>
       </tr>	  
 	  <tr style='height:20px;'>
         <td class="maptable16">enr_end_date</td>
         <td class="maptable17">ResearchStudy.enrollment.member.period</td>
-        <td class="maptable17">ResearchStudy</td>
+        <td class="maptable17">CdmhResearchStudy, CdmhGroup</td>
         <td class="maptable17">PerformedAdministrativeActivity.dateRange(IVL[TS.DATETIME]).high</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">chart</td>
-        <td class="maptable17">ResearchStudy:Extension (Proposed Name: chart-availability - Boolean)</td>
-        <td class="maptable17">ResearchStudy</td>
+        <td class="maptable17">Not mapped for CDMH project</td>
+        <td class="maptable17">Not mapped for CDMH project</td>
         <td class="maptable17">Not mapped for CDMH project</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">enr_basis</td>
-        <td class="maptable17">ResearchStudy.enrollment.member.period (Different Group for different time periods for same patient)</td>
-        <td class="maptable17">ResearchStudy</td>
+        <td class="maptable17">ResearchStudy.enrollment.characteristic</td>
+        <td class="maptable17">CdmhResearchStudy, CdmhGroup</td>
         <td class="maptable17">PerformedAdministrativeActivity.informationSourceTypeCode</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable13" colspan="2">Table : DIAGNOSIS
         </td>	
-        <td class="maptable13">Condition</td>
+        <td class="maptable13">Encounter</td>
         <td class="maptable13">PerformedDiagnosis</td>
 	</tr>
 	<tr style='height:20px;'>
         <td class="maptable16">diagnosisid</td>
-        <td class="maptable17">Condition.id</td>
-        <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">Encounter.diagnosis.condition.id</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedDiagnosis : PerformedObservation.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">patid</td>
-        <td class="maptable17">Condition.subject</td>
-        <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">Encounter.subject.id</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedDiagnosis : PerformedObservation : Subject.identifier.item(ID).identifier</td>
       </tr>	  
 	  <tr style='height:20px;'>
         <td class="maptable16">encounterid</td>
-        <td class="maptable17">Condition.encounter</td>
-        <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">Encounter.id</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedDiagnosis : PerformedObservation : PerformedCompositionRelationship : PerformedEncounter.identifier.item(ID).identifier</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">enc_type</td>
-        <td class="maptable17">Condition.encounter.class</td>
-        <td class="maptable17">us-core-condition,us-core-encounter</td>
+        <td class="maptable17">Encounter.class</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedDiagnosis : PerformedObservation : PerformedCompositionRelationship : PerformedEncounter : DefinedSubjectActivityGroup.nameCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">admit_date</td>
-        <td class="maptable17">Condition.encounter.period</td>
-        <td class="maptable17">us-core-condition,us-core-encounter</td>
+        <td class="maptable17">Encounter.period.start</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedDiagnosis : PerformedObservation : PerformedCompositionRelationship : PerformedEncounter.dateRange(IVL[TS.DATETIME]).low</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">providerid</td>
-        <td class="maptable17">Condition.encounter.participant.individual.id</td>
-        <td class="maptable17">us-core-condition,us-core-encounter, us-core-practitioner</td>
+        <td class="maptable17">Encounter.participant.individual.id</td>
+        <td class="maptable17">CdmhEncounter, us-core-practitioner</td>
         <td class="maptable17">PerformedDiagnosis : PerformedObservation : Performer : HealthcareProvider.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
 	   <tr style='height:20px;'>
         <td class="maptable16">dx</td>
-        <td class="maptable17">Condition.code</td>
-        <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">Encounter.diagnosis.condition.code (value)</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedDiagnosis.value(ANY=CD).code</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">dx_type</td>
-        <td class="maptable17">Condition.code</td>
-        <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">Encounter.diagnosis.condition.code (system)</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedDiagnosis.value(ANY=CD).codeSystem</td>
       </tr>	  
 	  <tr style='height:20px;'>
         <td class="maptable16">dx_source</td>
-        <td class="maptable17">Condition.encounter.diagnosis.use</td>
-        <td class="maptable17">us-core-condition,us-core-encounter</td>
+        <td class="maptable17">Encounter.diagnosis.use</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedDiagnosis : PerformedObservation.timePointCode</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">dx_origin</td>
-        <td class="maptable17">Condition.Extension (Proposed Name: data-source-type : CodeableConcept)</td>
-        <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">Encounter.diagnosis.extension: cdmh-pcornet-data-source-type</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedDiagnosis : PerformedObservation.informationSourceTypeCode</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">pdx</td>
-        <td class="maptable17">Condition.encounter.diagnosis.rank</td>
-        <td class="maptable17">us-core-condition,us-core-encounter</td>
+        <td class="maptable17">Encounter.diagnosis.rank</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedDiagnosis.priorityAtDischargeCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">dx_poa</td>
-        <td class="maptable17">Condition.encounter.diagnosis.use</td>
-        <td class="maptable17">us-core-condition,us-core-encounter</td>
+        <td class="maptable17">Not mapped for CDMH project</td>
+        <td class="maptable17">Not mapped for CDMH project</td>
         <td class="maptable17">Not mapped for CDMH project</td>
       </tr>
 	  <tr style='height:20px;'>
-        <td class="maptable13" colspan="2">Table : PROCEDURES
+        <td class="maptable13" colspan="2">Table : PROCEDURE
         </td>
         <td class="maptable13">Procedure</td>
         <td class="maptable13">PerformedProcedure</td>
 	</tr>
 	<tr style='height:20px;'>
-        <td class="maptable16">proceduresid</td>
+        <td class="maptable16">procedureid</td>
         <td class="maptable17">Procedure.id</td>
-        <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">CdmhProcedure</td>
         <td class="maptable17">PerformedProcedure.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">patid</td>
         <td class="maptable17">Procedure.subject</td>
-        <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">CdmhProcedure</td>
         <td class="maptable17">PerformedProcedure > Subject.identifier(ID).identifier</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">encounterid</td>
         <td class="maptable17">Procedure.encounter</td>
-        <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">CdmhProcedure, CdmhEncounter</td>
         <td class="maptable17">PerformedProcedure : PerformedCompositionRelationship : PerformedEncounter.identifier.item(ID).identifier</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">enc_type</td>
         <td class="maptable17">Procedure.encounter.class</td>
-        <td class="maptable17">us-core-procedure,us-core-encounter</td>
+        <td class="maptable17">CdmhProcedure, CdmhEncounter</td>
         <td class="maptable17">PerformedProcedure : PerformedCompositionRelationship : PerformedEncounter : DefinedSubjectActivityGroup.nameCode</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">admit_date</td>
         <td class="maptable17">Procedure.encounter.period</td>
-        <td class="maptable17">us-core-procedure,us-core-encounter</td>
+        <td class="maptable17">CdmhProcedure, CdmhEncounter</td>
         <td class="maptable17">PerformedProcedure : PerformedCompositionRelationship : PerformedEncounter.dateRange(IVL[TS.DATETIME]).low</td>
       </tr>
 	   <tr style='height:20px;'>
         <td class="maptable16">providerid</td>
         <td class="maptable17">Procedure.encounter.participant.individual.id</td>
-        <td class="maptable17">us-core-procedure,us-core-encounter,us-core-practitioner</td>
+        <td class="maptable17">CdmhProcedure,CdmhEncounter,us-core-practitioner</td>
         <td class="maptable17">PerformedProcedure : Performer : HealthcareProvider.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>	  
 	   <tr style='height:20px;'>
         <td class="maptable16">px_date</td>
         <td class="maptable17">Procedure.performedDateTime</td>
-        <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">CdmhProcedure</td>
         <td class="maptable17">PerformedProcedure.dateRange(IVL[TS.DATETIME]).high</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">px</td>
-        <td class="maptable17">Procedure.code</td>
-        <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">Procedure.code (value)</td>
+        <td class="maptable17">CdmhProcedure</td>
         <td class="maptable17">PerformedProcedure : DefinedProcedure.nameCode</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">px_type</td>
-        <td class="maptable17">Procedure.code</td>
-        <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">Procedure.code (system)</td>
+        <td class="maptable17">CdmhProcedure</td>
         <td class="maptable17">PerformedProcedure : DefinedProcedure.nameCode(CD).codeSystemName</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">px_source</td>
-        <td class="maptable17">Procedure.Extension (Proposed Name: data-source-type : CodeableConcept)</td>
-        <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">Procedure.code.extension: cdmh-pcornet-data-source-type</td>
+        <td class="maptable17">CdmhProcedure</td>
         <td class="maptable17">PerformedProcedure.informationSourceTypeCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">ppx</td>
-        <td class="maptable17">Procedure.Extension (Proposed Name: principal-flag : Boolean)</td>
-        <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">Not mapped for CDMH project</td>
+        <td class="maptable17">Not mapped for CDMH project</td>
         <td class="maptable17">Not mapped for CDMH project</td>
       </tr>
 	   <tr style='height:20px;'>

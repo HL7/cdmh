@@ -52,7 +52,7 @@ The steps involved in the CDMH project includes creating a query, distributing t
 
 **Data Partner Client:** Data Partner Client represents the capability that allows the Data Partner network or organization to control the queries being run and results being submitted to the Researchers. 
 
-**CDMs:** Common Data Models (CDMs) represent various physical representations of data that are commonly used by research networks and organizations currently. For CDMH project purposes, FDA's Sentinel,PCORnet CDM, i2b2 and OMOP data models are being considered for mapping to FHIR.  
+**CDMs:** Common Data Models (CDMs) represent various physical representations of data that are commonly used by research networks and organizations currently. For CDMH project purposes, FDA's Sentinel, PCORnet CDM, i2b2 and OMOP data models are being considered for mapping to FHIR.  
 
 ####  BRIDG Intermediary Model and its role in CDMH project
 
@@ -63,7 +63,7 @@ The abstract model shown above allows researchers to compose queries in a unifor
 For CDMH, Option 1 was not considered as it would add a significant burden on the researchers and the user interface to compose queries in each format and the maintenance of the overall solution would be complex. Hence Option 2 was chosen with BRIDG serving as the intermediary model. 
 Leveraging BRIDG as the intermediary model has many benefits some of which are listed below
 * Ability to use a common model for composing the queries making the system design easier and maintainable.
-* Well defined semantics of BRIDG makes it easier for others to understand the data.
+* Well-defined semantics of BRIDG makes it easier for others to understand the data.
 * Allows for converting from a single intermediary models to any number of CDMs, which can be done once centrally thus reducing any burden on the data partners. 
 * Allows for converting results from the data partners to a common model from where it can be mapped and translated to other formats including FHIR.
 
