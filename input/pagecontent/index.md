@@ -40,6 +40,6 @@ The following table will provide a road map to the reader to follow and absorb t
 | CDMH Overview | The artifact provides an overview of the CDMH project.| [Overview](background.html)|
 | Mappings and Profiles | The artifact defines the various mappings, profiles, extensions and resources that make up the CDMH FHIR IG.| [Mappings and Profiles](profiles.html)|
 | Implementation Guidance | The artifact contains guidance and examples that will help implementers of CDMH FHIR IG.| [Implementation Guidance](guidance.html)|
-| DAF-Research | The PCORTF sponsored IG outlines mechanisms to perform queries in distributed networks which is leveraged by the CDMH IG.| [DAF-Research](http://hl7.org/fhir/us/daf-research/)|
+| DAF-Research | The PCORTF sponsored IG outlines mechanisms to perform queries in distributed networks which is leveraged by the CDMH IG.| [DAF-Research](http://hl7.org/fhir/us/daf-research/)| 
 
 
