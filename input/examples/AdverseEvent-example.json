@@ -1,0 +1,71 @@
+{
+  "resourceType": "AdverseEvent",
+  "id": "example",
+  "meta": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString": "AdverseEvent Example"
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown": "This is an example for the *CDMH AdverseEvent Profile*."
+      }
+    ],
+    "profile": [
+      "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-adverseevent"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Adverse Event Example</b></p></div>"
+  },
+  "identifier": {
+    "system": "http://acme.com/ids/patients/risks",
+    "value": "49476534"
+  },
+  "actuality": "actual",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/adverse-event-category",
+          "code": "medication-mishap",
+          "display": "Medication Mishap"
+        }
+      ]
+    }
+  ],
+  "event": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "304386008",
+        "display": "O/E - itchy rash"
+      }
+    ],
+    "text": "This was a mild rash on the left forearm"
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "date": "2017-01-29T12:34:56+00:00",
+  "seriousness": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/adverse-event-seriousness",
+        "code": "non-serious",
+        "display": "Non-serious"
+      }
+    ]
+  },
+  "severity": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/adverse-event-severity",
+        "code": "mild",
+        "display": "Mild"
+      }
+    ]
+  }
+}

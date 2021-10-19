@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="pcornet-priority"/>
+  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-priority"/>
+  <version value="1.0.0"/>
+  <name value="PCORNetPriority"/>
+  <title value="PCORNet Priority"/>
+  <status value="active"/>
+  <date value="2021-09-06"/>
+  <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
+  <description value="The PCORNet Priority Source contains the codes to be used by PCORNet data marts."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="E"/>
+    <display value="Expedite"/>
+    <definition value="Immediacy of test is Expedite."/>
+  </concept>
+  <concept>
+    <code value="R"/>
+    <display value="Routine"/>
+    <definition value="Immediacy of test is Routine."/>
+  </concept>
+   <concept>
+    <code value="S"/>
+    <display value="Stat"/>
+    <definition value="Immediacy of test is Stat."/>
+  </concept>
+  <concept>
+    <code value="NI"/>
+    <display value="No information"/>
+    <definition value="Immediacy of test has No information."/>
+  </concept>
+  <concept>
+    <code value="UN"/>
+    <display value="Unknown"/>
+    <definition value="Immediacy of test is Unknown."/>
+  </concept>
+  <concept>
+    <code value="OT"/>
+    <display value="Other"/>
+    <definition value="Immediacy of test is Other."/>
+  </concept>
+ </CodeSystem>

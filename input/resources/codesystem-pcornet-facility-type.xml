@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="pcornet-facility-type"/>
+  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-facility-type"/>
+  <version value="1.0.0"/>
+  <name value="PCORNetFacilityType"/>
+  <title value="PCORNet Facility Type"/>
+  <status value="active"/>
+  <date value="2021-09-06"/>
+  <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
+  <description value="The PCORNet Facility Type contains the codes to be used by PCORNet data marts."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="69"/>
+  <concept>
+    <code value="OT"/>
+    <display value="Mapped to CMS Place of Service Code - 01,02,04,05,06,07,08,09,15,16,18,20,26,33,54,56,99"/>
+    <definition value="Covered facilities or locations"/>
+  </concept>
+  <concept>
+    <code value="RESIDENTIAL_SCHOOL_INFIRMARY"/>
+    <display value="School"/>
+    <definition value="A facility whose primary purpose is education."/>
+  </concept>
+  <concept>
+    <code value="HOSPITAL_PRISON"/>
+    <display value="Mapped to CMS Place of Service Code - 09 and 21. Prison / Correctional Facility, Inpatient Hospital"/>
+    <definition value="A prison, jail, reformatory, work farm, detention center, or any other similar facility maintained by either Federal, State or local authorities for the purpose of confinement or rehabilitation of adult or juvenile criminal offenders."/>
+  </concept>
+  <concept>
+    <code value="FEE_FOR_SERVICE_PRIVATE_PHYSICIANS_GROUP_OFFICE"/>
+    <display value="Office"/>
+    <definition value="Location, other than a hospital, skilled nursing facility (SNF), military treatment facility, community health center, State or local public health clinic, or intermediate care facility (ICF), where the health professional routinely provides health examinations, diagnosis, and treatment of illness or injury on an ambulatory basis."/>
+  </concept>
+  <concept>
+    <code value="INDEPENDENT_AMBULATORY_CARE_PROVIDER_SITE_OTHER"/>
+    <display value="Office"/>
+    <definition value="Location, other than a hospital, skilled nursing facility (SNF), military treatment facility, community health center, State or local public health clinic, or intermediate care facility (ICF), where the health professional routinely provides health examinations, diagnosis, and treatment of illness or injury on an ambulatory basis."/>
+ </concept>
+  <concept>
+    <code value="PRIVATE_PHYSICIANS_GROUP_OFFICE"/>
+    <display value="Office"/>
+    <definition value="Location, other than a hospital, skilled nursing facility (SNF), military treatment facility, community health center, State or local public health clinic, or intermediate care facility (ICF), where the health professional routinely provides health examinations, diagnosis, and treatment of illness or injury on an ambulatory basis."/>
+  </concept>
+  <concept>
+    <code value="SOLO_PRACTICE_PRIVATE_OFFICE"/>
+    <display value="Office"/>
+    <definition value="Location, other than a hospital, skilled nursing facility (SNF), military treatment facility, community health center, State or local public health clinic, or intermediate care facility (ICF), where the health professional routinely provides health examinations, diagnosis, and treatment of illness or injury on an ambulatory basis."/>
+  </concept>
+  <concept>
+    <code value="HEALTH_MAINTENANCE_ORGANIZATION"/>
+    <display value="Office"/>
+   <definition value="Location, other than a hospital, skilled nursing facility (SNF), military treatment facility, community health center, State or local public health clinic, or intermediate care facility (ICF), where the health professional routinely provides health examinations, diagnosis, and treatment of illness or injury on an ambulatory basis."/>
+  </concept>
+  <concept>
+    <code value="PRIVATE_RESIDENTIAL_HOME"/>
+    <display value="Home"/>
+    <definition value="Location, other than a hospital or other facility, where the patient receives care in a private residence."/>
+  </concept>
+  <concept>
+    <code value="RESIDENTIAL_INSTITUTION"/>
+    <display value="Mapped to CMS Place of Service Code - 13,14 and 32. Assisted Living Facility, Group Home, Nursing Facility"/>
+    <definition value="Covered location for types of Residential Institutions."/>
+  </concept>
+  <concept>
+    <code value="WALK_IN_CLINIC"/>
+    <display value="Walk-in Retail Clinic"/>
+    <definition value="A walk-in health clinic, other than an office, urgent care facility, pharmacy or independent clinic and not described by any other Place of Service code, that is located within a retail operation and provides, on an ambulatory basis, preventive and primary care services."/>
+  </concept>
+  <concept>
+    <code value="HOSPITAL_OUTPATIENT_ALLERGY_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+    <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+  </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_DENTAL_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+     <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+  </concept>
+   <concept>
+    <code value="HHOSPITAL_OUTPATIENT_DERMATOLOGY_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+    <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+  </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_ENDOCRINOLOGY_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+   <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+  </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_FAMILY_MEDICINE_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+    <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+   </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_GASTROENTEROLOGY_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+    <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+   </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_GENERAL_SURGERY_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+     <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+   </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_GERIATRIC_HEALTH_CENTER"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+    <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+   </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_GYNECOLOGY_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+     <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+   </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_HEMATOLOGY_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+    <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+   </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_IMMUNOLOGY_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+     <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+  </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_INFECTIOUS_DISEASE_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+     <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+   </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_MENTAL_HEALTH_CENTER"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+     <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+  </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_NEUROLOGY_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+     <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+  </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_OBSTETRICAL_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+    <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+   </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_ONCOLOGY_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+    <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+  </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_OPHTHALMOLOGY_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+     <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+  </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_ORTHOPEDICS_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+     <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+  </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_OTORHINOLARYNGOLOGY_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+    <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+  </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_PAIN_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+    <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+   </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_PEDIATRIC_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+    <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+  </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_PERIPHERAL_VASCULAR_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+    <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+   </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_RESPIRATORY_DISEASE_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+    <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+   </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_RHEUMATOLOGY_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+   <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+   </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_UROLOGY_CLINIC"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+    <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+  </concept>
+   <concept>
+    <code value="HOSPITAL_OUTPATIENT_SURGERY_FACILITY"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+    <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+   </concept>
+   <concept>
+    <code value="HOSPITAL_BIRTHING_CENTER"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+    <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+  </concept>
+  <concept>
+    <code value="HOSPITAL_BASED_OUTPATIENT_CLINIC_OR_DEPARTMENT_OTHER"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+     <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+  </concept>
+   <concept>
+    <code value="HOSPITAL_RADIOLOGY_FACILITY"/>
+    <display value="Mapped to CMS Place of Service Code - 19 and 22. Off-Campus - Outpatient Hospital, On Campus - Outpatient Hospital"/>
+    <definition value="Off-Campus: A portion of an off-campus hospital provider based department which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization.
+    On Campus: A portion of a hospital’s main campus which provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services to sick or injured persons who do not require hospitalization or institutionalization."/>
+   </concept>
+   <concept>
+    <code value="HOSPITAL_CHILDRENS"/>
+    <display value="Inpatient Hospital"/>
+    <definition value="A facility, other than psychiatric, which primarily provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services by, or under, the supervision of physicians to patients admitted for a variety of medical conditions."/>
+  </concept>
+   <concept>
+    <code value="HOSPITAL_COMMUNITY"/>
+    <display value="Inpatient Hospital"/>
+    <definition value="A facility, other than psychiatric, which primarily provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services by, or under, the supervision of physicians to patients admitted for a variety of medical conditions."/>
+  </concept>
+  <concept>
+    <code value="HOSPITAL_GOVERNMENT"/>
+    <display value="Inpatient Hospital"/>
+    <definition value="A facility, other than psychiatric, which primarily provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services by, or under, the supervision of physicians to patients admitted for a variety of medical conditions."/>
+  </concept>
+  <concept>
+    <code value="HOSPITAL_LONG_TERM_CARE"/>
+    <display value="Inpatient Hospital"/>
+    <definition value="A facility, other than psychiatric, which primarily provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services by, or under, the supervision of physicians to patients admitted for a variety of medical conditions."/>
+  </concept>
+  <concept>
+    <code value="HOSPITAL_MILITARY_FIELD"/>
+    <display value="Inpatient Hospital"/>
+    <definition value="A facility, other than psychiatric, which primarily provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services by, or under, the supervision of physicians to patients admitted for a variety of medical conditions."/>
+  </concept>
+  <concept>
+    <code value="HOSPITAL_TRAUMA_CENTER"/>
+    <display value="Inpatient Hospital"/>
+    <definition value="A facility, other than psychiatric, which primarily provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services by, or under, the supervision of physicians to patients admitted for a variety of medical conditions."/>
+  </concept>
+  <concept>
+    <code value="HOSPITAL_VETERANS_ADMINISTRATION"/>
+    <display value="Inpatient Hospital"/>
+    <definition value="A facility, other than psychiatric, which primarily provides diagnostic, therapeutic (both surgical and nonsurgical), and rehabilitation services by, or under, the supervision of physicians to patients admitted for a variety of medical conditions."/>
+  </concept>
+  <concept>
+    <code value="EMERGENCY_DEPARTMENT_HOSPITAL"/>
+    <display value="Emergency Room - Hospital"/>
+    <definition value="A portion of a hospital where emergency diagnosis and treatment of illness or injury is provided."/>
+  </concept>
+   <concept>
+    <code value="AMBULATORY_SURGERY_CENTER"/>
+    <display value="Ambulatory Surgical Center"/>
+    <definition value="A freestanding facility, other than a physician's office, where surgical and diagnostic services are provided on an ambulatory basis."/>
+  </concept>
+  <concept>
+    <code value="FREE_STANDING_AMBULATORY_SURGERY_FACILITY"/>
+    <display value="Ambulatory Surgical Center"/>
+    <definition value="A freestanding facility, other than a physician's office, where surgical and diagnostic services are provided on an ambulatory basis."/>
+  </concept>
+  <concept>
+    <code value="FREE_STANDING_BIRTHING_CENTER"/>
+    <display value="Birthing Center"/>
+    <definition value="A facility, other than a hospital's maternity facilities or a physician's office, which provides a setting for labor, delivery, and immediate post-partum care as well as immediate care of new born infants."/>
+  </concept>
+  <concept>
+    <code value="SKILLED_NURSING_FACILITY"/>
+    <display value="Skilled Nursing Facility"/>
+    <definition value="A facility which primarily provides inpatient skilled nursing care and related services to patients who require medical, nursing, or rehabilitative services but does not provide the level of care or treatment available in a hospital."/>
+  </concept>
+  <concept>
+    <code value="HOSPICE_FACILITY"/>
+    <display value="Hospice"/>
+    <definition value="A facility, other than a patient's home, in which palliative and supportive care for terminally ill patients and their families are provided."/>
+  </concept>
+  <concept>
+    <code value="AMBULANCE_BASED_CARE"/>
+    <display value="Ambulance - Land"/>
+    <definition value="A land vehicle specifically designed, equipped and staffed for lifesaving and transporting the sick or injured."/>
+  </concept>
+  <concept>
+    <code value="HELICOPTER_BASED_CARE"/>
+    <display value="Ambulance - Air or Water"/>
+    <definition value="A portion of a hospital where emergency diagnosis and treatment of illness or injury is provided."/>
+  </concept>
+  <concept>
+    <code value="HOSPITAL_SHIP"/>
+    <display value="Ambulance - Air or Water"/>
+    <definition value="A portion of a hospital where emergency diagnosis and treatment of illness or injury is provided."/>
+  </concept>
+  <concept>
+    <code value="LOCAL_COMMUNITY_HEALTH_CENTER"/>
+    <display value="Mapped to CMS Place of Service Code - 50 and 71. Federally Qualified Health Center, Public Health Clinic"/>
+    <definition value="A facility located in a medically underserved area that provides Medicare beneficiaries preventive primary medical care under the general direction of a physician.  facility maintained by either State or local health departments that provides ambulatory primary medical care under the general direction of a physician."/>
+  </concept>
+  <concept>
+    <code value="HOSPITAL_PSYCHIATRIC"/>
+    <display value="Mapped to CMS Place of Service Code - 51 and 52. Inpatient Psychiatric Facility, Psychiatric Facility - Partial Hospitalization"/>
+    <definition value="A facility that provides inpatient psychiatric services for the diagnosis and treatment of mental illness on a 24-hour basis, by or under the supervision of a physician. 
+    A facility for the diagnosis and treatment of mental illness that provides a planned therapeutic program for patients who do not require full time hospitalization, but who need broader programs than are possible from outpatient visits to a hospital-based or hospital-affiliated facility."/>
+  </concept>
+  <concept>
+    <code value="PSYCHOGERIATRIC_DAY_HOSPITAL"/>
+    <display value="Psychiatric Facility - Partial Hospitalization"/>
+    <definition value="A facility for the diagnosis and treatment of mental illness that provides a planned therapeutic program for patients who do not require full time hospitalization, but who need broader programs than are possible from outpatient visits to a hospital-based or hospital-affiliated facility."/>
+  </concept>
+  <concept>
+    <code value="FREE_STANDING_MENTAL_HEALTH_CENTER"/>
+    <display value="Community Mental Health Center"/>
+    <definition value="A facility that provides the following services: outpatient services, including specialized outpatient services for children, the elderly, individuals who are chronically ill, and residents of the CMHC's mental health services area who have been discharged from inpatient treatment at a mental health facility; 24 hour a day emergency care services; day treatment, other partial hospitalization services, or psychosocial rehabilitation services; screening for patients being considered for admission to State mental health facilities to determine the appropriateness of such admission; and consultation and education services."/>
+  </concept>
+  <concept>
+    <code value="SUBSTANCE_ABUSE_TREATMENT_CENTER"/>
+    <display value="Mapped to CMS Place of Service Code - 55 and 57. Residential Substance Abuse Treatment Facility, Non-residential Substance Abuse Treatment Facility"/>
+    <definition value="Covered location for SUBSTANCE_ABUSE_TREATMENT_CENTER"/>
+  </concept>
+  <concept>
+    <code value="VACCINATION_CLINIC"/>
+    <display value="Mass Immunization Center"/>
+    <definition value="A location where providers administer pneumococcal pneumonia and influenza virus vaccinations and submit these services as electronic media claims, paper claims, or using the roster billing method. This generally takes place in a mass immunization setting, such as, a public health center, pharmacy, or mall but may include a physician office setting."/>
+  </concept>
+  <concept>
+    <code value="HOSPITAL_REHABILITATION"/>
+    <display value="Comprehensive Inpatient Rehabilitation Facility"/>
+    <definition value="A facility that provides comprehensive rehabilitation services under the supervision of a physician to inpatients with physical disabilities. Services include physical therapy, occupational therapy, speech pathology, social or psychological services, and orthotics and prosthetics services."/>
+  </concept>
+  <concept>
+    <code value="HOSPITAL_OUTPATIENT_REHABILITATION_CLINIC"/>
+    <display value="Comprehensive Outpatient Rehabilitation Facility"/>
+    <definition value="A facility that provides comprehensive rehabilitation services under the supervision of a physician to outpatients with physical disabilities. Services include physical therapy, occupational therapy, and speech pathology services."/>
+  </concept>
+  <concept>
+    <code value="DIALYSIS_UNIT_HOSPITAL"/>
+    <display value="End-Stage Renal Disease Treatment Facility"/>
+    <definition value="A facility other than a hospital, which provides dialysis treatment, maintenance, and/or training to patients or caregivers on an ambulatory or home-care basis."/>
+  </concept>
+  <concept>
+    <code value="FREE_RURAL_HEALTH_CENTER"/>
+    <display value="Rural Health Clinic"/>
+    <definition value="A certified facility which is located in a rural medically underserved area that provides ambulatory primary medical care under the general direction of a physician."/>
+  </concept>
+  <concept>
+    <code value="FREE_STANDING_LABORATORY_FACILITY"/>
+    <display value="Independent Laboratory"/>
+    <definition value="A laboratory certified to perform diagnostic and/or clinical tests independent of an institution or a physician's office."/>
+  </concept>
+ </CodeSystem>

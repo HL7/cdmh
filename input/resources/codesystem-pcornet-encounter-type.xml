@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="pcornet-encounter-type"/>
+  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-encounter-type"/>
+  <version value="1.0.0"/>
+  <name value="PCORNetEncounterType"/>
+  <title value="PCORNet Encounter Type"/>
+  <status value="active"/>
+  <date value="2021-09-06"/>
+  <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
+  <description value="The PCORNet Encounter Type contains the codes to be used by PCORNet data marts."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="12"/>
+  <concept>
+    <code value="AV"/>
+    <display value="Ambulatory Visit"/>
+    <definition value="Includes visits at outpatient clinics, physician offices,  same day/ambulatory surgery centers, urgent care facilities, and other same-day ambulatory hospital encounters, but excludes emergency  department encounters."/>
+  </concept>
+  <concept>
+    <code value="ED"/>
+    <display value="Emergency Department"/>
+    <definition value="Includes ED encounters that become inpatient stays (in which case inpatient stays would be a separate encounter). Excludes urgent care facility visits. ED claims should be pulled before  hospitalization claims to ensure that ED with subsequent admission won't be rolled up in the hospital event. Does not include observation stays, where known."/>
+  </concept>
+  <concept>
+    <code value="EI"/>
+    <display value="Emergency Department Admit to Inpatient Hospital Stay (permissible substitution)"/>
+    <definition value="Permissible substitution for preferred  state of separate  ED and IP records. Only for use with data sources where the individual records for ED and IP cannot be distinguished."/>
+  </concept>
+  <concept>
+    <code value="IP"/>
+    <display value="Inpatient Hospital Stay"/>
+    <definition value="Includes all inpatient stays, including: same-day hospital discharges, hospital transfers,  and acute hospital care where the discharge is after  the admission date. Does not include observation stays, where known."/>
+  </concept>
+  <concept>
+    <code value="IS"/>
+    <display value="Non-Acute Institutional Stay"/>
+    <definition value="Includes hospice, skilled nursing facility (SNF), rehab center, nursing home, residential, overnight non-hospital dialysis, and other non-hospital stays."/>
+  </concept>
+  <concept>
+    <code value="OS"/>
+    <display value="Observation Stay"/>
+    <definition value="Hospital outpatient services given to help the doctor decide if the patient needs to be admitted as an inpatient or can be discharged. Observations services may be given in the emergency department or another area of  the hospital.” Definition from Medicare, CMS Product No. 11435, https://www.medicare.gov/Pubs/pdf/11435.pdf."/>
+  </concept>
+  <concept>
+    <code value="IC"/>
+    <display value="Institutional Professional Consult (permissible substitution)"/>
+    <definition value="Permissible substitution when services provided by a medical professional  cannot be combined with the given encounter record, such as a specialist consult in an inpatient setting; this situation can be common with claims data sources.  This includes physician consults for patients during inpatient encounters that are not directly related to the cause of the admission (e.g. a ophthalmologist consult for a patient with diabetic ketoacidosis) (guidance updated in v4.0)."/>
+  </concept>
+   <concept>
+    <code value="TH"/>
+    <display value="Telehealth"/>
+    <definition value="Includes telemedicine or virtual visits, which can be conducted via video, phone or other means."/>
+  </concept>
+  <concept>
+    <code value="OA"/>
+    <display value="Other Ambulatory Visit"/>
+    <definition value="PIncludes other non-overnight AV encounters such as hospice visits, home health visits, skilled nursing visits, other non-hospital visits, as well as telemedicine, telephone and email consultations. May also include 'lab only' visits (when a lab is ordered outside of a patient visit), 'pharmacy only' (e.g., when a patient has a refill ordered without a face-to-face  visit), 'imaging only', etc."/>
+  </concept>
+  <concept>
+    <code value="NI"/>
+    <display value="No information"/>
+    <definition value="Patient Encounter Type has No information."/>
+  </concept>
+  <concept>
+    <code value="UN"/>
+    <display value="Unknown"/>
+    <definition value="Patient Encounter Type is Unknown."/>
+  </concept>
+  <concept>
+    <code value="OT"/>
+    <display value="Other"/>
+    <definition value="Patient Encounter Type is Other."/>
+  </concept>
+ </CodeSystem>

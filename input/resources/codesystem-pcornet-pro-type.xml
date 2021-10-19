@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="pcornet-pro-type"/>
+  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-pro-type"/>
+  <version value="1.0.0"/>
+  <name value="PCORNetProType"/>
+  <title value="PCORNet Pro Type"/>
+  <status value="active"/>
+  <date value="2021-09-06"/>
+  <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
+  <description value="The PCORNet Pro Type contains the codes to be used by PCORNet data marts."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="PM"/>
+    <display value="PROMIS"/>
+    <definition value="Self-reported and parent-reported measures of global, physical, mental, and social health for adults and children in the general population and those living with a chronic condition."/>
+  </concept>
+  <concept>
+    <code value="NQ"/>
+    <display value="Neuro-QoL"/>
+    <definition value="Self-reported and proxy-reported measures of physical, mental, and social health for adults and children living with a neurological condition."/>
+  </concept>
+  <concept>
+    <code value="AM"/>
+    <display value="ASQC-Me"/>
+    <definition value="Self-reported measures of physical, mental, and social health for adults living with sickle cell disease."/>
+  </concept>
+   <concept>
+    <code value="NT"/>
+    <display value="NIH Toolbox"/>
+    <definition value="Performance tests of cognitive, motor, and sensory function and self-reported measures of emotional function for adults and children in the general population and those living with a chronic condition."/>
+  </concept>
+   <concept>
+    <code value="PC"/>
+    <display value="PRO_CTCAE"/>
+    <definition value="A patient-reported outcome measurement system developed by the National Cancer Institute to capture symptomatic adverse events in patients on cancer clinical trials."/>
+  </concept>
+   <concept>
+    <code value="LC"/>
+    <display value="LOINC"/>
+    <definition value="Terminology / vocabulary used to describe the PRO item is LOINC."/>
+  </concept>
+   <concept>
+    <code value="HC"/>
+    <display value="HCAHPS"/>
+    <definition value="HCAHPS initiative is to provide a standardized survey instrument and data collection methodology for measuring patients perspectives on hospital care."/>
+  </concept>
+  <concept>
+    <code value="NI"/>
+    <display value="No information"/>
+    <definition value="Terminology / vocabulary used to describe the PRO item is No information."/>
+  </concept>
+  <concept>
+    <code value="UN"/>
+    <display value="Unknown"/>
+    <definition value="Terminology / vocabulary used to describe the PRO item is Unknown."/>
+  </concept>
+  <concept>
+    <code value="OT"/>
+    <display value="Other"/>
+    <definition value="Terminology / vocabulary used to describe the PRO item is Other."/>
+  </concept>
+ </CodeSystem>

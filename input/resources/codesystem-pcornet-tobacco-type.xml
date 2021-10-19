@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="pcornet-tobacco-type"/>
+  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-tobacco-type"/>
+  <version value="1.0.0"/>
+  <name value="PCORNetTobaccoType"/>
+  <title value="PCORNet Tobacco Type"/>
+  <status value="active"/>
+  <date value="2021-09-06"/>
+  <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
+  <description value="The PCORNet Tobacco Type contains the codes to be used by PCORNet data marts."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="01"/>
+    <display value="Smoked tobacco only"/>
+    <definition value="Type(s) of tobacco used is Smoked tobacco only."/>
+  </concept>
+  <concept>
+    <code value="02"/>
+    <display value="Non-smoked tobacco only"/>
+    <definition value="Type(s) of tobacco used is Non-smoked tobacco only."/>
+  </concept>
+   <concept>
+    <code value="03"/>
+    <display value="Use of both smoked and non-smoked tobacco products"/>
+    <definition value="Type(s) of tobacco used is Use of both smoked and non-smoked tobacco products."/>
+  </concept>
+     <concept>
+    <code value="04"/>
+    <display value="None"/>
+    <definition value="Type(s) of tobacco used is None."/>
+  </concept>
+     <concept>
+    <code value="05"/>
+    <display value="Use of smoked tobacco but no information about non-smoked tobacco use"/>
+    <definition value="Type(s) of tobacco used is Use of smoked tobacco but no information about non-smoked tobacco use."/>
+  </concept>
+  <concept>
+    <code value="NI"/>
+    <display value="No information"/>
+    <definition value="Type(s) of tobacco used is No information."/>
+  </concept>
+  <concept>
+    <code value="UN"/>
+    <display value="Unknown"/>
+    <definition value="Type(s) of tobacco used is Unknown."/>
+  </concept>
+  <concept>
+    <code value="OT"/>
+    <display value="Other"/>
+    <definition value="Type(s) of tobacco used is Other."/>
+  </concept>
+ </CodeSystem>

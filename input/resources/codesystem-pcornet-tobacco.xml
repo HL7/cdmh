@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="pcornet-tobacco"/>
+  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-tobacco"/>
+  <version value="1.0.0"/>
+  <name value="PCORNetTobacco"/>
+  <title value="PCORNet Tobacco"/>
+  <status value="active"/>
+  <date value="2021-09-06"/>
+  <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
+  <description value="The PCORNet Tobacco contains the codes to be used by PCORNet data marts."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="01"/>
+    <display value="Current User"/>
+    <definition value="Indicator for any form of tobacco is Current User."/>
+  </concept>
+  <concept>
+    <code value="02"/>
+    <display value="Never"/>
+    <definition value="Indicator for any form of tobacco is Never."/>
+  </concept>
+   <concept>
+    <code value="03"/>
+    <display value="Quit/former user"/>
+    <definition value="Indicator for any form of tobacco is Quit/former user."/>
+  </concept>
+     <concept>
+    <code value="04"/>
+    <display value="Passive or environmental exposure"/>
+    <definition value="Indicator for any form of tobacco is Passive or environmental exposure."/>
+  </concept>
+     <concept>
+    <code value="06"/>
+    <display value="Not asked"/>
+    <definition value="Indicator for any form of tobacco is Not asked."/>
+  </concept>
+  <concept>
+    <code value="NI"/>
+    <display value="No information"/>
+    <definition value="Indicator for any form of tobacco is No information."/>
+  </concept>
+  <concept>
+    <code value="UN"/>
+    <display value="Unknown"/>
+    <definition value="Indicator for any form of tobacco is Unknown."/>
+  </concept>
+  <concept>
+    <code value="OT"/>
+    <display value="Other"/>
+    <definition value="Indicator for any form of tobacco is Other."/>
+  </concept>
+ </CodeSystem>
