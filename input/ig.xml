@@ -51,6 +51,13 @@
       <name value="CDMH Adverse Event - Example"/>
       <description value="An example showing a CDMH Adverse Event record in FHIR extracted from an EMR."/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Medication/example"/>
+      </reference>
+      <name value="CDMH Medication - Example"/>
+      <description value="An example showing a CDMH Medication record in FHIR extracted from an EMR."/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>

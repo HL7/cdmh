@@ -17,9 +17,26 @@
     ]
   },
   "text": {
-    "status": "generated",
+    "status": "extensions",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Adverse Event Example</b></p></div>"
   },
+  "extension": [
+	 {
+	    "id": "1",
+            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-death-source",
+            "valueCode": "F"
+         },
+         {
+	    "id": "2",
+            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-death-match-confidence",
+            "valueCode": "F"
+         },
+         {
+	    "id": "3",
+            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-death-cause-confidence",
+            "valueCode": "F"
+         }
+  ],
   "identifier": {
     "system": "http://acme.com/ids/patients/risks",
     "value": "49476534"
@@ -67,5 +84,27 @@
         "display": "Mild"
       }
     ]
-  }
+  },
+  "suspectEntity": [
+    {
+      "instance": {
+        "reference": "Medication/example"
+      },
+      "causality": [
+         {
+            "id": "1234",
+            "extension": [
+         	{  
+                   "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-death-cause",
+                   "valueCode": "F"
+                },
+                {  
+                   "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-death-cause-code",
+                   "valueCode": "F"
+                }
+            ]
+        }
+      ]
+    }
+  ]
 }
