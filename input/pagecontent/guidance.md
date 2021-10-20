@@ -13,7 +13,7 @@ The CDMH project envisions open source translators to be created using the mappi
 
 The CDMH project analysis has identified many areas where semantics of the data elements have to be considered to perform the mappings. The following are specific areas where translators written to map between the source and target formats have to apply proper semantic transformation to achieve the desired results. 
 * Date and Time Representations.
-* Vocabulary Mappings from source vocabulary (CDMs representation) to target vocabulary (FHIR representation) has to be considered to minimize or prevent data loss. 
+* Vocabulary Mappings from source vocabulary (CDMs representation) to target vocabulary (FHIR representation) has to be considered to minimize or prevent data loss. The IG contains many concept maps to help address these translations which can be executed using FHIR engine.
 - Diagnosis codes from source vocabulary to ICD10-CM
 - Procedure codes from source vocabulary to CPT-4
 - Sex codes
