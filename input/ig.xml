@@ -58,6 +58,76 @@
       <name value="CDMH Medication - Example"/>
       <description value="An example showing a CDMH Medication record in FHIR extracted from an EMR."/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Condition/example"/>
+      </reference>
+      <name value="CDMH Condition - Example"/>
+      <description value="An example showing a CDMH Condition record in FHIR extracted from an EMR."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Encounter/example"/>
+      </reference>
+      <name value="CDMH Encounter - Example"/>
+      <description value="An example showing a Encounter record in FHIR extracted from an EMR."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Group/example"/>
+      </reference>
+      <name value="CDMH Group - Example"/>
+      <description value="An example showing a Group record in FHIR extracted from an EMR."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationDispense/example"/>
+      </reference>
+      <name value="CDMH MedicationDispense - Example"/>
+      <description value="An example showing a MedicationDispense record in FHIR extracted from an EMR."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="MedicationRequest/example"/>
+      </reference>
+      <name value="CDMH MedicationRequest - Example"/>
+      <description value="An example showing a MedicationRequest record in FHIR extracted from an EMR."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Practitioner/example"/>
+      </reference>
+      <name value="CDMH Practitioner - Example"/>
+      <description value="An example showing a Practitioner record in FHIR extracted from an EMR."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/example"/>
+      </reference>
+      <name value="CDMH Lab Results - Example"/>
+      <description value="An example showing an example of Lab Result record in FHIR extracted from an EMR."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Observation/vitals-example"/>
+      </reference>
+      <name value="CDMH Vital Signs - Example"/>
+      <description value="An example showing an example of Vital Signs record in FHIR extracted from an EMR."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Procedure/example"/>
+      </reference>
+      <name value="CDMH Procedure - Example"/>
+      <description value="An example showing an example of Procedure record in FHIR extracted from an EMR."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="ResearchStudy/example"/>
+      </reference>
+      <name value="CDMH ResearchStudy - Example"/>
+      <description value="An example showing an example of ResearchStudy record in FHIR extracted from an EMR."/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>

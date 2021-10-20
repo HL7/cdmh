@@ -1,0 +1,47 @@
+{
+  "resourceType": "Group",
+  "id": "example",
+  "meta": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString": "Group Example"
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown": "This is an example for the *CDMH Group Profile*."
+      }
+    ],
+    "profile": [
+      "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-group"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>All patients part of a research study </p>\n    </div>"
+  },
+  "type": "person",
+  "actual": true,
+  "characteristic": [
+    {
+      "code": {
+        "text": "Patients part of research study"
+      },
+      "valueCodeableConcept": {
+        "text": "Patients part of Research Study"
+      },
+      "exclude": false
+    }
+  ],
+  "member": [
+    {
+      "entity": {
+        "reference": "Patient/example"
+      },
+      "period": {
+        "start": "2014-10-08"
+      },
+      "inactive": false
+    }
+  ]
+}

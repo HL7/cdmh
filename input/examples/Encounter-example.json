@@ -1,0 +1,61 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "example",
+  "meta" : {
+    "lastUpdated" : "2017-05-26T11:56:57.250-04:00",
+    "profile" : [
+      "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-encounter"
+    ]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Encounter Example</b></p></div>"
+  },
+  "extension": [
+         {
+            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-drg-group",
+            "valueCode": "F"
+         },
+         {
+            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-drg-group-version",
+            "valueCode": "F"
+         }
+  ],
+  "status" : "finished",
+  "class" : {
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code" : "AMB",
+    "display" : "ambulatory"
+  },
+  "type" : [
+    {
+      "coding" : [
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "308335008"
+        }
+      ],
+      "text" : "Office Visit"
+    }
+  ],
+  "subject" : {
+    "reference" : "Patient/example"
+  },
+  "period" : {
+    "start" : "2015-11-01T17:00:14-05:00",
+    "end" : "2015-11-01T18:00:14-05:00"
+  },
+  "diagnosis" : [
+     {
+         "extension": [
+         {  
+            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-data-source-type",
+            "valueCode": "F"
+         }
+       ],
+       "condition": {
+	  "reference" : "Condition/example"
+       }
+     }
+  ]
+}

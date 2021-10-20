@@ -1,0 +1,29 @@
+{
+  "resourceType": "ResearchStudy",
+  "id": "example",
+  "meta": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString": "ResearchStudy Example"
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown": "This is an example for the *CDMH ResearchStudy Profile*."
+      }
+    ],
+    "profile": [
+      "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-researchstudy"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">[Put rendering here]</div>"
+  },
+  "status": "active",
+  "enrollment": [
+    {
+    "reference": "Group/example"
+    }
+  ]
+}

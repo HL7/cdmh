@@ -9,17 +9,17 @@
   <Author>Grahame</Author>
   <LastAuthor>Microsoft Office User</LastAuthor>
   <Created>2012-03-19T11:12:07Z</Created>
-  <LastSaved>2021-08-17T17:13:38Z</LastSaved>
+  <LastSaved>2021-10-20T14:22:58Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>17440</WindowHeight>
-  <WindowWidth>28040</WindowWidth>
-  <WindowTopX>3900</WindowTopX>
-  <WindowTopY>2260</WindowTopY>
+  <WindowHeight>16940</WindowHeight>
+  <WindowWidth>27640</WindowWidth>
+  <WindowTopX>4380</WindowTopX>
+  <WindowTopY>2280</WindowTopY>
   <ActiveSheet>2</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -1143,7 +1143,7 @@
     <Cell ss:StyleID="s93"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s92"><Data ss:Type="String">CDMH MedicationDispense</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s95"><Data ss:Type="String">Sets expectations for supported capabilities for MedicationDispense resource in CDMH IG.  &#10;Patient.identifier (MedicareId, MedicaidId, MemberId, MemberSSN, MRN etc)&#10;Patient.name (Family, Given)&#10;Patient.telecom (Home Phone, Mobile Phone, Work Phone, Email)&#10;Patient.gender&#10;Patient.birthDate&#10;Patient.address (Line, City, state, postal code, period)&#10;Patient.communication (Language)</Data><NamedCell
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Sets expectations for supported capabilities for MedicationDispense resource in CDMH IG.</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s95"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2776,7 +2776,7 @@
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>5</LeftColumnRightPane>
+   <LeftColumnRightPane>4</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -2791,6 +2791,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
+     <ActiveRow>8</ActiveRow>
      <ActiveCol>15</ActiveCol>
     </Pane>
    </Panes>
@@ -5526,7 +5527,7 @@
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>23</LeftColumnRightPane>
+   <LeftColumnRightPane>4</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -7346,8 +7347,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveCol>0</ActiveCol>
-     <RangeSelection>R2:R4</RangeSelection>
+     <ActiveRow>23</ActiveRow>
+     <ActiveCol>8</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

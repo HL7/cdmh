@@ -1,0 +1,48 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "example",
+  "meta" : {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Practitioner Example"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a practitioner example for the * Practitioner Profile*."
+      }
+    ]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Practitioner Example</b></p></div>"
+  },
+  "identifier" : [
+    {
+      "system" : "http://hl7.org.fhir/sid/us-npi",
+      "value" : "9941339108"
+    },
+  ],
+  "name" : [
+    {
+      "family" : "Bone",
+      "given" : [
+        "Ronald"
+      ],
+      "prefix" : [
+        "Dr"
+      ]
+    }
+  ],
+  "address" : [
+    {
+      "use" : "home",
+      "line" : [
+        "1003 Healthcare Drive"
+      ],
+      "city" : "Amherst",
+      "state" : "MA",
+      "postalCode" : "01002"
+    }
+  ]
+}

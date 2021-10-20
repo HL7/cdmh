@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "example",
+  "meta" : {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Rehab Example"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "This is a rehab example for the *CDMH Procedure Profile*."
+      }
+    ],
+    "profile" : [
+      "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-procedure"
+    ]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure Example</b></p>"
+  },
+  "status" : "completed",
+  "code" : {
+    "coding" : [
+      {
+        "system" : "http://snomed.info/sct",
+        "code" : "24165007",
+        "display" : "Alcoholism counseling"
+      }
+    ],
+    "text" : "Alcohol rehabilitation"
+  },
+  "subject" : {
+    "reference" : "Patient/example"
+  },
+  "performedDateTime" : "2002-05-23"
+}
