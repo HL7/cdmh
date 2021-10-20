@@ -11,13 +11,24 @@
   "status" : "ci-build",
   "current" : true,
   "sequence" : "Release 4"
- },{
+ },
+ {
+  "version" : "1.0.0",
+  "date" : "TBD",
+  "desc" : "STU1 Release",
+  "path" : "http://hl7.org/fhir/us/cdmh/STU1",
+  "status" : "trial-use",
+  "sequence" : "STU 1",
+  "fhirversion" : "4.0.1"
+ },
+ {
   "version" : "0.1.0",
   "date" : "2018-04-02",
   "desc" : "Release 4 STU Ballot",
   "path" : "http://hl7.org/fhir/us/cdmh/2019May",
   "status" : "ballot",
   "sequence" : "Release 4"
- }]
+ }],
+ "category": "Research"
 }
 
