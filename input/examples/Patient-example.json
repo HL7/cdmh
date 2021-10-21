@@ -142,6 +142,15 @@
   ],
   "gender": "female",
   "birthDate": "1987-02-20",
+  "_birthDate": 
+  {
+     "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+        "valueDateTime": "1987-02-20T13:28:17-05:00"
+      }
+    ]
+  },
   "address": [
     {
       "line": [
