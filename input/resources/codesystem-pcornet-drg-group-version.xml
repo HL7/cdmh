@@ -3,12 +3,12 @@
   <id value="pcornet-drg-group-version"/>
   <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-drg-group-version"/>
   <version value="1.0.0"/>
-  <name value="PCORNetDrugGroupVersion"/>
-  <title value="PCORNet Drug Group Version"/>
+  <name value="PCORNetDRGGroupVersion"/>
+  <title value="PCORNet DRG Group Version"/>
   <status value="active"/>
   <date value="2021-09-06"/>
   <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
-  <description value="The PCORNet Drug Group Version contains the codes to be used by PCORNet data marts."/>
+  <description value="The PCORNet Diagnosis Related Group Version contains the codes to be used by PCORNet data marts."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -22,26 +22,26 @@
   <concept>
     <code value="01"/>
     <display value="CMS-DRG (old system)"/>
-    <definition value="DRG code version."/>
+    <definition value="DRG code version is CMS-DRG."/>
   </concept>
    <concept>
     <code value="02"/>
     <display value="MS-DRG (current system)"/>
-    <definition value="DRG code version."/>
+    <definition value="DRG code version is MS-DRG."/>
   </concept>
      <concept>
     <code value="NI"/>
     <display value="No information"/>
-    <definition value="DRG code version."/>
+    <definition value="DRG code version has No information."/>
   </concept>
      <concept>
     <code value="UN"/>
     <display value="Unknown"/>
-    <definition value="DRG code version."/>
+    <definition value="DRG code version is Unknown."/>
   </concept>
      <concept>
     <code value="OT"/>
     <display value="Other"/>
-    <definition value="DRG code version."/>
+    <definition value="DRG code version is Other."/>
   </concept>
  </CodeSystem>

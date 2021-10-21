@@ -9,17 +9,17 @@
   <Author>Grahame</Author>
   <LastAuthor>Microsoft Office User</LastAuthor>
   <Created>2012-03-19T11:12:07Z</Created>
-  <LastSaved>2021-10-20T13:22:36Z</LastSaved>
+  <LastSaved>2021-10-20T21:58:08Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>16940</WindowHeight>
+  <WindowHeight>11500</WindowHeight>
   <WindowWidth>27640</WindowWidth>
-  <WindowTopX>4300</WindowTopX>
-  <WindowTopY>2760</WindowTopY>
+  <WindowTopX>2520</WindowTopX>
+  <WindowTopY>6800</WindowTopY>
   <ActiveSheet>5</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -843,6 +843,17 @@
    </Borders>
    <Interior/>
   </Style>
+  <Style ss:ID="s161" ss:Parent="s62">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s162" ss:Parent="s62">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:ShrinkToFit="1"
+    ss:WrapText="1"/>
+   <Borders/>
+   <Interior/>
+  </Style>
  </Styles>
  <Worksheet ss:Name="Instructions">
   <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="5" x:FullColumns="1"
@@ -986,14 +997,14 @@
   <Table ss:ExpandedColumnCount="25" ss:ExpandedRowCount="69" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s81" ss:DefaultColumnWidth="65"
    ss:DefaultRowHeight="15">
-   <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="122"/>
+   <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="179"/>
    <Column ss:StyleID="s82" ss:Width="68"/>
    <Column ss:StyleID="s82" ss:AutoFitWidth="0" ss:Width="59"/>
    <Column ss:StyleID="s82" ss:Width="227"/>
    <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="77"/>
    <Column ss:StyleID="s81" ss:Width="29"/>
    <Column ss:StyleID="s81" ss:Width="35"/>
-   <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="119"/>
+   <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="255"/>
    <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="29"/>
    <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="107"/>
    <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="60" ss:Span="1"/>
@@ -1203,7 +1214,9 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s162" ss:HRef="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-drg-group-version"><Data
+      ss:Type="String">PCORNetDRGGroupVersion</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1295,7 +1308,9 @@
     <Cell ss:StyleID="s104"><Data ss:Type="String">Extension{#pcornet-data-source-type}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s162" ss:HRef="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-data-source-type"><Data
+      ss:Type="String">PCORNetDataSourceType</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2848,8 +2863,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>5</ActiveRow>
-     <ActiveCol>5</ActiveCol>
+     <ActiveRow>3</ActiveRow>
+     <ActiveCol>0</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -6305,14 +6320,15 @@
    ss:DefaultRowHeight="15">
    <Column ss:StyleID="s82" ss:Width="227"/>
    <Column ss:StyleID="s81" ss:Width="51"/>
-   <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="120" ss:Span="1"/>
-   <Column ss:Index="5" ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="80"/>
+   <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="120"/>
+   <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="200"/>
+   <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="162"/>
    <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="77"/>
    <Column ss:StyleID="s81" ss:Width="29"/>
    <Column ss:StyleID="s81" ss:Width="35"/>
    <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="119"/>
    <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="29"/>
-   <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="107"/>
+   <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="246"/>
    <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="60"/>
    <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="81"/>
    <Column ss:StyleID="s81" ss:AutoFitWidth="0" ss:Width="37"/>
@@ -6369,8 +6385,10 @@
         html:Face="Tahoma" x:Family="Swiss" html:Size="8" html:Color="#000000">If Y, indicates this element modifies the meaning of sibling or descendant elements.  Defaults to N</Font>       </ss:Data></Comment><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s85"><Data ss:Type="String">Binding</Data><Comment
-      ss:Author=""><ss:Data xmlns="http://www.w3.org/TR/REC-html40">        <Font
-        html:Face="Tahoma" x:Family="Swiss" html:Size="8" html:Color="#000000">Binding for coded data - either from local Bindings tab or declared elsewhere</Font>       </ss:Data></Comment><NamedCell
+      ss:Author=""><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><Font
+        html:Color="#000000">        </Font><Font html:Face="Tahoma"
+        x:Family="Swiss" html:Size="8" html:Color="#000000">Binding for coded data - either from local Bindings tab or declared elsewhere</Font><Font
+        html:Color="#000000">       </Font></ss:Data></Comment><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s85"><Data ss:Type="String">Pattern</Data><Comment
       ss:Author=""><ss:Data xmlns="http://www.w3.org/TR/REC-html40">        <Font
@@ -6471,7 +6489,7 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><Data ss:Type="String">Encounter</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><Data ss:Type="String">DRGGroupVersion</Data><NamedCell
+    <Cell ss:StyleID="s104"><Data ss:Type="String">PCORNetDRGGroupVersion</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><Data ss:Type="String">Diagnosis Related Group Version</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -6482,11 +6500,12 @@
     <Cell ss:StyleID="s104"><Data ss:Type="String">code</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">PCORNetDRGGroupVersion</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><Data ss:Type="String">DRG Group Version</Data><NamedCell
+    <Cell ss:StyleID="s104"><Data ss:Type="String">PCORNet DRG Group Version</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="Default"><Data ss:Type="String">DRG code version.</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -6495,7 +6514,8 @@
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">1.0.0</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -6507,7 +6527,7 @@
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><Data ss:Type="String">Encounter.diagnosis</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><Data ss:Type="String">DataSourceType</Data><NamedCell
+    <Cell ss:StyleID="s104"><Data ss:Type="String">PCORNetDataSourceType</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><Data ss:Type="String">Data Source from where the data was derived.</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -6518,11 +6538,12 @@
     <Cell ss:StyleID="s104"><Data ss:Type="String">code</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">PCORNetDataSourceType</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><Data ss:Type="String">Data Source Type</Data><NamedCell
+    <Cell ss:StyleID="s104"><Data ss:Type="String">PCORNet Data Source Type</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="Default"><Data ss:Type="String">Data Source Type</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -6531,7 +6552,8 @@
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><Data ss:Type="String">1.0.0</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -7420,7 +7442,7 @@
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
-   <LeftColumnRightPane>1</LeftColumnRightPane>
+   <LeftColumnRightPane>5</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -7428,14 +7450,15 @@
     </Pane>
     <Pane>
      <Number>1</Number>
+     <ActiveCol>1</ActiveCol>
     </Pane>
     <Pane>
      <Number>2</Number>
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>4</ActiveRow>
-     <ActiveCol>2</ActiveCol>
+     <ActiveRow>2</ActiveRow>
+     <ActiveCol>10</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -8357,7 +8380,7 @@
   <Table ss:ExpandedColumnCount="14" ss:ExpandedRowCount="27" x:FullColumns="1"
    x:FullRows="1" ss:StyleID="s126" ss:DefaultColumnWidth="65"
    ss:DefaultRowHeight="15">
-   <Column ss:StyleID="s126" ss:Width="115"/>
+   <Column ss:StyleID="s126" ss:AutoFitWidth="0" ss:Width="129"/>
    <Column ss:StyleID="s126" ss:AutoFitWidth="0" ss:Width="275"/>
    <Column ss:StyleID="s126" ss:Width="51"/>
    <Column ss:StyleID="s126" ss:Width="68"/>
@@ -8430,15 +8453,17 @@
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s101"/>
-    <Cell ss:StyleID="s104"/>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">PCORNetDRGGroupVersion</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">Diagnosis Related Group Version codes for PCORNet data marts</Data></Cell>
+    <Cell ss:StyleID="s132"><Data ss:Type="String">value set</Data></Cell>
+    <Cell ss:StyleID="s132"><Data ss:Type="String">extensible</Data></Cell>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s161" ss:HRef="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-drg-group-version"><Data
+      ss:Type="String">http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-drg-group-version</Data></Cell>
     <Cell ss:StyleID="s132"/>
     <Cell ss:StyleID="s132"/>
-    <Cell ss:StyleID="s132"/>
-    <Cell ss:StyleID="s132"/>
-    <Cell ss:StyleID="s132"/>
-    <Cell ss:StyleID="s132"/>
-    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s161" ss:HRef="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-drg-group-version"><Data
+      ss:Type="String">http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-drg-group-version</Data></Cell>
     <Cell ss:StyleID="s132"/>
     <Cell ss:StyleID="s132"/>
     <Cell ss:StyleID="s132"/>
@@ -8446,15 +8471,17 @@
     <Cell ss:StyleID="s133"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s101"/>
-    <Cell ss:StyleID="s104"/>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">PCORNetDataSourceType</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">Diagnosis Data Source Type codes forPCORNet data</Data></Cell>
+    <Cell ss:StyleID="s132"><Data ss:Type="String">value set</Data></Cell>
+    <Cell ss:StyleID="s132"><Data ss:Type="String">extensible</Data></Cell>
+    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s161" ss:HRef="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-data-source-type"><Data
+      ss:Type="String">http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-data-source-type</Data></Cell>
     <Cell ss:StyleID="s132"/>
     <Cell ss:StyleID="s132"/>
-    <Cell ss:StyleID="s132"/>
-    <Cell ss:StyleID="s132"/>
-    <Cell ss:StyleID="s132"/>
-    <Cell ss:StyleID="s132"/>
-    <Cell ss:StyleID="s132"/>
+    <Cell ss:StyleID="s161" ss:HRef="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-data-source-type"><Data
+      ss:Type="String">http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-data-source-type</Data></Cell>
     <Cell ss:StyleID="s132"/>
     <Cell ss:StyleID="s132"/>
     <Cell ss:StyleID="s132"/>
@@ -8862,7 +8889,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>13</ActiveRow>
+     <ActiveRow>2</ActiveRow>
+     <ActiveCol>5</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
