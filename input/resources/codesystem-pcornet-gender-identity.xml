@@ -27,33 +27,33 @@
   </concept>
   <concept>
     <code value="F"/>
-    <display value="Female"/>
-    <definition value="Gender identity is a Female."/>
+    <display value="Woman"/>
+    <definition value="Gender identity is a Woman."/>
   </concept>
   <concept>
     <code value="TM"/>
-    <display value="Transgender Male"/>
+    <display value="Transgender male/Transman/Female-to-male"/>
     <definition value="Gender identity is Transgender male or Transman or Female-to-Male."/>
   </concept>
   <concept>
     <code value="TF"/>
-    <display value="Transgender Female"/>
+    <display value="Transgender female/Transwoman/Male-tofemale"/>
     <definition value="Gender identity is Transgender female or Transwoman or Male-to-female."/>
   </concept>
   <concept>
     <code value="GQ"/>
-    <display value="Gender Queer"/>
+    <display value="Genderqueer/Non-binary"/>
     <definition value="Gender identity is GenderQueer/Non-binary."/>
   </concept>
   <concept>
-    <code value="QS"/>
-    <display value="Questioning"/>
-    <definition value="Person has a sexual orientation of Questioning."/>
+    <code value="SE"/>
+    <display value="Something else"/>
+    <definition value="Gender identity is Something else."/>
   </concept>
   <concept>
-    <code value="SE"/>
-    <display value="Something Else"/>
-    <definition value="Gender identity is Something Else."/>
+    <code value="MU"/>
+    <display value="Multiple gender categories"/>
+    <definition value="Gender identity is Multiple gender categories."/>
   </concept>
   <concept>
     <code value="DC"/>
@@ -62,7 +62,7 @@
   </concept>
   <concept>
     <code value="NI"/>
-    <display value="No Information"/>
+    <display value="No information"/>
     <definition value="There is no information about the Person's gender identity"/>
   </concept>
   <concept>

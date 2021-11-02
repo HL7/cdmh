@@ -19,7 +19,7 @@
   <caseSensitive value="true"/>
   <valueSet value="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-ethnicity"/>
   <content value="complete"/>
-  <count value="10"/>
+  <count value="6"/>
   <concept>
     <code value="Y"/>
     <display value="Yes"/>
@@ -29,6 +29,11 @@
     <code value="N"/>
     <display value="No"/>
     <definition value="Person is not hispanic."/>
+  </concept>
+    <concept>
+    <code value="R"/>
+    <display value="Refuse to answer"/>
+    <definition value="Person has refused to answer."/>
   </concept>
   <concept>
     <code value="NI"/>

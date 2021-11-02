@@ -22,26 +22,26 @@
   <concept>
     <code value="09"/>
     <display value="ICD-9"/>
-    <definition value="Death Cause Code is ICD-9"/>
+    <definition value="Death Cause values are from ICD-9"/>
   </concept>
   <concept>
     <code value="10"/>
     <display value="ICD-10"/>
-    <definition value="Death Cause Code is ICD-10."/>
+    <definition value="Death Cause values are from ICD-10."/>
   </concept>
   <concept>
     <code value="NI"/>
     <display value="No information"/>
-    <definition value="Death Cause Code has No information."/>
+    <definition value="Death Cause value has No information."/>
   </concept>
   <concept>
     <code value="UN"/>
     <display value="Unknown"/>
-    <definition value="Death Cause Code is Unknown."/>
+    <definition value="Death Cause value is Unknown."/>
   </concept>
   <concept>
     <code value="OT"/>
     <display value="Other"/>
-    <definition value="Death Cause Code is Other."/>
+    <definition value="Death Cause value is Other."/>
   </concept>
  </CodeSystem>

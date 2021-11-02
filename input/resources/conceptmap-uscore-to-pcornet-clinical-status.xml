@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="uscore-to-pcornet-clinical-status"/> 
+  <text> 
+    <status value="generated"/> 
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2> Mapping from US Core to PCORNet Clinical Status Codes</h2> 
+        <p> Mapping from US Core Condition status (http://hl7.org/fhir/ValueSet/condition-clinical) to 
+        <a>http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-clinical-status</a> 
+      </p>
+      <div> 
+        <p> This concept map defines a mapping from US Core Condition Clinical category to PCORNet Clinical Status codes.</p> 
+      </div> 
+      <br/> 
+      <table class="grid">
+        <tr> 
+          <td> 
+            <b> Source Code</b> 
+          </td> 
+          <td> 
+            <b> Equivalence</b> 
+          </td> 
+          <td> 
+            <b> Destination Code</b> 
+          </td> 
+        </tr> 
+        <tr> 
+          <td> active</td> 
+          <td> equal</td> 
+          <td> AC</td> 
+        </tr> 
+        <tr> 
+          <td> inactive</td> 
+          <td> equal</td> 
+          <td> IN</td> 
+        </tr> 
+         <tr> 
+          <td> resolved</td> 
+          <td> equal</td> 
+          <td> RS</td> 
+        </tr> 
+      </table>  
+    </div> 
+  </text> 
+  <url value="http://hl7.org/fhir/us/cdmh/ConceptMap/uscore-to-pcornet-clinical-status"/> 
+  <name value="USCoreToPCORNetClinicalStatus"/> 
+  <title value="Mapping from US Core to PCORNet Clinical Status Codes"/>
+  <status value="draft"/> 
+  <experimental value="false"/> 
+  <description value="This concept map defines a mapping from US Core Race to PCORNet Clinical Status codes."/> 
+  <sourceCanonical value="http://hl7.org/fhir/ValueSet/condition-clinical"/> 
+  <targetCanonical value="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-clinical-status"/> 
+  <group> 
+    <element> 
+      <code value="AC"/> 
+      <target> 
+        <code value="Active"/> 
+        <equivalence value="equal"/> 
+      </target> 
+    </element> 
+    <element> 
+      <code value="IN"/> 
+      <target> 
+        <code value="Inactive"/> 
+        <equivalence value="equal"/> 
+      </target> 
+    </element> 
+        <element> 
+      <code value="RS"/> 
+      <target> 
+        <code value="Resolved"/> 
+        <equivalence value="equal"/> 
+      </target> 
+    </element>
+  </group> 
+</ConceptMap> 

@@ -10,7 +10,9 @@
         <a>http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-ethnicity</a> 
       </p>
       <div> 
-        <p> This concept map defines a mapping from US Core Ethnicity to PCORNet Ethnicity codes.</p> 
+        <p> This concept map defines a mapping from US Core Ethnicity to PCORNet Ethnicity codes.
+            For values such as "Patient Refusing to Answer", No Information etc, the mapping software has to map the data absent reason values to the PCORNet Ethnicity codes. 
+        </p> 
       </div> 
       <br/> 
       <table class="grid">
