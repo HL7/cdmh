@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="pcornet-death-source"/>
-  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-death-source"/>
+  <id value="pcornet-death-sources"/>
+  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-death-sources"/>
   <version value="1.0.0"/>
-  <name value="PCORNetDeathSource"/>
-  <title value="PCORNet Death Source"/>
+  <name value="PCORNetDeathSources"/>
+  <title value="PCORNet Death Sources"/>
   <status value="active"/>
   <date value="2021-09-06"/>
   <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>

@@ -30,11 +30,6 @@
 	    "id": "2",
             "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-death-match-confidence",
             "valueCode": "F"
-         },
-         {
-	    "id": "3",
-            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-death-cause-confidence",
-            "valueCode": "F"
          }
   ],
   "identifier": {
@@ -100,6 +95,21 @@
                 },
                 {  
                    "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-death-cause-code",
+                   "valueCode": "F"
+                },
+                {
+                   "id": "3",
+                   "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-death-cause-confidence",
+                    "valueCode": "F"
+                },
+                {
+                   "id": "4",
+                   "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-death-cause-type",
+                    "valueCode": "C"
+                },
+                {
+                   "id": "5",
+                   "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-death-cause-source",
                    "valueCode": "F"
                 }
             ]

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="uscore-to-pcornet-admitting-source"/> 
+  <text> 
+    <status value="generated"/> 
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <h2> Mapping from US Core to PCORNet  admitting source Codes</h2> 
+        <p> Mapping from US Core hospitalization location (http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType) to 
+        <a>http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-admitting-source</a> 
+      </p>
+      <div> 
+        <p> This concept map defines a mapping from US Core hospitalization location to PCORNet Admitting Source codes.</p> 
+      </div> 
+      <br/> 
+      <table class="grid">
+        <tr> 
+          <td> 
+            <b> Source Code</b> 
+          </td> 
+          <td> 
+            <b> Equivalence</b> 
+          </td> 
+          <td> 
+            <b> Destination Code</b> 
+          </td> 
+        </tr> 
+        <tr> 
+          <td> CARD</td> 
+          <td> equal</td> 
+          <td> AV</td> 
+        </tr> 
+        <tr> 
+          <td> ER</td> 
+          <td> equal</td> 
+          <td> ED</td> 
+        </tr> 
+         <tr> 
+          <td> ETU</td> 
+          <td> equal</td> 
+          <td> ES</td> 
+        </tr> 
+         <tr> 
+          <td> RH</td> 
+          <td> equal</td> 
+          <td> RH</td> 
+        </tr> 
+         <tr> 
+          <td> RTF</td> 
+          <td> equal</td> 
+          <td> RS</td> 
+        </tr> 
+         <tr> 
+          <td> SNF</td> 
+          <td> equal</td> 
+          <td> SN</td> 
+        </tr>
+         <tr> 
+          <td> GACH</td> 
+          <td> equal</td> 
+          <td> IP</td> 
+        </tr>
+      </table>  
+    </div> 
+  </text> 
+  <url value="http://hl7.org/fhir/us/cdmh/ConceptMap/uscore-to-pcornet-admitting-source"/> 
+  <name value="USCoreToPCORNetAdmittingSource"/> 
+  <title value="Mapping from US Core to PCORNet Admitting Source Codes"/>
+  <status value="draft"/> 
+  <experimental value="false"/> 
+  <description value="This concept map defines a mapping from US Core Race to PCORNet Admitting Source codes."/> 
+  <sourceCanonical value="http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType"/> 
+  <targetCanonical value="http://hl7.org/fhir/us/cdmh/ConceptMap/uscore-to-pcornet-admitting-source"/> 
+  <group> 
+    <element> 
+      <code value="AV"/> 
+      <target> 
+        <code value="Ambulatory Visit"/> 
+        <equivalence value="equal"/> 
+      </target> 
+    </element> 
+    <element> 
+      <code value="ED"/> 
+      <target> 
+        <code value="Emergency Department"/> 
+        <equivalence value="equal"/> 
+      </target> 
+    </element> 
+    <element> 
+      <code value="ES"/> 
+      <target> 
+        <code value="Emergency Medical Service"/> 
+        <equivalence value="equal"/> 
+      </target>      
+    </element>
+    <element> 
+      <code value="RH"/> 
+      <target> 
+        <code value="Rehabilitation Facility"/> 
+        <equivalence value="equal"/> 
+      </target>      
+    </element>
+    <element> 
+      <code value="RS"/> 
+      <target> 
+        <code value="Residential Facility"/> 
+        <equivalence value="equal"/> 
+      </target>      
+    </element>
+     <element> 
+      <code value="SN"/> 
+      <target> 
+        <code value="Skilled Nursing Facility"/> 
+        <equivalence value="equal"/> 
+      </target>      
+    </element>
+     <element> 
+      <code value="IP"/> 
+      <target> 
+        <code value="Other Acute Inpatient Hospital"/> 
+        <equivalence value="equal"/> 
+      </target>      
+    </element>
+  </group> 
+</ConceptMap> 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="pcornet-death-cause-confidence"/>
-  <url value="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-death-cause-confidence"/>
+  <id value="pcornet-facility-type"/>
+  <url value="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-facility-type"/>
   <version value="1.0.0"/>
-  <name value="PCORNetDeathCauseConfidence"/>
-  <title value="PCORNet Death Cause Confidence"/>
+  <name value="PCORNetFacilityType"/>
+  <title value="PCORNet Facility Type"/>
   <status value="active"/>
   <date value="2021-09-06"/>
   <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
@@ -14,7 +14,7 @@
 			<value value="http://hl7.org/fhir"/>
 		</telecom>
 	</contact>
-	<description value="The PCORNet Death Cause Confidence Codes contains the codes to be used by PCORNet data marts."/>
+	<description value="The PCORNet Facility Type contains the codes to be used by PCORNet data marts."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -24,8 +24,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-death-cause-confidence"/>
+      <system value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-facility-type"/>
     </include>
   </compose>
 </ValueSet>
-

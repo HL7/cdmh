@@ -24,7 +24,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-death-source"/>
+      <system value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-death-sources"/>
     </include>
   </compose>
 </ValueSet>
