@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="pcornet-data-source-type"/>
-  <url value="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-data-source-type"/>
+  <id value="pcornet-diagnosis-classification"/>
+  <url value="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-diagnosis-classification"/>
   <version value="1.0.0"/>
-  <name value="PCORNetDataSourceType"/>
-  <title value="PCORNet Data Source Type"/>
+  <name value="PCORNetDiagnosisClassification"/>
+  <title value="PCORNet Diagnosis Classification"/>
   <status value="active"/>
   <date value="2021-09-06"/>
   <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
@@ -14,7 +14,7 @@
 			<value value="http://hl7.org/fhir"/>
 		</telecom>
 	</contact>
-	<description value="The PCORNet Data Source Type contains the codes to be used by PCORNet data marts."/>
+	<description value="The PCORNet Diagnosis Classification contains the codes to be used by PCORNet data marts."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -24,7 +24,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-data-source-type"/>
+      <system value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-diagnosis-classification-codes"/>
     </include>
   </compose>
 </ValueSet>

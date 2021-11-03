@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="pcornet-data-source-type"/>
-  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-data-source-type"/>
+  <id value="pcornet-diagnosis-classification-codes"/>
+  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-diagnosis-classification-codes"/>
   <version value="1.0.0"/>
-  <name value="PCORNetDataSourceType"/>
-  <title value="PCORNet Data Source Type"/>
+  <name value="PCORNetDiagnosisClassificationCodes"/>
+  <title value="PCORNet Diagnosis Classification Codes"/>
   <status value="active"/>
   <date value="2021-09-06"/>
   <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
-  <description value="The PCORNet Data Source Type contains the codes to be used by PCORNet data marts."/>
+  <description value="The PCORNet Diagnosis Classification Codes contains the concepts to be used by PCORNet data marts to represent the diagnosis classification."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -22,36 +22,36 @@
   <concept>
     <code value="AD"/>
     <display value="Admitting"/>
-    <definition value="Diagnosis Data Source Type is Admitting."/>
+    <definition value="Classification of Diagnosis is Admitting."/>
   </concept>
   <concept>
     <code value="DI"/>
     <display value="Discharge"/>
-    <definition value="Diagnosis Data Source Type is Discharge."/>
+    <definition value="Classification of Diagnosis is Discharge."/>
   </concept>
   <concept>
     <code value="FI"/>
     <display value="Final"/>
-   <definition value="Diagnosis Data Source Type is Final, Ambulatory encounters would generally be expected to have a source of “Final”."/>
+   <definition value="Classification of Diagnosis is Final, Ambulatory encounters would generally be expected to have a source of “Final”."/>
   </concept>
   <concept>
     <code value="IN"/>
     <display value="Interim"/>
-   <definition value="Diagnosis Data Source Type is Interim, it is not necessary to populate interim diagnoses unless readily available."/>
+   <definition value="Classification of Diagnosis is Interim, it is not necessary to populate interim diagnoses unless readily available."/>
   </concept>
   <concept>
     <code value="NI"/>
     <display value="No information"/>
-    <definition value="Diagnosis Data Source Type has No information."/>
+    <definition value="Classification of Diagnosis has No information."/>
   </concept>
   <concept>
     <code value="UN"/>
     <display value="Unknown"/>
-    <definition value="Diagnosis Data Source Type is Unknown."/>
+    <definition value="Classification of Diagnosis is Unknown."/>
   </concept>
   <concept>
     <code value="OT"/>
     <display value="Other"/>
-    <definition value="Diagnosis Data Source Type is Other."/>
+    <definition value="Classification of Diagnosis is Other."/>
   </concept>
  </CodeSystem>

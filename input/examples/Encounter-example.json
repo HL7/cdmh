@@ -49,12 +49,12 @@
      {
          "extension": [
          {  
-            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-data-source-type",
+            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-diagnosis-classification",
             "valueCode": "AD"
          }
        ],
        "condition": {
-	  "reference" : "Condition/example"
+	       "reference" : "Condition/example"
        }
      }
   ]

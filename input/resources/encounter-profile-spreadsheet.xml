@@ -9,18 +9,18 @@
   <Author>Grahame</Author>
   <LastAuthor>Microsoft Office User</LastAuthor>
   <Created>2012-03-19T11:12:07Z</Created>
-  <LastSaved>2021-10-26T20:00:44Z</LastSaved>
+  <LastSaved>2021-11-03T18:53:50Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>17440</WindowHeight>
-  <WindowWidth>28040</WindowWidth>
-  <WindowTopX>860</WindowTopX>
-  <WindowTopY>500</WindowTopY>
-  <ActiveSheet>2</ActiveSheet>
+  <WindowHeight>16440</WindowHeight>
+  <WindowWidth>27240</WindowWidth>
+  <WindowTopX>4700</WindowTopX>
+  <WindowTopY>3260</WindowTopY>
+  <ActiveSheet>8</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -901,6 +901,14 @@
    </Borders>
    <Interior/>
   </Style>
+  <Style ss:ID="s171">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
  </Styles>
  <Worksheet ss:Name="Instructions">
   <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="5" x:FullColumns="1"
@@ -1437,7 +1445,7 @@
     <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s101"><Data ss:Type="String">pcornet-data-source-type</Data><NamedCell
+    <Cell ss:StyleID="s101"><Data ss:Type="String">pcornet-diagnosis-classification</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s102"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1447,11 +1455,11 @@
     <Cell ss:StyleID="s104"><Data ss:Type="String">0..1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><Data ss:Type="String">Extension{#pcornet-data-source-type}</Data><NamedCell
+    <Cell ss:StyleID="s104"><Data ss:Type="String">Extension{#pcornet-diagnosis-classification}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109" ss:HRef="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-data-source-type"><Data
-      ss:Type="String">PCORNetDataSourceType</Data><NamedCell
+      ss:Type="String">PCORNetDiagnosisClassification</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1479,7 +1487,8 @@
     <Cell ss:StyleID="s104"><Data ss:Type="String">1..1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">Reference{ http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-condition}</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -3007,7 +3016,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -3028,9 +3036,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>6</ActiveRow>
-     <ActiveCol>0</ActiveCol>
-     <RangeSelection>R7</RangeSelection>
+     <ActiveRow>10</ActiveRow>
+     <ActiveCol>7</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -6686,15 +6693,15 @@
     <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s127"><Data ss:Type="String">pcornet-data-source-type</Data><NamedCell
+    <Cell ss:StyleID="s127"><Data ss:Type="String">pcornet-diagnosis-classification</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><Data ss:Type="String">Resource</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><Data ss:Type="String">Encounter.diagnosis</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><Data ss:Type="String">PCORNetDataSourceType</Data><NamedCell
+    <Cell ss:StyleID="s104"><Data ss:Type="String">PCORNetDiagnosisClassification</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><Data ss:Type="String">Data Source from where the data was derived.</Data><NamedCell
+    <Cell ss:StyleID="s104"><Data ss:Type="String">Diagnosis Classification</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><Data ss:Type="String">0..1</Data><NamedCell
@@ -6703,14 +6710,14 @@
     <Cell ss:StyleID="s104"><Data ss:Type="String">code</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><Data ss:Type="String">PCORNetDataSourceType</Data><NamedCell
+    <Cell ss:StyleID="s104"><Data ss:Type="String">PCORNetDiagnosisClassification</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s104"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s104"><Data ss:Type="String">PCORNet Data Source Type</Data><NamedCell
+    <Cell ss:StyleID="s104"><Data ss:Type="String">PCORNet Diagnosis Classification</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">Data Source Type</Data><NamedCell
+    <Cell ss:StyleID="s171"><Data ss:Type="String">Diagnosis Classification</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -7606,7 +7613,7 @@
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
-   <LeftColumnRightPane>5</LeftColumnRightPane>
+   <LeftColumnRightPane>1</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -7614,15 +7621,14 @@
     </Pane>
     <Pane>
      <Number>1</Number>
-     <ActiveCol>1</ActiveCol>
     </Pane>
     <Pane>
      <Number>2</Number>
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>2</ActiveRow>
-     <ActiveCol>10</ActiveCol>
+     <ActiveRow>4</ActiveRow>
+     <ActiveCol>15</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -8635,17 +8641,17 @@
     <Cell ss:StyleID="s136"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s101"><Data ss:Type="String">PCORNetDataSourceType</Data></Cell>
-    <Cell ss:StyleID="s104"><Data ss:Type="String">Diagnosis Data Source Type codes forPCORNet data</Data></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">PCORNetDiagnosisClassification</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">Diagnosis Classification codes for PCORNet Data Marts.</Data></Cell>
     <Cell ss:StyleID="s135"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s135"><Data ss:Type="String">extensible</Data></Cell>
     <Cell ss:StyleID="s135"/>
-    <Cell ss:StyleID="s153" ss:HRef="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-data-source-type"><Data
-      ss:Type="String">http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-data-source-type</Data></Cell>
+    <Cell ss:StyleID="s153" ss:HRef="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-diagnosis-classification"><Data
+      ss:Type="String">http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-diagnosis-classification</Data></Cell>
     <Cell ss:StyleID="s135"/>
     <Cell ss:StyleID="s135"/>
-    <Cell ss:StyleID="s153" ss:HRef="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-data-source-type"><Data
-      ss:Type="String">http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-data-source-type</Data></Cell>
+    <Cell ss:StyleID="s153" ss:HRef="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-diagnosis-classification"><Data
+      ss:Type="String">http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-diagnosis-classification</Data></Cell>
     <Cell ss:StyleID="s135"/>
     <Cell ss:StyleID="s135"/>
     <Cell ss:StyleID="s135"/>
@@ -9054,6 +9060,7 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -9073,9 +9080,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>5</ActiveRow>
-     <ActiveCol>0</ActiveCol>
-     <RangeSelection>R6C1:R6C9</RangeSelection>
+     <ActiveRow>2</ActiveRow>
+     <ActiveCol>8</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

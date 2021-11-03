@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="pcornet-condition-source"/>
+  <url value="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-condition-source"/>
+  <version value="1.0.0"/>
+  <name value="PCORNetConditionSource"/>
+  <title value="PCORNet Condition Source"/>
+  <status value="active"/>
+  <date value="2021-09-06"/>
+  <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://hl7.org/fhir"/>
+		</telecom>
+	</contact>
+	<description value="The PCORNet Condition Source Codes contains the codes to be used by PCORNet data marts to indicate from where the data originated."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-information-sources"/>
+      <concept>
+        <code value="PR"/>
+      </concept>
+      <concept>
+        <code value="HC"/>
+      </concept>
+      <concept>
+        <code value="RG"/>
+      </concept>
+      <concept>
+        <code value="CC"/>
+      </concept>
+      <concept>
+        <code value="PC"/>
+      </concept>
+      <concept>
+        <code value="DR"/>
+      </concept>
+      <concept>
+        <code value="NI"/>
+      </concept>
+      <concept>
+        <code value="UN"/>
+      </concept>
+      <concept>
+        <code value="OT"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
+
