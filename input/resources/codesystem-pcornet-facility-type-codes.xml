@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="pcornet-facility-type"/>
-  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-facility-type"/>
+  <id value="pcornet-facility-type-codes"/>
+  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-facility-type-codes"/>
   <version value="1.0.0"/>
-  <name value="PCORNetFacilityType"/>
-  <title value="PCORNet Facility Type"/>
+  <name value="PCORNetFacilityTypeCodes"/>
+  <title value="PCORNet Facility Type Codes"/>
   <status value="active"/>
   <date value="2021-09-06"/>
   <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
-  <description value="The PCORNet Facility Type contains the codes to be used by PCORNet data marts."/>
+  <description value="The PCORNet Facility Type contains the codes to be used by PCORNet data marts to represent the type of facility where care is delivered."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

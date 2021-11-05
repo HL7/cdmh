@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="pcornet-admitting-source"/>
-  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-admitting-source"/>
+  <id value="pcornet-admitting-source-facility-type-codes"/>
+  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-admitting-source-facility-type-codes"/>
   <version value="1.0.0"/>
-  <name value="PCORNetAdmittingSource"/>
-  <title value="PCORNet Admitting Source"/>
+  <name value="PCORNetAdmittingSourceFacilityTypeCodes"/>
+  <title value="PCORNet Admitting Source Facility Type Codes"/>
   <status value="active"/>
   <date value="2021-09-06"/>
   <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
-  <description value="The PCORNet Admitting Source contains the codes to be used by PCORNet data marts."/>
+  <description value="The PCORNet Admitting Source Facility Type Codes contains the concepts to be used by PCORNet data marts to indicate the type of facility from where the patient came to be hospitalized."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -17,7 +17,6 @@
     </coding>
   </jurisdiction>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-admitting-source"/>
   <content value="complete"/>
   <count value="18"/>
   <concept>

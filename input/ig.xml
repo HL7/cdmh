@@ -128,6 +128,13 @@
       <name value="CDMH ResearchStudy - Example"/>
       <description value="An example showing an example of ResearchStudy record in FHIR extracted from an EMR."/>
     </resource>
+    <resource>
+      <reference>
+        <reference value="Location/example"/>
+      </reference>
+      <name value="CDMH Location - Example"/>
+      <description value="An example showing an example of Location record in FHIR extracted from an EMR."/>
+    </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->
       <nameUrl value="toc.html"/>

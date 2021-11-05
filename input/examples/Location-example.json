@@ -1,0 +1,65 @@
+{
+  "resourceType": "Location",
+  "id": "example",
+  "meta": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString": "CareDeliveryLocation"
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown": "This is a Cdmh Location example for the *Cdmh Location*."
+      }
+    ],
+    "profile": [
+      "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-location"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Location Example</b></p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://www.acme.org/location",
+      "value": "29"
+    }
+  ],
+  "status": "active",
+  "name": "Care Delivery Location",
+  "description": "Care Delivery Location",
+  "type" : [
+    {
+      "coding" : [
+        {
+          "system" : "http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-facility-type-codes",
+          "code" : "OT"
+        }
+      ],
+      "text" : "Office Visit"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(+1) 734-677-7777"
+    }
+  ],
+  "address": {
+    "line": [
+      "3300 Washtenaw Avenue, Suite 227"
+    ],
+    "city": "Amherst",
+    "state": "MA",
+    "postalCode": "01002",
+    "country": "USA"
+  },
+  "position": {
+    "longitude": -72.519854,
+    "latitude": 42.373222
+  },
+  "managingOrganization": {
+    "display": "Health Level Seven International"
+  }
+}

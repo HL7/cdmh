@@ -49,13 +49,54 @@
      {
          "extension": [
          {  
-            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-diagnosis-classification",
-            "valueCode": "AD"
+            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-diagnosis-origin",
+            "valueCode": "OD"
          }
        ],
        "condition": {
 	       "reference" : "Condition/example"
-       }
+       },
+       "use" : {
+          "coding" : [
+          {
+             "system" : "http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-diagnosis-classification-codes",
+             "code" : "AD"
+          }
+         ],
+        "text" : "Office Visit"
+      }
      }
-  ]
+  ],
+  "hospitalization" : 
+     {
+        "extension": [
+         {  
+            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-admitting-source-facility-type",
+            "valueCode": "AF"
+         },
+         {  
+            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-discharge-status",
+            "valueCode": "HH"
+         }
+       ],
+       "origin": {
+         "reference" : "Location/example"
+       },
+       "dischargeDisposition" : {
+          "coding" : [
+          {
+             "system" : "http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-discharge-disposition",
+             "code" : "A"
+          }
+         ],
+        "text" : "Discharged Alive"
+      }
+     },
+     "location" : [
+       {
+          "location" : {
+            "reference" : "Location/example"
+          }
+       }
+     ]
 }

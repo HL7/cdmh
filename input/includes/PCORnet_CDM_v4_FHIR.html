@@ -125,7 +125,7 @@
       <tr style='height:20px;'>
         <td class="maptable16">facility_location</td>
         <td class="maptable17">Encounter.location.location.address</td>
-        <td class="maptable17">CdmhEncounter, us-core-location</td>
+        <td class="maptable17">CdmhEncounter, CdmhLocation</td>
         <td class="maptable17">PerformedEncounter : Place.physicalAddress(AD).item(ADXP).value WHERE PerformedActivity : Place.physicalAddress(AD).item(ADXP).partType = 'ZIP'</td>
       </tr>
       <tr style='height:20px;'>
@@ -137,7 +137,7 @@
       <tr style='height:20px;'>
         <td class="maptable16">facilityid</td>
         <td class="maptable17">Encounter.location.location.id</td>
-        <td class="maptable17">CdmhEncounter, us-core-location</td>
+        <td class="maptable17">CdmhEncounter, CdmhLocation</td>
         <td class="maptable17">PerformedEncounter : Place : ServiceDeliveryLocation : Organization : HealthcareFacility.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>
       <tr style='height:20px;'>
@@ -148,13 +148,13 @@
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">discharge_status</td>
-        <td class="maptable17">Encounter.location.location.type</td>
-        <td class="maptable17">CdmhEncounter,us-core-location</td>
+        <td class="maptable17">Encounter.hospitalization.extension: cdmh-pcornet-discharge-status</td>
+        <td class="maptable17">CdmhEncounter,CdmhLocation</td>
         <td class="maptable17">PerformedEncounter : PerformedObservation : PerformedObservationResult.value(ANY = CD) WHERE PerformedObservation : DefinedObservation.nameCode = "SubjectStatusAtDischarge"</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">drg</td>
-        <td class="maptable17">Encounter.extension : cdmh-pcornet-drg-group</td>
+        <td class="maptable17">Encounter.extension: cdmh-pcornet-drg-group</td>
         <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedEncounter.classificationCode(CD).code</td>
       </tr>
@@ -166,8 +166,8 @@
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">admitting_source</td>
-        <td class="maptable17">Encounter.hospitalization.origin(location).type</td>
-        <td class="maptable17">CdmhEncounter, us-core-location</td>
+        <td class="maptable17">Encounter.hospitalization.extension: cdmh-pcornet-admitting-source-facility-type</td>
+        <td class="maptable17">CdmhEncounter, CdmhLocation</td>
         <td class="maptable17">PerformedEncounter : arrives from : Place.typeCode</td>
       </tr>
       <tr style='height:20px;'>
@@ -185,7 +185,7 @@
       <tr style='height:20px;'>
         <td class="maptable16">facility_type</td>
         <td class="maptable17">Encounter.location.location.type</td>
-        <td class="maptable17">CdmhEncounter, us-core-location</td>
+        <td class="maptable17">CdmhEncounter, CdmhLocation</td>
         <td class="maptable17">PerformedEncounter : Place : ServiceDeliveryLocation : Organization : HealthcareFacility</td>
       </tr>
       <tr style='height:20px;'>
@@ -285,7 +285,7 @@
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">dx_origin</td>
-        <td class="maptable17">Encounter.diagnosis.extension: cdmh-pcornet-data-source-type</td>
+        <td class="maptable17">Encounter.diagnosis.extension: cdmh-pcornet-diagnosis-origin</td>
         <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedDiagnosis : PerformedObservation.informationSourceTypeCode</td>
       </tr>
