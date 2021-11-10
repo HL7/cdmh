@@ -25,6 +25,13 @@
   "characteristic": [
     {
       "code": {
+        "coding" : [
+          {
+            "system": "http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-enr-basis-codes",
+            "code" : "E",
+            "display" : "Encounter Based"
+          }
+        ],
         "text": "Patients part of research study"
       },
       "valueCodeableConcept": {

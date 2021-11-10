@@ -18,7 +18,7 @@
   </jurisdiction>
   <caseSensitive value="true"/>
   <content value="complete"/>
-  <count value="12"/>
+  <count value="14"/>
   <concept>
     <code value="OD"/>
     <display value="Internal administration"/>
@@ -40,9 +40,19 @@
     <definition value="Source of the information is Patient-reported."/>
   </concept>
   <concept>
+    <code value="PD"/>
+    <display value="Patient Device Direct Feed"/>
+    <definition value="Source of the information is a Patient Device Direct Feed."/>
+  </concept>
+  <concept>
     <code value="HC"/>
     <display value="Healthcare"/>
     <definition value="Source of the information is Healthcare organization such as problem list."/>
+  </concept>
+  <concept>
+    <code value="HD"/>
+    <display value="Healthcare Device Direct Feed"/>
+    <definition value="Source of the information is Healthcare Device Direct Feed."/>
   </concept>
   <concept>
     <code value="RG"/>

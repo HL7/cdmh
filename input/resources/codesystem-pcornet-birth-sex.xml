@@ -17,7 +17,6 @@
     </coding>
   </jurisdiction>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-birth-sex"/>
   <content value="complete"/>
   <count value="6"/>
   <concept>

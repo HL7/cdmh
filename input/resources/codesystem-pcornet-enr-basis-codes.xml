@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="pcornet-enr-basis-codes"/>
+  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-enr-basis-codes"/>
+  <version value="1.0.0"/>
+  <name value="PCORNetEnrollmentBasisCodes"/>
+  <title value="PCORNet Enrollment Basis codes"/>
+  <status value="active"/>
+  <date value="2021-09-06"/>
+  <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
+  <description value="The PCORNet Enrollment Basis Codes contains the concepts to be used by PCORNet data marts to indicate the source of the enrollment."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="I"/>
+    <display value="Medical Insurance Coverage"/>
+    <definition value="Enrollment Basis is derived from Medical Insurance Coverage."/>
+  </concept>
+  <concept>
+    <code value="D"/>
+    <display value="Outpatient Prescription Drug Coverage"/>
+    <definition value="Enrollment Basis is derived from Oupatient Prescription Drug Coverage."/>
+  </concept>
+  <concept>
+    <code value="G"/>
+    <display value="Geography Based"/>
+    <definition value="Enrollment Basis is derived based on Geography."/>
+  </concept>
+  <concept>
+    <code value="A"/>
+    <display value="Algorithmic"/>
+    <definition value="Enrollment Basis is derived Algorithmically."/>
+  </concept>
+  <concept>
+    <code value="E"/>
+    <display value="Encounter Based"/>
+    <definition value="Enrollment Basis is derived from Encounter information."/>
+  </concept>
+ </CodeSystem>

@@ -20,6 +20,12 @@
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CDMH Vital Signs Example</b></p>"
   },
+  "extension": [
+         {
+            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-body-position",
+            "valueCode": "02"
+         }
+  ],
   "status" : "final",
   "category" : [
     {
@@ -34,6 +40,13 @@
     }
   ],
   "code" : {
+    "extension": [
+        {
+            "id": "1",
+            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-vital-source",
+            "valueCode": "PR"
+         }
+    ],
     "coding" : [
       {
         "system" : "http://loinc.org",

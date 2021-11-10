@@ -363,7 +363,7 @@
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">px_source</td>
-        <td class="maptable17">Procedure.code.extension: cdmh-pcornet-data-source-type</td>
+        <td class="maptable17">Procedure.code.extension: cdmh-pcornet-px-source</td>
         <td class="maptable17">CdmhProcedure</td>
         <td class="maptable17">PerformedProcedure.informationSourceTypeCode</td>
       </tr>
@@ -411,7 +411,7 @@
       </tr>	  
 	   <tr style='height:20px;'>
         <td class="maptable16">vital_source</td>
-        <td class="maptable17">Observation.Extension (Proposed Name: data-source-type : CodeableConcept)</td>
+        <td class="maptable17">Observation.code.extension: cdmh-pcornet-vital-source </td>
         <td class="maptable17">CdmhVitalSigns</td>
         <td class="maptable17">observation</td>
       </tr>	  
@@ -447,7 +447,7 @@
       </tr>	  
 	  <tr style='height:20px;'>
         <td class="maptable16">bp_position</td>
-        <td class="maptable17">Observation.bodySite</td>
+        <td class="maptable17">Observation.extension: cdmh-pcornet-body-position</td>
         <td class="maptable17">CdmhVitalSigns</td>
         <td class="maptable17">PerformedClinicalResult : PerformedObservation.bodyPositionCode</td>
       </tr>	  
@@ -490,7 +490,7 @@
 	  <tr style='height:20px;'>
         <td class="maptable16">prescribingid</td>
         <td class="maptable17">MedicationDispense.authorizingPrescription.requester</td>
-        <td class="maptable17">CdmhMedicationDispense,us-core-medicationrequest,us-core-practitioner</td>
+        <td class="maptable17">CdmhMedicationDispense,CdmhMedicationRequest,us-core-practitioner</td>
         <td class="maptable17">PerformedStudyAgentTransfer : {is the component of} : PerformedCompositionRelationship : {is the parent of} : PerformedSubstanceAdministration.identifier</td>
       </tr>	  
 	  <tr style='height:20px;'>

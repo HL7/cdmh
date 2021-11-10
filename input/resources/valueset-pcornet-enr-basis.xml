@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="pcornet-clinical-status"/>
-  <url value="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-clinical-status"/>
+  <id value="pcornet-enr-basis"/>
+  <url value="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-enr-basis"/>
   <version value="1.0.0"/>
-  <name value="PCORNetClinicalStatus"/>
-  <title value="PCORNet Clinical Status"/>
+  <name value="PCORNetEnrollmentBasis"/>
+  <title value="PCORNet Enrollment Basis"/>
   <status value="active"/>
   <date value="2021-09-06"/>
   <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
@@ -14,7 +14,7 @@
 			<value value="http://hl7.org/fhir"/>
 		</telecom>
 	</contact>
-	<description value="The PCORNet Condition Clinical Status contains the codes to be used by PCORNet data marts."/>
+	<description value="The PCORNet Enrollment Basis Codes contains the codes to be used by PCORNet data marts to indicate the source of the Enrollment."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -24,7 +24,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-clinical-status-codes"/>
+      <system value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-enr-basis-codes"/>
     </include>
   </compose>
 </ValueSet>

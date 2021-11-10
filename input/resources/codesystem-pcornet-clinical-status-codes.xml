@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="pcornet-clinical-status"/>
-  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-clinical-status"/>
+  <id value="pcornet-clinical-status-codes"/>
+  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-clinical-status-codes"/>
   <version value="1.0.0"/>
-  <name value="PCORNetClinicalStatus"/>
-  <title value="PCORNet Clinical Status"/>
+  <name value="PCORNetClinicalStatusCodes"/>
+  <title value="PCORNet Clinical StatusCodes"/>
   <status value="active"/>
   <date value="2021-09-06"/>
   <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
-  <description value="The PCORNet Condition Clinical Status contains the codes to be used by PCORNet data marts."/>
+  <description value="The PCORNet Clinical Status Codes contains the concepts to be used by PCORNet data marts to indicate the status of a Patients condition."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -17,7 +17,6 @@
     </coding>
   </jurisdiction>
   <caseSensitive value="true"/>
-  <valueSet value="http://hl7.org/fhir/us/cdmh/ValueSet/pcornet-clinical-status"/>
   <content value="complete"/>
   <count value="6"/>
   <concept>
