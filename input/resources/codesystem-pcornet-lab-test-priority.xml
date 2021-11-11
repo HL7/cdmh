@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="pcornet-priority"/>
-  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-priority"/>
+  <id value="pcornet-lab-test-priority-codes"/>
+  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-lab-test-priority-codes"/>
   <version value="1.0.0"/>
-  <name value="PCORNetPriority"/>
-  <title value="PCORNet Priority"/>
+  <name value="PCORNetLabTestPriorityCodes"/>
+  <title value="PCORNet Lab Test Priority Codes"/>
   <status value="active"/>
   <date value="2021-09-06"/>
   <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
-  <description value="The PCORNet Priority Source contains the codes to be used by PCORNet data marts."/>
+  <description value="The PCORNet Lab Test Priority Codes contains the concepts to be used by PCORNet data marts to indicate the immediacy of the lab test."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="pcornet-lab-loinc-source"/>
-  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-lab-loinc-source"/>
+  <id value="pcornet-lab-loinc-source-codes"/>
+  <url value="http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-lab-loinc-source-codes"/>
   <version value="1.0.0"/>
-  <name value="PCORNetLabLoincSource"/>
-  <title value="PCORNet Lab Loinc Source"/>
+  <name value="PCORNetLabLoincSourceCodes"/>
+  <title value="PCORNet Lab Loinc Source Codes"/>
   <status value="active"/>
   <date value="2021-09-06"/>
   <publisher value="HL7 International - Biomedical Research and Regulation Work Group"/>
-  <description value="The PCORNet Lab Loinc Source contains the codes to be used by PCORNet data marts."/>
+  <description value="The PCORNet Lab Loinc Source Codes contains the concepts to be used by PCORNet data marts to indicate the source of the LOINC code of the Lab test that produced the lab result."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

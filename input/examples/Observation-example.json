@@ -22,6 +22,16 @@
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>CDMH Lab Results Example</b></p>"
   },
+  "extension": [
+        {
+            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-lab-result-source",
+            "valueCode": "DR"
+         },
+         {
+            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-lab-test-priority",
+            "valueCode": "E"
+         }
+    ],
   "status" : "final",
   "category" : [
     {
@@ -36,6 +46,13 @@
     }
   ],
   "code" : {
+    "extension": [
+        {
+            "id": "1",
+            "url": "http://hl7.org/fhir/us/cdmh/StructureDefinition/cdmh-pcornet-lab-loinc-code-source",
+            "valueCode": "HL"
+         }
+    ],
     "coding" : [
       {
         "system" : "http://loinc.org",
