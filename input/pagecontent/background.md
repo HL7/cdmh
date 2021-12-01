@@ -54,7 +54,7 @@ The steps involved in the CDMH project to includes creating a query, and then di
 
 **CDMs:** Common Data Models (CDMs) represent various physical representations of data that are commonly used by research networks and organizations currently. For CDMH project purposes, FDA's Sentinel, PCORnet CDM, i2b2 and OMOP data models are being considered for mapping to FHIR.  
 
-####  BRIDG Intermediary Model and its role in CDMH project
+####  BRIDG 5.1 based Intermediary Model and its role in CDMH project
 
 The abstract model shown above allows researchers to compose queries in a uniform format and send them to the data partners for execution. In order to compose queries that can be executed against the different data models, the researcher has two options 
 1. Compose queries in the different formats required by each data partner.

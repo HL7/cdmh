@@ -13,7 +13,7 @@ The mappings use the US Core profiles, value sets and code systems where they ex
 
 
 
-#### CDMs to BRIDG Mappings 
+#### CDMs to BRIDG 5.1 Mappings 
 
 The mappings of the various CDMs to BRIDG data model which was used as the intermediary model in the CDMH project are documented in the following spreadsheet. BRIDG was chosen as the intermediary model as it was required for submitting data to FDA.
 
