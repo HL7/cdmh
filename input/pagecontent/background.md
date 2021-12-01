@@ -10,9 +10,9 @@
 
 Section 937(a)(£) of the Public Health Service Act (PHS Act), as amended by section 6301(b) of the Affordable Care Act of 2010 (ACA), PL 111-148, 124 Stat. 119 (March 23, 2010), authorizes the Secretary of the U.S. Department of Health and Human Services (HHS) to provide for the coordination of relevant Federal programs to build data capacity for patient-centered outcomes research. The Office of the Assistant Secretary for Planning and Evaluation (ASPE) is delegated to coordinate the Department's effort.
 
-The current project, titled Harmonization of Various Common Data Models and Open Standards for Evidence Generation, is a multiagency collaboration led by the Food and Drug Administration (FDA). Other agencies include the National Cancer Institute (NCI), National Center for Advancing Translational Sciences (NCATS), the Office of the National Coordinator for Health Information Technology (ONC) and the National Library of Medicine (NLM).
+The current project, titled Harmonization of Various Common Data Models and Open Standards for Evidence Generation, is a multi-agency collaboration led by the Food and Drug Administration (FDA). Other agencies include the National Cancer Institute (NCI), National Center for Advancing Translational Sciences (NCATS), the Office of the National Coordinator for Health Information Technology (ONC) and the National Library of Medicine (NLM).
 
-The purpose of this project is to provide patient-centered outcomes researchers as well as other researcher at various Federal Government Agencies, academia, etc. with access to broader observational data by leveraging existing PCORTF investments such as US-Core, Data Access Framework Research Implementation Guide (DAF-Research IG). The project leverages the lessons learned from [ONC Query Health initiative](https://www.ncbi.nlm.nih.gov/pubmed/24699371) completed in 2013/2014. Subsequently efforts in HL7 towards a language for clinical decision support and quality measurement and subsequently a harmonization of those effors into [CQL](https://cql.hl7.org/) which enabled specification of query semantics against various data models including FHIR. In addition FHIR has developed StructureMap and ConceptMap resources which can be used for mapping and transformation between models. CDMH uses many of these concepts to build the necessary mappings and profiles that can be leveraged to make data captured and stoed in different models available for researchers.
+The purpose of this project is to provide patient-centered outcomes researchers as well as other researcher at various Federal Government Agencies, academia, etc. with access to broader observational data by leveraging existing PCORTF investments such as US-Core, Data Access Framework Research Implementation Guide (DAF-Research IG). The project leverages the lessons learned from [ONC Query Health initiative](https://www.ncbi.nlm.nih.gov/pubmed/24699371) completed in 2013/2014. Subsequently efforts in HL7 towards a language for clinical decision support and quality measurement and subsequently a harmonization of those efforts into [CQL](https://cql.hl7.org/) which enabled specification of query semantics against various data models including FHIR. In addition FHIR has developed StructureMap and ConceptMap resources which can be used for mapping and transformation between models. CDMH uses many of these concepts to build the necessary mappings and profiles that can be leveraged to make data captured and stored in different models available for researchers.
 
 ###  Purpose and Goals of the Project 
 
@@ -35,7 +35,7 @@ This section outlines the abstract model, the specific actors and definitions th
 
 {% include img.html img="cdmh-abstract-model.png" caption="Figure 1: CDMH Abstract Model" %}
 
-The steps involved in the CDMH project includes creating a query, distributing the query to the various organizations (data partners), and collecting the results, and then finally viewing the results. These steps are is outlined in the above diagram and the definitions of the various actors can be found below.
+The steps involved in the CDMH project to includes creating a query, and then distributing the query to the various organizations (data partners), and collecting the results, and then finally viewing the results. These steps are is outlined in the above diagram and the definitions of the various actors can be found below.
 
 **Researcher Portal:** Researcher Portal actor represents the capabilities that will be used by the researcher to compose the queries, distribute the queries and then view the returned results. Typically in a Researcher Portal implementation there will be many modular components, some of which are outlined below
 
@@ -66,6 +66,7 @@ Leveraging BRIDG as the intermediary model has many benefits some of which are l
 * Well-defined semantics of BRIDG makes it easier for others to understand the data.
 * Allows for converting from a single intermediary models to any number of CDMs, which can be done once centrally thus reducing any burden on the data partners. 
 * Allows for converting results from the data partners to a common model from where it can be mapped and translated to other formats including FHIR.
+* BRIDG formats are already in use for submission of data to FDA.
 
 In the current phase of the project, BRIDG was chosen as the intermediary model to gain experience with the overall project and its implementation. In future phases, FHIR may be considered for playing the role of the intermediary model.
 
