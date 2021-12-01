@@ -22,7 +22,7 @@
   "fhirversion" : "4.0.1"
  },
  {
-  "version" : "0.1.0",
+  "version" : "0.1",
   "date" : "2018-04-02",
   "desc" : "Release 4 STU Ballot",
   "path" : "http://hl7.org/fhir/us/cdmh/2019May",
