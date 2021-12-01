@@ -104,8 +104,8 @@
       <reference>
         <reference value="Specimen/example"/>
       </reference>
-      <name value="CDMH MedicationStatement - Example"/>
-      <description value="An example showing a MedicationStatement record in FHIR extracted from an EMR."/>
+      <name value="CDMH Specimen - Example"/>
+      <description value="An example showing a Specimen record in FHIR extracted from an EMR."/>
     </resource>
     <resource>
       <reference>
