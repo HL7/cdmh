@@ -394,7 +394,7 @@
 	  <tr style='height:20px;'>
         <td class="maptable16">encounterid</td>
         <td class="maptable17">Observation.encounter</td>
-        <td class="maptable17">observation-vitalsigns</td>
+        <td class="maptable17">CdmhVitalSigns</td>
         <td class="maptable17">PerformedClinicalResult : PerformedObservation : PerformedCompositionRelationship : PerformedEncounter.identifier(DSET[ID]).item(ID).identifier</td>
       </tr>	  
 	  <tr style='height:20px;'>
@@ -562,7 +562,7 @@
 	  <tr style='height:20px;'>
         <td class="maptable16">lab_name</td>
         <td class="maptable17">Observation.performer(organization).name</td>
-        <td class="maptable17">CdmhLabResults, us-core-organization</td>
+        <td class="maptable17">CdmhLabResults, CdmhOrganization</td>
         <td class="maptable17">PerformedClinicalResult : PerformedObservation : DefinedObservation.nameCode(CD).originalText</td>
       </tr>	  
 	  <tr style='height:20px;'>
@@ -586,7 +586,7 @@
 	  <tr style='height:20px;'>
         <td class="maptable16">result_loc</td>
         <td class="maptable17">Observation.performer(organization).type</td>
-        <td class="maptable17">CdmhLabResults, us-core-organization</td>
+        <td class="maptable17">CdmhLabResults, CdmhOrganization</td>
         <td class="maptable17">PerformedClinicalResult : PerformedObservation : Place.typeCode</td>
       </tr>	  
 	  <tr style='height:20px;'>

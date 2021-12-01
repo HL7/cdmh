@@ -57,6 +57,13 @@ The table below outlines the mappings between OMOP and FHIR Resources/profiles a
 {% include OMOP_FHIR.html %}
 
 
+1: codes, Codings and CodeableConcept data types in FHIR which are used to convey specific concepts about a resource have to be mapped to OMOP Vocabulary which contains a large number of concepts with a specific concept_id that is used in the various tables. (For e.g In OMOP table CONDITION_OCCURRENCE, the condition_concept_id contains an id present in the OMOP vocabulary and the FHIR Condition.code value has to be mapped to the OMOP concept_id using guidance present in the [OMOP Common Data Model](https://ohdsi.github.io/CommonDataModel/) and [OMOP OHDSI Documentation](https://ohdsi.github.io/TheBookOfOhdsi/CommonDataModel.html#visitOccurrence). In this case, Condition.code from FHIR resource would actually be retained in the CONDITION_SOURCE_VALUE element).
+
+2: Identifiers in the FHIR resources should be used to generate the ID elements of the OMOP tables unless they are auto-generated. If IDs in OMOP tables are auto-generated, then the identifiers should be stored in the OMOP tables under the <TABLENAME>_SOURCE_VALUE element. For e.g If the PERSON_ID is auto-generated, then the Patient.identifier from the FHIR resource should be stored in the PERSON_SOURCE_VALUE column in the OMOP PERSON table. This will allow linkages between the FHIR resources and OMOP tables when data is extracted for population of the OMOP tables. If the FHIR resources do not contain identifiers, then the id element of the FHIR resources can be used to map back and forth between FHIR resources and OMOP tables created from the FHIR resources.
+
+3: The concept_ids identified should be used by queries to retrieve the data from OMOP tables for analysis instead of using the <DOMAIN>_SOURCE_VALUE elements.
+ 
+
 
 #### Sentinel 6.0.2 to FHIR R4 Mappings
 

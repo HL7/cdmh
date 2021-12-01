@@ -1,5 +1,9 @@
 == Suppressed Messages ==
 
-# Ignore Profile Validation Messages and Warnings.
+# This Encounter Example information message can be ignored as the validator is not validating according to the binding provided.
 
+None of the codings provided are in the value set 'DiagnosisRole' (http://hl7.org/fhir/ValueSet/diagnosis-role), and a coding is recommended to come from this value set) (codes = http://hl7.org/fhir/us/cdmh/CodeSystem/pcornet-diagnosis-classification-codes#AD)
 
+# This MedicationDispense profile information message can be ignored as the validator is complaining about a snapshot element even if the profile is an empty profile.
+
+The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk

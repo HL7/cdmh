@@ -95,6 +95,20 @@
     </resource>
     <resource>
       <reference>
+        <reference value="MedicationStatement/example"/>
+      </reference>
+      <name value="CDMH MedicationStatement - Example"/>
+      <description value="An example showing a MedicationStatement record in FHIR extracted from an EMR."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Specimen/example"/>
+      </reference>
+      <name value="CDMH MedicationStatement - Example"/>
+      <description value="An example showing a MedicationStatement record in FHIR extracted from an EMR."/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="Practitioner/example"/>
       </reference>
       <name value="CDMH Practitioner - Example"/>
@@ -134,6 +148,13 @@
       </reference>
       <name value="CDMH Location - Example"/>
       <description value="An example showing an example of Location record in FHIR extracted from an EMR."/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Organization/acme-lab"/>
+      </reference>
+      <name value="CDMH Organization - Example"/>
+      <description value="An example showing an example of Organization record in FHIR extracted from an EMR."/>
     </resource>
     <page>
       <!-- The root will always be toc.html - the template will force it if you don't do it -->

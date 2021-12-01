@@ -17,7 +17,7 @@
       <tr style='height:20px;'>
         <td class="maptable16">birth_date</td>
         <td class="maptable17">Patient.birthDate</td>
-        <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">CdmhPatient</td>
         <td class="maptable17">Person.birthDate</td>
       </tr>
       <tr style='height:20px;'>
@@ -29,19 +29,19 @@
       <tr style='height:20px;'>
         <td class="maptable16">sex</td>
         <td class="maptable17">Patient.extension: us-core-birthsex</td>
-        <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">CdmhPatient</td>
         <td class="maptable17">Person.sexGenotypeCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Hispanic</td>
         <td class="maptable17">Patient.extension: us-core-ethnicity</td>
-        <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">CdmhPatient</td>
         <td class="maptable17">Person.ethnicGroupCode WHERE Person.ethnicGroupCode = "Hispanic"</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">Race</td>
         <td class="maptable17">Patient.extension: us-core-race</td>
-        <td class="maptable17">us-core-patient</td>
+        <td class="maptable17">CdmhPatient</td>
         <td class="maptable17">Person.raceCode</td>
       </tr>
       <tr style='height:20px;'>
@@ -60,37 +60,37 @@
 	  <tr style='height:20px;'>
         <td class="maptable16">DIAGNOSIS_CODE</td>
         <td class="maptable17">Condition.code</td>
-        <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">CdmhCondition</td>
         <td class="maptable17">PerformedDiagnosis.value(ANY=CD).code</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">DIAGNOSIS_CODING_SYSTEM</td>
         <td class="maptable17">Condition.code</td>
-        <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">CdmhCondition</td>
         <td class="maptable17">PerformedDiagnosis.value(ANY=CD).codeSystem</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">DIAGNOSIS_CODING_SYSTEM_VERSION</td>
         <td class="maptable17">Condition.code</td>
-        <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">CdmhCondition</td>
         <td class="maptable17">PerformedDiagnosis.value(ANY=CD).codeSystemVersion</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">DIAGNOSIS_DATE</td>
         <td class="maptable17">Condition.onsetDateTime</td>
-        <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">CdmhCondition</td>
         <td class="maptable17">PerformedDiagnosis.reportedDate</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">DIAGNOSIS_PRIORITY</td>
         <td class="maptable17">Condition.encounter.diagnosis.rank</td>
-        <td class="maptable17">us-core-condition, us-core-encounter</td>
+        <td class="maptable17">CdmhCondition, CdmhEncounter</td>
         <td class="maptable17">PerformedDiagnosis.priorityAtDischargeCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">DIAGNOSIS_SOURCE</td>
         <td class="maptable17">Condition.category</td>
-        <td class="maptable17">us-core-condition</td>
+        <td class="maptable17">CdmhCondition</td>
         <td class="maptable17">PerformedDiagnosis : PerformedObservation.timePointCode</td>
       </tr>	  
 	  <tr style='height:20px;'>
@@ -102,133 +102,133 @@
 	  <tr style='height:20px;'>
         <td class="maptable16">ABNORMAL_RESULT_INDICATOR</td>
         <td class="maptable17">Observation.interpretation</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">PerformedClinicalResult.normalRangeComparisonCode</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">RAW_MODIFIER_LOW</td>
         <td class="maptable17">Observation.referenceRange.modifierExtension</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">PerformedClinicalResult : ReferenceResult.value(ANY=IVL[PQ]).low</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">RAW_NORMAL_RANGE_HIGH</td>
         <td class="maptable17">Observation.referenceRange.high</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">PerformedClinicalResult : ReferenceResult.value(ANY=IVL[PQ]).high</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">RAW_NORMAL_RANGE_LOW</td>
         <td class="maptable17">Observation.referenceRange.low</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">PerformedClinicalResult : ReferenceResult.value(ANY=IVL[PQ]).low</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">RAW_ORDER_DEPT</td>
         <td class="maptable17">Location.id</td>
-        <td class="maptable17">us-core-location</td>
+        <td class="maptable17">CdmhLocation</td>
         <td class="maptable17">Not mapped for CDMH project</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">RAW_PANEL</td>
         <td class="maptable17">Observation.code</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">PerformedClinicalResult : PerformedObservation : DefinedObservation.nameCode(CD).translation(DSET[CD]).item</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">RAW_RESULT</td>
         <td class="maptable17">Observation.value[x]</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">PerformedClinicalResult : PerformedClinicalResult.value (with the same data type rules as the MS_Result_X attributes)</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">RAW_UNIT</td>
-        <td class="maptable17">Observation.value[x]</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">Observation.valueQuantity.unit</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">PerformedClinicalResult : PerformedClincalResult.value(ANY=PQ).originalText</td>
       </tr> 
       <tr style='height:20px;'>
         <td class="maptable16">RESULT_LOCATION</td>
         <td class="maptable17">Location</td>
-        <td class="maptable17">us-core-location</td>
+        <td class="maptable17">CdmhLocation</td>
         <td class="maptable17">PerformedClinicalResult : PerformedObservation : Place.typeCode</td>
       </tr> 
       <tr style='height:20px;'>
         <td class="maptable16">RESULT_MODIFIER</td>
         <td class="maptable17">Observation.value[x]</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">PerformedClinicalResult.value AND PerformedClinicalResult : PerformedClinicalResult.value</td>
       </tr> 
       <tr style='height:20px;'>
         <td class="maptable16">RESULT_NUMERICAL</td>
-        <td class="maptable17">Observation.value[x]</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">Observation.valueInt</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">IF Unit AND Modifier are present, PerformedClinicalResult.value(ANY=URG[PQ]) ELSE IF Unit present, PerformedClinicalResult.value(ANY=PQ).value, ELSE IF Modifier present, PerformedClinicalResult.value(ANY=URG[REAL]), ELSE PerformedClinicalResult.value(ANY=REAL).value</td>
       </tr> 
       <tr style='height:20px;'>
         <td class="maptable16">LAB_CLASSIFICATION _SYSTEM_VERSION</td>
         <td class="maptable17">Observation.code</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">PerformedClinicalResult : PerformedObservation : DefinedObservation.nameCode(CD).valueSetVersion</td>
       </tr> 
       <tr style='height:20px;'>
         <td class="maptable16">RESULT_QUALITATIVE</td>
         <td class="maptable17">Observation.valueCodeableConcept</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">PerformedClinicalResult.value(ANY=CD).code</td>
       </tr> 
       <tr style='height:20px;'>
         <td class="maptable16">RESULT_UNIT</td>
-        <td class="maptable17">Observation.value[x]</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">Observation.valueQuantity.unit</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">PerformedClinicalResult.value(ANY=PQ).unit</td>
       </tr> 
       <tr style='height:20px;'>
         <td class="maptable16">SPECIMEN_DATE</td>
         <td class="maptable17">Observation.specimen.collection.collectedDateTime</td>
-        <td class="maptable17">us-core-observationresults,Specimen</td>
+        <td class="maptable17">CdmhLabResults,CdmhSpecimen</td>
         <td class="maptable17">PerformedClinicalResult : PerformedObservation : Subject : Specimen : PerformedSpecimenCollection.dateRange(IVL[TS.DATETIME]).low</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">LAB_CLASSIFICATION_SYSTEM</td>
         <td class="maptable17">Observation.code</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">PerformedClinicalResult : PerformedObservation : DefinedObservation.nameCode(CD).valueSetVersion</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">LAB_CODING_SYSTEM</td>
         <td class="maptable17">Observation.code</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">PerformedClinicalResult : PerformedObservation : DefinedObservation.nameCode(CD).codeSystem</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">LAB_CODE</td>
         <td class="maptable17">Observation.code</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">PerformedClinicalResult : PerformedObservation : DefinedObservation.nameCode(CD).code</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">LAB_CODING_SYSTEM_VERSION</td>
         <td class="maptable17">Observation.code</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">PerformedClinicalResult : PerformedObservation : DefinedObservation.nameCode(CD).codeSystemVersion</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">RAW_FACILITY_CODE</td>
         <td class="maptable17">Encounter.location.location.identifier</td>
-        <td class="maptable17">us-core-encounter, us-core-location</td>
+        <td class="maptable17">CdmhEncounter, CdmhLocation</td>
         <td class="maptable17">Not Mapped for CDMH project</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">RAW_LAB_CODE</td>
         <td class="maptable17">Observation.code</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">PerformedClinicalResult : PerformedObservation : DefinedObservation.nameCode(CD).translation(DSET[CD]).item</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">RAW_MODIFIER_HIGH</td>
         <td class="maptable17">Observation.referenceRange.modifierExtension</td>
-        <td class="maptable17">us-core-observationresults</td>
+        <td class="maptable17">CdmhLabResults</td>
         <td class="maptable17">PerformedClinicalResult : ReferenceResult.value(ANY=IVL[PQ]).high</td>
       </tr>
 	  
@@ -241,81 +241,75 @@
 	  <tr style='height:20px;'>
         <td class="maptable16">MEDICATION_CLASSIFICATION_SYSTEM</td>
         <td class="maptable17">	MedicationStatement.medicationCodeableConcept</td>
-        <td class="maptable17">us-core-medicationstatement</td>
+        <td class="maptable17">CdmhMedicationStatement</td>
         <td class="maptable17">PerformedSubstanceAdministration : Drug.code(CD).valueSet</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">RAW_MEDICATION_NAME</td>
-        <td class="maptable17">MedicationStatement.Extension (Proposed Name: raw-value : CodeableConcept)</td>
-        <td class="maptable17">us-core-medicationstatement</td>
+        <td class="maptable17">MedicationStatement.medicationCodeableConcept.text</td>
+        <td class="maptable17">CdmhMedicationStatement</td>
         <td class="maptable17">Not mapped for CDMH project</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">RAW_MEDICATION_STRENGTH</td>
         <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).dosageInstruction.dose[x]</td>
-        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+        <td class="maptable17">CdmhMedicationStatement, CdmhMedicationRequest</td>
         <td class="maptable17">Not mapped for CDMH project</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">RAW_MEDICATION_ROUTE</td>
         <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).dosageInstruction.route</td>
-        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+        <td class="maptable17">CdmhMedicationStatement, CdmhMedicationRequest</td>
         <td class="maptable17">Not mapped for CDMH project</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">MEDICATION_CODING_SYSTEM</td>
         <td class="maptable17">MedicationStatement.medicationCodeableConcept</td>
-        <td class="maptable17">us-core-medicationstatement</td>
+        <td class="maptable17">CdmhMedicationStatement</td>
         <td class="maptable17">PerformedSubstanceAdministration : Drug.code(CD).codeSystemName</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">MEDICATION_CLASSIFICATION_SYSTEM_VERSION</td>
         <td class="maptable17">MedicationStatement.medicationCodeableConcept</td>
-        <td class="maptable17">us-core-medicationstatement,</td>
+        <td class="maptable17">CdmhMedicationStatement,</td>
         <td class="maptable17">PerformedSubstanceAdministration : Drug.code(CD).valueSetVersion</td>
       </tr>
 	   <tr style='height:20px;'>
         <td class="maptable16">MEDICATION_CLASSIFICATION_SYSTEM</td>
         <td class="maptable17">MedicationStatement.medicationCodeableConcept</td>
-        <td class="maptable17">us-core-medicationstatement</td>
+        <td class="maptable17">CdmhMedicationStatement</td>
         <td class="maptable17">PerformedSubstanceAdministration : Drug.code(CD).codeSystemName</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">MEDICATION_CODE</td>
         <td class="maptable17">MedicationStatement.medicationCodeableConcept</td>
-        <td class="maptable17">us-core-medicationstatement</td>
+        <td class="maptable17">CdmhMedicationStatement</td>
         <td class="maptable17">PerformedSubstanceAdministration : Drug.code(CD).code</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">MEDICATION_CODING_SYSTEM_VERSION</td>
         <td class="maptable17">MedicationStatement.medicationCodeableConcept</td>
-        <td class="maptable17">us-core-medicationstatement</td>
+        <td class="maptable17">CdmhMedicationStatement</td>
         <td class="maptable17">PerformedSubstanceAdministration : Drug.code(CD).CodeSystemVersion</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">ORDER_DATE</td>
         <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).authoredOn</td>
-        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+        <td class="maptable17">CdmhMedicationStatement, CdmhMedicationRequest</td>
         <td class="maptable17">PerformedSubstanceAdministration.orderDate</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">ORDER_TYPE</td>
         <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).requester</td>
-        <td class="maptable17">us-core-medicationstatement, us-core-medicationrequest</td>
+        <td class="maptable17">CdmhMedicationStatement, CdmhMedicationRequest</td>
         <td class="maptable17">PerformedSubstanceAdministration.orderCareSettingTypeCode</td>
       </tr>
       <tr style='height:20px;'>
         <td class="maptable16">RAW_MEDICATION_CODE</td>
         <td class="maptable17">MedicationStatement.medicationCodeableConcept</td>
-        <td class="maptable17">us-core-medicationstatement</td>
+        <td class="maptable17">CdmhMedicationStatement</td>
         <td class="maptable17">Not mapped for CDMH project</td>
       </tr>
-      <tr style='height:20px;'>
-        <td class="maptable16">RAW_MEDICATION_FORM</td>
-        <td class="maptable17">MedicationStatement.basedOn(MedicationRequest).dosageInstruction.doseAndRate.dose[x]</td>
-        <td class="maptable17">us-core-medicationstatement</td>
-        <td class="maptable17">Not mapped for CDMH project</td>
-	  </tr>
 		<tr style='height:20px;'>
         <td class="maptable13" colspan="2">Table :PROCEDURE
         </td>
@@ -325,25 +319,25 @@
 	  <tr style='height:20px;'>
         <td class="maptable16">PROCEDURE_CODING_SYSTEM</td>
         <td class="maptable17">Procedure.code</td>
-        <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">CdmhProcedure</td>
         <td class="maptable17">PerformedProcedure : DefinedProcedure.nameCode(CD).codeSystemName</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">PROCEDURE_CODE</td>
         <td class="maptable17">Procedure.code</td>
-        <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">CdmhProcedure</td>
         <td class="maptable17">PerformedProcedure : DefinedProcedure.nameCode</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">PROCEDURE_CODING_SYSTEM_VERSION</td>
         <td class="maptable17">Procedure.code</td>
-        <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">CdmhProcedure</td>
         <td class="maptable17">PerformedProcedure : DefinedProcedure.nameCode(CD).codeSystemVersion</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">PROCEDURE_DATE</td>
         <td class="maptable17">Procedure.performedDateTime</td>
-        <td class="maptable17">us-core-procedure</td>
+        <td class="maptable17">CdmhProcedure</td>
         <td class="maptable17">PerformedProcedure.dateRange(IVL[TS.DATETIME]).high</td>
       </tr>
 	  
@@ -357,19 +351,19 @@
 	  <tr style='height:20px;'>
         <td class="maptable16">ADMIT_DATE</td>
         <td class="maptable17">Encounter.period</td>
-        <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedEncounter.dateRange(IVL[TS.DATETIME]).low</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">DISCHARGE_DATE</td>
         <td class="maptable17">Encounter.period</td>
-        <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedEncounter.dateRange(IVL[TS.DATETIME]).high</td>
       </tr>
 	  <tr style='height:20px;'>
         <td class="maptable16">VISIT_TYPE</td>
         <td class="maptable17">Encounter.class</td>
-        <td class="maptable17">us-core-encounter</td>
+        <td class="maptable17">CdmhEncounter</td>
         <td class="maptable17">PerformedEncounter : DefinedSubjectActivityGroup.nameCode</td>
       </tr>
 		
