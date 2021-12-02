@@ -29,7 +29,23 @@ Vocabulary mappings between FHIR and the common data models differ for many data
 * [i2b2 Data Model](https://community.i2b2.org/wiki/display/BUN/i2b2+Common+Data+Model+Documentation)
 * [FHIR Server implementation on i2b2](https://www.researchgate.net/publication/319117737_A_Fast_Healthcare_Interoperability_Resources_FHIR_layer_implemented_over_i2b2)
 
-#### Mappings between Vocabularies
+##### Mappings between Vocabularies
 
 * [SNOMED to ICD Mapping](https://www.nlm.nih.gov/research/umls/mapping_projects/snomedct_to_icd10cm.html)
 * [RxNorm to NDC Mapping](https://www.nlm.nih.gov/research/umls/rxnorm/docs/techdoc.html)
+
+#### Mandatory FHIR elements not mapped directly to Common Data Models
+
+FHIR Resources contain mandatory elements as per the specification which are not mapped to any of the Common Data Models. These elements will be populated by the EHR as per their workflows. The guidance below indicates the mandatory values for each of the profiled resources that are expected to be extracted from the EHR for populating common data models. 
+
+* AdverseEvent resources with ``actuality`` code of "actual"
+* Condition resources with ``category`` code of "problem-list-item" or "encounter-diagnosis" 
+* Encounter resources with ``status`` code of "finished" 
+* Group resources with ``type`` code of "person" and ``exclude`` flag of "false" 
+* MedicationDispense resources with ``status`` code of "completed" 
+* MedicationRequest resources with ``status`` code of "active" or "completed" 
+* MedicationStatement resources with ``status`` code of "active" or "completed" or "intended" or "not-taken" 
+* Observation resources representing LabResults with ``status`` code of "final" 
+* Observation resources representing VitalSigns with ``status`` code of "final" 
+* Procedure resources with ``status`` code of "completed" 
+* ResearchStudy resources with ``status`` code of "active" or "administratively-completed" or "approved" or "closed-to-accrual" or "closed-to-accrual-and-intervention" or "completed" 
